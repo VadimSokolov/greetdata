@@ -1,0 +1,4292 @@
+[
+  {
+    "id": "08971f13-6b0a-4653-ae5c-78edaa645623",
+    "created": "2026-01-12T21:34:53.763147Z",
+    "last_modified": "2026-01-12T21:34:53.763151Z",
+    "name": "Renewable Natural Gas (RNG) to Central Gaseous Hydrogen (G.H2) Plant",
+    "notes": "Publication Details\nTitle : Life-Cycle Analysis of Shale gas and Natural Gas\nPublication Date : December 31, 2011\nAuthors : C. Clark, J.Han, A. Burnham, J.B. Dunn, M.Q. Wang\nhttp://greet.es.anl.gov/publication-shale_gas\n\nUpdated the step loss factor according to GREET1_2014's methane leakage data, by QZ on Sept. 18, 2014\nUpdated the step CH4 loss according to GREET1_2014's methane leakage data, by QZ on May 26, 2015",
+    "transported_flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+    "loss_ratio": {
+      "id": "a0285377-4a60-4f43-a8eb-940e2755e3bd",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "4f63065f-47c2-4e0d-8230-55aacbdc1da8",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "1e9e5f42-d51b-46ff-b81b-3a918f8b6c17",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "568b61eb-9d47-4b27-8f28-5f04a036a70e",
+        "created": "2026-01-12T21:34:53.805291Z",
+        "last_modified": "2026-01-12T21:34:53.805295Z",
+        "fuel_group": {
+          "id": "f544a289-e87d-42d8-90c4-bae264931341",
+          "created": "2026-01-12T21:34:48.524680Z",
+          "last_modified": "2026-01-12T21:34:48.524684Z",
+          "name": "NG + Electricity",
+          "fuel_shares": [
+            {
+              "id": "01b92e05-60ee-49eb-a39f-200ff7522659",
+              "created": "2026-01-12T21:34:48.527487Z",
+              "last_modified": "2026-01-12T21:34:48.527490Z",
+              "flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+              "source_pathway_id": "1da237e0-bcf9-439d-a104-e843155dd8ea",
+              "source_mix_id": null,
+              "share": {
+                "id": "cc771a1e-247f-43d1-990e-5a6a9afbff0b",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0.98",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.98
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "b0c1c760-a912-4be0-a7f9-52c4eaeeaf8f",
+              "technology_at_journey_end_id": null
+            },
+            {
+              "id": "d08768d3-4616-4f59-b27c-67cd168be70e",
+              "created": "2026-01-12T21:34:48.527469Z",
+              "last_modified": "2026-01-12T21:34:48.527473Z",
+              "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+              "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
+              "source_mix_id": null,
+              "share": {
+                "id": "c969fc5f-626c-4dee-8d06-6c64389248fa",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0.02",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.02
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "6f27d2b3-28a8-4c06-b2b6-c821e9be700c"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "cf327abf-a496-4025-a526-5bff6dc26180",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1094354.258566943",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 1094354.258566943
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "ca19c63f-616d-4586-b2a1-d1ce0e97f94f",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.14",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.14
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "191d9563-5898-4cca-838f-491273a08a38",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1/parameter_2*parameter_3",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "0c2e0ae8-1ffb-4871-9d47-ba0c58ec1e23::0",
+                      "local_variable_name": "parameter_1",
+                      "source": "Transportation Process: 4ae12cc5-6342-4fa3-96d5-6cc8aecec949 -> Step: 1b32e99f-6aa9-4017-8f4b-f49c8cdf47fe -> loss_ratio::0",
+                      "description": ""
+                    },
+                    "parameter_2": {
+                      "parameter": "c10041c9-09e1-47c6-81fc-10fb717ae39f::0",
+                      "local_variable_name": "parameter_2",
+                      "source": "Transportation Process: 4ae12cc5-6342-4fa3-96d5-6cc8aecec949 -> Step: 1b32e99f-6aa9-4017-8f4b-f49c8cdf47fe -> distance::0",
+                      "description": ""
+                    },
+                    "parameter_3": {
+                      "parameter": "cf327abf-a496-4025-a526-5bff6dc26180::0",
+                      "local_variable_name": "parameter_3",
+                      "source": "Transportation Process: 08971f13-6b0a-4653-ae5c-78edaa645623 -> Step: 568b61eb-9d47-4b27-8f28-5f04a036a70e -> distance::0",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.00258506075136995
+              }
+            },
+            "parameters_used": [
+              "0c2e0ae8-1ffb-4871-9d47-ba0c58ec1e23::0",
+              "cf327abf-a496-4025-a526-5bff6dc26180::0",
+              "c10041c9-09e1-47c6-81fc-10fb717ae39f::0"
+            ]
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "01402983-2e10-43c6-8a10-02ff4ca21ba6",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "020548c5-f913-4c57-8b9c-e9dc7de27fbc",
+        "destination_id": "691aac23-4764-4309-94da-220ad2da7f2a"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "34145ccc-eb5e-4107-9d12-021e8e10aa27",
+    "created": "2026-01-12T21:34:53.763166Z",
+    "last_modified": "2026-01-12T21:34:53.763170Z",
+    "name": "Ammonium Nitrate Transportation",
+    "notes": "Updated the transportation distance and share using TFI's State of the Industry Sustainability Performance Indicators report (2019). \n\nUpdated with GREET1_2013 values on Nov.1, 2013.",
+    "transported_flow_id": "3729d778-5f5a-4e39-9d0a-c726e494db0a",
+    "loss_ratio": {
+      "id": "92cbafe7-908a-4ba0-88cc-73c0f604c3dc",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "ab22e300-7e56-4b1e-9d3a-c7377e056512",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "3efccefb-fc48-4456-a4da-b04137f63d47",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "360a5f30-10b1-4bc7-8b63-b2112dafc87c",
+        "created": "2026-01-12T21:34:53.805414Z",
+        "last_modified": "2026-01-12T21:34:53.805418Z",
+        "fuel_group": {
+          "id": "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+          "created": "2026-01-12T21:34:48.524648Z",
+          "last_modified": "2026-01-12T21:34:48.524652Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "c8d004df-3ed5-419b-ac2a-d9f79dadb015",
+              "created": "2026-01-12T21:34:48.527374Z",
+              "last_modified": "2026-01-12T21:34:48.527378Z",
+              "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
+              "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
+              "source_mix_id": null,
+              "share": {
+                "id": "5226116c-171f-4efb-879b-63fb14c17d08",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "2cdb4177-55da-4822-bd7b-e2874eab8d56",
+              "technology_at_journey_end_id": "04d4e3ac-e261-4205-a242-51c5cb708016"
+            },
+            {
+              "id": "9617cc8a-de06-407a-9bc9-28d6d6983a12",
+              "created": "2026-01-12T21:34:48.527355Z",
+              "last_modified": "2026-01-12T21:34:48.527359Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "6cf69d60-8d8f-4b01-9fdd-2c8b6d44fd4d",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "a71c5296-dfd5-48f8-a68f-e0d6924fdfe5",
+              "technology_at_journey_end_id": "56a132ed-6546-4575-a846-b107800d519b"
+            }
+          ],
+          "transportation_mode_id": "6d336d5b-d0be-4e1e-8943-afa63b042876"
+        },
+        "is_backhauling_used": false,
+        "distance": {
+          "id": "03878194-9edf-4624-8cdd-5d4bc594d142",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "ab5e9d53-c40d-42d9-81c5-16d9fd209dfd",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "87ddc5b8-1fb6-4afe-9d12-6582e02e83e8",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "3405a218-a602-4636-a5d9-0e4ab8c8ac87",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "cd379d5b-5cca-4125-985b-d99dab864159",
+        "destination_id": "6b7a87fe-2a8b-4799-bd06-306f4d7f39cc"
+      },
+      {
+        "id": "7cd258b5-1664-4392-96d4-cc7dcd5deedf",
+        "created": "2026-01-12T21:34:53.805390Z",
+        "last_modified": "2026-01-12T21:34:53.805393Z",
+        "fuel_group": {
+          "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+          "created": "2026-01-12T21:34:48.524288Z",
+          "last_modified": "2026-01-12T21:34:48.524291Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
+              "created": "2026-01-12T21:34:48.527105Z",
+              "last_modified": "2026-01-12T21:34:48.527109Z",
+              "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+              "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
+              "source_mix_id": null,
+              "share": {
+                "id": "4b56ea44-c899-483a-bc2b-76ffe4e4743d",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
+              "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
+            }
+          ],
+          "transportation_mode_id": "15b0f95f-0ed2-4237-ab05-af7478524a8a"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "027bec4f-9e4c-4882-b12c-5e6184b033bb",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "6918571.99644013",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 6918571.99644013
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "4f8e5497-9f69-4a22-9ee2-931ee6fcf20f",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "d772815e-6aa9-446a-9882-8cbb78d8d116",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "988af2d2-b4e8-4c13-a14d-0cfedfb811ca",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.54",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.54
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "cd379d5b-5cca-4125-985b-d99dab864159",
+        "destination_id": "6b7a87fe-2a8b-4799-bd06-306f4d7f39cc"
+      },
+      {
+        "id": "9101fc6f-2ca4-4385-9689-2448a791f0e8",
+        "created": "2026-01-12T21:34:53.805365Z",
+        "last_modified": "2026-01-12T21:34:53.805369Z",
+        "fuel_group": {
+          "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
+          "created": "2026-01-12T21:34:48.524891Z",
+          "last_modified": "2026-01-12T21:34:48.524895Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
+              "created": "2026-01-12T21:34:48.528026Z",
+              "last_modified": "2026-01-12T21:34:48.528029Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "60e0ca4d-b770-4978-aa2f-75e07813c6c5",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "daf4f664-daad-431f-a53c-3774d931433f",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1771888.2921797123",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 1771888.2921797123
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "2afe058c-6f53-43e3-97d1-30d19e607f98",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "6909f535-e8ee-4fb3-ab8c-c9de62ba8e0f",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "eb19db93-1b80-45be-b575-a425f03c44d7",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.32",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.32
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "cd379d5b-5cca-4125-985b-d99dab864159",
+        "destination_id": "6b7a87fe-2a8b-4799-bd06-306f4d7f39cc"
+      },
+      {
+        "id": "24b901f8-3bde-49ec-b178-fa8418939a13",
+        "created": "2026-01-12T21:34:53.805341Z",
+        "last_modified": "2026-01-12T21:34:53.805344Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "041c290a-7274-493c-8e3a-7de36b9cd0f7",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "389461.36849000031",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 389461.3684900003
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "edc48683-e2c6-4bef-a1c2-d7e5e9dfbedd",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "f291d98a-e4df-438a-a2f0-fc92c8ffc4b9",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "6d3956b4-e818-40c4-9e8e-129b6e25effb",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.14",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.14
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "cd379d5b-5cca-4125-985b-d99dab864159",
+        "destination_id": "6b7a87fe-2a8b-4799-bd06-306f4d7f39cc"
+      },
+      {
+        "id": "87cf0003-3e14-4441-a36e-12818f8d373b",
+        "created": "2026-01-12T21:34:53.805316Z",
+        "last_modified": "2026-01-12T21:34:53.805320Z",
+        "fuel_group": {
+          "id": "eb6dffb3-bc4b-491e-93af-6059076ac09e",
+          "created": "2026-01-12T21:34:48.525060Z",
+          "last_modified": "2026-01-12T21:34:48.525063Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "348d4f2c-9ee2-4197-a708-c233d3649a2e",
+              "created": "2026-01-12T21:34:48.528221Z",
+              "last_modified": "2026-01-12T21:34:48.528225Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "90f7539c-1a69-4e0a-869a-a0cce74ffb41",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "3db58a79-24e7-425d-aaf9-97a1fa4a82f0",
+              "technology_at_journey_end_id": "3e540d50-e6a2-4287-8d63-0d396b89be56"
+            }
+          ],
+          "transportation_mode_id": "dd278e6c-44bf-4350-8a52-fa44a0bc15e7"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "b651f2d4-c546-444a-bfb0-c894d85d693d",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "48280.32",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 48280.32
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "6bb5f70d-c170-490c-9437-a3b5b3fa5205",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "d5f21679-15c3-4733-9863-161942ef807e",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "1a815460-7d4b-4ad4-8e5e-8dd0ece1a168",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "6b7a87fe-2a8b-4799-bd06-306f4d7f39cc",
+        "destination_id": "ad07b638-6edd-4503-abd9-37f48b8ce694"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "3bd4825f-2299-465d-80f0-81ec9c8f9e75",
+    "created": "2026-01-12T21:34:53.763185Z",
+    "last_modified": "2026-01-12T21:34:53.763189Z",
+    "name": "Natural Gas (NG) To FT Fuel Plant - Nuclear",
+    "notes": "Publication Details\nTitle : Assessment of Fuel-Cycle Energy Use and Greenhouse Gas Emissions for Fischer-Tropsch Diesel from Coal and Cellulosic Biomass.\nPublication Date : March 1, 2011\nPublication Journal : http://pubs.acs.org/doi/abs/10.1021/es1017703\nAuthors : Xiaomin Xie, Michael Wang, and Jeongwoo Han. \n",
+    "transported_flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+    "loss_ratio": {
+      "id": "dd1a3a51-6b3c-47dd-8ece-58b2d9717ff2",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "136eb969-ad1e-44fb-affb-12cc52cb40c4",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "c05b41a0-1400-4333-acae-acde5246fc5f",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "3c071ee1-b269-431d-b5bc-6853414b2db7",
+        "created": "2026-01-12T21:34:53.805439Z",
+        "last_modified": "2026-01-12T21:34:53.805443Z",
+        "fuel_group": {
+          "id": "f544a289-e87d-42d8-90c4-bae264931341",
+          "created": "2026-01-12T21:34:48.524680Z",
+          "last_modified": "2026-01-12T21:34:48.524684Z",
+          "name": "NG + Electricity",
+          "fuel_shares": [
+            {
+              "id": "01b92e05-60ee-49eb-a39f-200ff7522659",
+              "created": "2026-01-12T21:34:48.527487Z",
+              "last_modified": "2026-01-12T21:34:48.527490Z",
+              "flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+              "source_pathway_id": "1da237e0-bcf9-439d-a104-e843155dd8ea",
+              "source_mix_id": null,
+              "share": {
+                "id": "cc771a1e-247f-43d1-990e-5a6a9afbff0b",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0.98",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.98
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "b0c1c760-a912-4be0-a7f9-52c4eaeeaf8f",
+              "technology_at_journey_end_id": null
+            },
+            {
+              "id": "d08768d3-4616-4f59-b27c-67cd168be70e",
+              "created": "2026-01-12T21:34:48.527469Z",
+              "last_modified": "2026-01-12T21:34:48.527473Z",
+              "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+              "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
+              "source_mix_id": null,
+              "share": {
+                "id": "c969fc5f-626c-4dee-8d06-6c64389248fa",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0.02",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.02
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "6f27d2b3-28a8-4c06-b2b6-c821e9be700c"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "383784ec-5b6f-4600-b952-b6522fedd658",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "80467.2",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 80467.2
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "e9d6f6ba-b398-4e8e-a384-e69c9c7bc60a",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.14",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.14
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "17c102ed-7bf0-412c-8eac-6aa70904711f",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.000228491790936092",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.000228491790936092
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "22bd9098-e86f-4ae2-884e-813419f8369c",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "cb4c3e51-cae4-4da3-8e04-9cde7a5f4123",
+        "destination_id": "ce2fc17f-2f8b-44e5-a9e8-30dc4d23b4a8"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "401decff-522c-44b7-9c27-c69c792ea79a",
+    "created": "2026-01-12T21:34:53.763204Z",
+    "last_modified": "2026-01-12T21:34:53.763208Z",
+    "name": "Lime Transportaiton for Lithium from Brine",
+    "notes": "Transportation of Lime from Limestone from its orginal to destination locations.",
+    "transported_flow_id": "674fafe9-d8d8-492d-b18e-569b6ae514c5",
+    "loss_ratio": {
+      "id": "9464148d-83a2-442b-93f9-d1caac7304b5",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "f754b232-a8a3-4933-8491-1b407ca1b703",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "1f542770-e730-4827-8f57-85e7f1afb115",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "95fa86b4-fcf4-43f4-9380-94bc4018f474",
+        "created": "2026-01-12T21:34:53.805489Z",
+        "last_modified": "2026-01-12T21:34:53.805493Z",
+        "fuel_group": {
+          "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+          "created": "2026-01-12T21:34:48.524288Z",
+          "last_modified": "2026-01-12T21:34:48.524291Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
+              "created": "2026-01-12T21:34:48.527105Z",
+              "last_modified": "2026-01-12T21:34:48.527109Z",
+              "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+              "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
+              "source_mix_id": null,
+              "share": {
+                "id": "4b56ea44-c899-483a-bc2b-76ffe4e4743d",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
+              "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
+            }
+          ],
+          "transportation_mode_id": "15b0f95f-0ed2-4237-ab05-af7478524a8a"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "fa583c8a-9f28-4e4a-b8f4-c08434c8ca5f",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "8046722.4894628171",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 8046722.489462817
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "b26db20c-6eb9-411f-aa8c-3a2c2c26f10b",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "2ed33195-80db-4a4f-a407-e5a98a9253c9",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "07f33df5-f146-4f97-9f64-6c2ab2e91930",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "3061d001-9986-46fc-9839-e5fe9cc00bcf",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      },
+      {
+        "id": "febdc862-58a8-448b-a1b5-33425c796860",
+        "created": "2026-01-12T21:34:53.805464Z",
+        "last_modified": "2026-01-12T21:34:53.805468Z",
+        "fuel_group": {
+          "id": "9f3390a3-8150-45e5-8684-08eea2f44188",
+          "created": "2026-01-12T21:34:48.525123Z",
+          "last_modified": "2026-01-12T21:34:48.525126Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4147d6b8-9a71-4889-a34d-792fc8ab6504",
+              "created": "2026-01-12T21:34:48.528390Z",
+              "last_modified": "2026-01-12T21:34:48.528393Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "53bd3bec-2be4-41ef-9ea7-80dc9db9baf8",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "eadc275f-a049-446a-85e2-fd85929b56c2"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "9ab767f7-5604-449d-bcfc-056902eb99cb",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "321868.89957851265",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 321868.89957851265
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "6a9972d9-65ac-493b-ae0e-5b248d903e13",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "fdd99843-f0c6-40de-8ab7-41ca3605fca1",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "fb43773f-afa3-4332-ad8b-bcc3d7316f96",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15",
+        "destination_id": "fc1d1a2e-990d-4055-86c5-3fd78231463f"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "44d3771b-7cc3-4586-a010-6ef5033421b6",
+    "created": "2026-01-12T21:34:53.763223Z",
+    "last_modified": "2026-01-12T21:34:53.763227Z",
+    "name": "Synthetic Crude Oil (SCO) Transportation to U.S. Refineries (In-Situ Production)",
+    "notes": "",
+    "transported_flow_id": "ed5b997a-8d4b-4317-a7fe-c9c178f2b651",
+    "loss_ratio": {
+      "id": "f96a9afb-3baa-48a2-86d9-be9a70c1fa0a",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.00006344772089",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 6.344772089e-05
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "22e226cc-6fb9-44ac-b7e4-bce6a789313d",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.5",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.5
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "3bb87108-62cd-4026-a369-7fbf1cee8502",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "44951d91-45d0-4487-ae6c-d4dc47bfd059",
+        "created": "2026-01-12T21:34:53.805513Z",
+        "last_modified": "2026-01-12T21:34:53.805517Z",
+        "fuel_group": {
+          "id": "1808cdaa-68f1-4d63-a984-6152b6274ffa",
+          "created": "2026-01-12T21:34:48.524753Z",
+          "last_modified": "2026-01-12T21:34:48.524757Z",
+          "name": "Electricity",
+          "fuel_shares": [
+            {
+              "id": "593c70ae-d4e6-4c9e-bc28-4544154a9abf",
+              "created": "2026-01-12T21:34:48.527695Z",
+              "last_modified": "2026-01-12T21:34:48.527698Z",
+              "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+              "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
+              "source_mix_id": null,
+              "share": {
+                "id": "337e77b8-c71c-4257-825c-ea62a26e5ba4",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "6f27d2b3-28a8-4c06-b2b6-c821e9be700c"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "96420662-283f-4fb2-b278-be1bc08ac729",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "2748759.552",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 2748759.552
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "eb56d50c-0a1e-488c-88f6-3bc49cf6891b",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "1706468b-a29a-4926-a8fe-9f7a7ab92e25",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "a6ff26bf-d18d-451d-ab84-82622d4f4343",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "ed794705-52ac-47f9-80b9-f0b7660211a8",
+        "destination_id": "96f52715-3884-4090-be60-74e6e803d61e"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "549e2424-67c9-4683-ac34-9fc71c7f5651",
+    "created": "2026-01-12T21:34:53.763242Z",
+    "last_modified": "2026-01-12T21:34:53.763246Z",
+    "name": "Gasoline Blendstock Distribution",
+    "notes": "Publication Details\nTitle : Analysis of Petroleum Refining Energy Efficiency of U.S. Refineries\nPublication Date : October 25, 2013\nAuthors : Hao Cai, Jeongwoo Han, Grant Forman, Vince Divita, Amgad Elgowainy, Michael Wang\nhttp://greet.es.anl.gov/publication-petroleum-eff-13\n\nPublication Details\nTitle : Updated Estimation of Energy Efficiencies of U.S. Petroleum Refineries\nPublication Date : July 1, 2010\nRevision Date : November 2, 2011\nAuthors : I. Palou-Rivera, J. Han, M. Wang\nhttp://greet.es.anl.gov/publication-petroleum",
+    "transported_flow_id": "64ff26f1-b439-4571-92eb-0ecb6dc09928",
+    "loss_ratio": {
+      "id": "276138ee-fdd5-4bf3-a9a2-13d12539e7e6",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "72b2b765-c0a9-46fb-85f2-f1a7e9a63a7d",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.67",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.67
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "249521ad-61c0-4af0-b174-c8fda3a970f7",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "a1e87b44-2795-4ae9-a5f0-e21aaf1f94ca",
+        "created": "2026-01-12T21:34:53.805538Z",
+        "last_modified": "2026-01-12T21:34:53.805542Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "01cb8661-6fd2-439e-82b3-e1900bc49c36",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "48280.32",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 48280.32
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "0393f36e-c8aa-488d-a6a7-26ff5ffc4a85",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.685",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.685
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "9cbbe58c-456f-4591-bccc-3bda1ed4bb7d",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "cfb511e8-1ff3-467d-ae00-fc25cf0ad5ba",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15",
+        "destination_id": "ad5f62e3-072d-4397-bfcb-318fa65a8bce"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "73809a3d-c322-45e9-988e-072dd1657e57",
+    "created": "2026-01-12T21:34:53.763261Z",
+    "last_modified": "2026-01-12T21:34:53.763265Z",
+    "name": "Ethanol Transportation (Produced in Brazil and Used in US) - from US Terminal to Refueling Station",
+    "notes": "Reference(s): \n\"Well to wheels energy use and greenhouse gas emissions of ethanol from corn, sugarcane and cellulosic biomass for US use\"--Page 5\nhttp://iopscience.iop.org/1748-9326/7/4/045905/pdf/1748-9326_7_4_045905.pdf\n\n\"Updated sugarcane parameters in GREET1_2012, second revision\"--page 5\nhttp://greet.es.anl.gov/publication-greet-updated-sugarcane\n ",
+    "transported_flow_id": "fdd32fa2-3105-4a9e-9f05-5f27957305cc",
+    "loss_ratio": {
+      "id": "ee976cd2-83f0-4836-9b5c-dd73f08819e1",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "0e6f3288-7528-48e2-a22b-0196c1d6b9f8",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "6e7295e3-6191-4f67-bdf4-74bc2357f888",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "a5cd07c3-3f9c-42b3-8e98-6780ce2d7dd2",
+        "created": "2026-01-12T21:34:53.805661Z",
+        "last_modified": "2026-01-12T21:34:53.805665Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "f5a242ac-5450-4c26-a6d4-a2411697b720",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "160934.4",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 160934.4
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "479b93e3-5b6c-4c40-b663-046b5ddf54dd",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.07",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.07
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "66a02431-d96f-4b5d-96a1-c5308b5723e1",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "823c0803-b80d-4ff4-bead-0b3495040dad",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "f356c775-ed4f-4fdc-ab8f-30a1117bf8ca",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      },
+      {
+        "id": "fdaf5a1e-f892-439b-87ea-527ecbbfb4fa",
+        "created": "2026-01-12T21:34:53.805636Z",
+        "last_modified": "2026-01-12T21:34:53.805640Z",
+        "fuel_group": {
+          "id": "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+          "created": "2026-01-12T21:34:48.524648Z",
+          "last_modified": "2026-01-12T21:34:48.524652Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "c8d004df-3ed5-419b-ac2a-d9f79dadb015",
+              "created": "2026-01-12T21:34:48.527374Z",
+              "last_modified": "2026-01-12T21:34:48.527378Z",
+              "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
+              "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
+              "source_mix_id": null,
+              "share": {
+                "id": "5226116c-171f-4efb-879b-63fb14c17d08",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "2cdb4177-55da-4822-bd7b-e2874eab8d56",
+              "technology_at_journey_end_id": "04d4e3ac-e261-4205-a242-51c5cb708016"
+            },
+            {
+              "id": "9617cc8a-de06-407a-9bc9-28d6d6983a12",
+              "created": "2026-01-12T21:34:48.527355Z",
+              "last_modified": "2026-01-12T21:34:48.527359Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "6cf69d60-8d8f-4b01-9fdd-2c8b6d44fd4d",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "a71c5296-dfd5-48f8-a68f-e0d6924fdfe5",
+              "technology_at_journey_end_id": "56a132ed-6546-4575-a846-b107800d519b"
+            }
+          ],
+          "transportation_mode_id": "6d336d5b-d0be-4e1e-8943-afa63b042876"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "8447f8a0-1da7-4611-b2d8-59988129ec08",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "836858.88",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 836858.88
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "d76df07f-dacd-439b-8946-2ac80481f40d",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.12",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.12
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "01a65037-4ac9-4451-8904-25e49c7962cc",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "994fa10a-15a9-45f7-958f-025687990df9",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "f356c775-ed4f-4fdc-ab8f-30a1117bf8ca",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      },
+      {
+        "id": "892842f1-a9d4-41d6-baa1-c0d26e4d1d12",
+        "created": "2026-01-12T21:34:53.805612Z",
+        "last_modified": "2026-01-12T21:34:53.805615Z",
+        "fuel_group": {
+          "id": "478af4ef-26c8-4cc0-a37b-51b2ac67a76c",
+          "created": "2026-01-12T21:34:48.524691Z",
+          "last_modified": "2026-01-12T21:34:48.524694Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "a68d7ad0-64fd-43de-b081-af2d623a4bc6",
+              "created": "2026-01-12T21:34:48.527557Z",
+              "last_modified": "2026-01-12T21:34:48.527560Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "bb7c5378-ee04-462e-af9b-53d5357be15d",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "da243eaf-dbea-4fd8-8c9c-5ae370b2da00",
+              "technology_at_journey_end_id": null
+            },
+            {
+              "id": "d1a83df5-1e9f-4b5f-8d23-2d5cd2e110c8",
+              "created": "2026-01-12T21:34:48.527539Z",
+              "last_modified": "2026-01-12T21:34:48.527543Z",
+              "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
+              "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
+              "source_mix_id": null,
+              "share": {
+                "id": "be316830-16b7-45af-965d-93d4136b8cff",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "3f96230e-b9ec-40bb-b8aa-dbcf34abe65a",
+              "technology_at_journey_end_id": null
+            },
+            {
+              "id": "0a2dd1f4-6ad0-4ef2-a92c-12d106cd6ced",
+              "created": "2026-01-12T21:34:48.527522Z",
+              "last_modified": "2026-01-12T21:34:48.527525Z",
+              "flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+              "source_pathway_id": "1da237e0-bcf9-439d-a104-e843155dd8ea",
+              "source_mix_id": null,
+              "share": {
+                "id": "190dd920-5f7c-4948-9a50-fdf448a96947",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "b0c1c760-a912-4be0-a7f9-52c4eaeeaf8f",
+              "technology_at_journey_end_id": null
+            },
+            {
+              "id": "53389727-e2a1-4ec6-87f6-23de7dbbc11c",
+              "created": "2026-01-12T21:34:48.527505Z",
+              "last_modified": "2026-01-12T21:34:48.527508Z",
+              "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+              "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
+              "source_mix_id": null,
+              "share": {
+                "id": "44e927d0-28ae-4eba-a238-7e93375d5ef5",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "6f27d2b3-28a8-4c06-b2b6-c821e9be700c"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "46393361-7e02-4af1-b5a5-5b45c96fde2a",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "965606.4",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 965606.4
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "6c65a813-4e38-45ea-aa1b-27840d6c8ba0",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.1
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "75d54ede-afc8-4148-932d-3d20c1a3aa75",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "0cd676c0-60c4-4d68-acd0-f9f114171ba1",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "f356c775-ed4f-4fdc-ab8f-30a1117bf8ca",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      },
+      {
+        "id": "5bc7ef47-46c6-44ad-a3c3-1c0380539d0e",
+        "created": "2026-01-12T21:34:53.805587Z",
+        "last_modified": "2026-01-12T21:34:53.805591Z",
+        "fuel_group": {
+          "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
+          "created": "2026-01-12T21:34:48.524891Z",
+          "last_modified": "2026-01-12T21:34:48.524895Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
+              "created": "2026-01-12T21:34:48.528026Z",
+              "last_modified": "2026-01-12T21:34:48.528029Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "60e0ca4d-b770-4978-aa2f-75e07813c6c5",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "e44eec76-ce35-4e58-b723-7f6d87402ccf",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1287475.2",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 1287475.2
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "de47f7cb-40d9-40d7-a4f8-cd2fe52d9cbd",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.1
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "14db6acc-94f3-4a03-af1d-fa2c5867a87e",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "1ad2e0d4-f338-42db-bc3e-2052b04c2eca",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "f356c775-ed4f-4fdc-ab8f-30a1117bf8ca",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      },
+      {
+        "id": "e16015bc-71e0-4f76-b9ab-8f956df3a67a",
+        "created": "2026-01-12T21:34:53.805563Z",
+        "last_modified": "2026-01-12T21:34:53.805566Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "43b0d847-89fb-441d-942c-8f3faa1a5e6f",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "48280.32",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 48280.32
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "99f311dd-254d-414c-bfae-317b0af9e3a1",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.685",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.685
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "9d71c525-1817-4935-82f3-a6e0ee1b2389",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "3a697cee-49f1-4486-bd81-542d46c6412b",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15",
+        "destination_id": "ad5f62e3-072d-4397-bfcb-318fa65a8bce"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "a8613cfe-6ac3-4365-a104-fb2188ab5e46",
+    "created": "2026-01-12T21:34:53.763280Z",
+    "last_modified": "2026-01-12T21:34:53.763284Z",
+    "name": "DME Produced from NG-derived Methanol",
+    "notes": "DME Transportation and Distribution\n\nLee, U., Han, J., Wang, M., Ward, J. et al., \"Well-to-Wheels Emissions of Greenhouse Gases and Air Pollutants of Dimethyl Ether from Natural Gas and Renewable Feedstocks in Comparison with Petroleum Gasoline and Diesel in the United States and Europe,\" SAE Int. J. Fuels Lubr. 9(3):2016, doi:10.4271/2016-01-2209.\nhttp://papers.sae.org/2016-01-2209/\n",
+    "transported_flow_id": "cf8ed5b4-f8e4-46d7-bef3-fbee2490dfe1",
+    "loss_ratio": {
+      "id": "fa571ecd-28e3-481e-b44b-020e3e5ba99c",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.0000358118451151708",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 3.58118451151708e-05
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "fa9c9bed-cf06-46a8-930d-72dd9fb80866",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.67",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.67
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "fdab6cb6-e3a3-4939-8e3d-741791260352",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "eaabba63-c84e-49f0-92d1-675ffacfaf2c",
+        "created": "2026-01-12T21:34:53.805767Z",
+        "last_modified": "2026-01-12T21:34:53.805771Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "a156ae48-e885-4b1f-bb91-805092690f06",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "48280.32",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 48280.32
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "e04185ca-ba90-4903-bfc3-1a9705df3121",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.685",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.685
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "f89a1e74-dd5e-4f8f-8db8-8b731da17dc2",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "374264b9-8f4c-4038-92fc-da97953642e8",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15",
+        "destination_id": "ad5f62e3-072d-4397-bfcb-318fa65a8bce"
+      },
+      {
+        "id": "d0d43dff-4953-4dc0-be97-68896335354a",
+        "created": "2026-01-12T21:34:53.805735Z",
+        "last_modified": "2026-01-12T21:34:53.805738Z",
+        "fuel_group": {
+          "id": "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+          "created": "2026-01-12T21:34:48.524648Z",
+          "last_modified": "2026-01-12T21:34:48.524652Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "c8d004df-3ed5-419b-ac2a-d9f79dadb015",
+              "created": "2026-01-12T21:34:48.527374Z",
+              "last_modified": "2026-01-12T21:34:48.527378Z",
+              "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
+              "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
+              "source_mix_id": null,
+              "share": {
+                "id": "5226116c-171f-4efb-879b-63fb14c17d08",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "0",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 0.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "2cdb4177-55da-4822-bd7b-e2874eab8d56",
+              "technology_at_journey_end_id": "04d4e3ac-e261-4205-a242-51c5cb708016"
+            },
+            {
+              "id": "9617cc8a-de06-407a-9bc9-28d6d6983a12",
+              "created": "2026-01-12T21:34:48.527355Z",
+              "last_modified": "2026-01-12T21:34:48.527359Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "6cf69d60-8d8f-4b01-9fdd-2c8b6d44fd4d",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "a71c5296-dfd5-48f8-a68f-e0d6924fdfe5",
+              "technology_at_journey_end_id": "56a132ed-6546-4575-a846-b107800d519b"
+            }
+          ],
+          "transportation_mode_id": "6d336d5b-d0be-4e1e-8943-afa63b042876"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "d23736ff-160e-4f0e-92c8-19b6b133d05b",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "836859.138904133",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 836859.138904133
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "be5dfa3f-3099-44ff-a284-7c894420f4e9",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.12",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.12
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "05c910b5-4cdd-4e01-87c8-e9dfa15ab31d",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "d44b0350-ec85-4148-98af-13e207d8b438",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.1
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "e3586fc6-ce69-455c-b302-731503666764",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      },
+      {
+        "id": "6be4ebdb-eb13-4b22-96a9-6d1f9f2131cd",
+        "created": "2026-01-12T21:34:53.805710Z",
+        "last_modified": "2026-01-12T21:34:53.805714Z",
+        "fuel_group": {
+          "id": "1808cdaa-68f1-4d63-a984-6152b6274ffa",
+          "created": "2026-01-12T21:34:48.524753Z",
+          "last_modified": "2026-01-12T21:34:48.524757Z",
+          "name": "Electricity",
+          "fuel_shares": [
+            {
+              "id": "593c70ae-d4e6-4c9e-bc28-4544154a9abf",
+              "created": "2026-01-12T21:34:48.527695Z",
+              "last_modified": "2026-01-12T21:34:48.527698Z",
+              "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+              "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
+              "source_mix_id": null,
+              "share": {
+                "id": "337e77b8-c71c-4257-825c-ea62a26e5ba4",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "6f27d2b3-28a8-4c06-b2b6-c821e9be700c"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "144e0d6d-1ce4-499c-959a-6c9a156f4e9c",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "885139.47384090989",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 885139.4738409099
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "6f994e5c-ef5d-4420-a8e2-598498613adb",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.1
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "9205c3c5-35f1-4ee2-8bc4-446b5011407f",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "8946e693-6aa6-46b4-b334-ccf7e5d250ac",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.6",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.6
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "e3586fc6-ce69-455c-b302-731503666764",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      },
+      {
+        "id": "778f3f4c-487a-4608-9ebf-36ed22cf7e92",
+        "created": "2026-01-12T21:34:53.805686Z",
+        "last_modified": "2026-01-12T21:34:53.805689Z",
+        "fuel_group": {
+          "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
+          "created": "2026-01-12T21:34:48.524891Z",
+          "last_modified": "2026-01-12T21:34:48.524895Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
+              "created": "2026-01-12T21:34:48.528026Z",
+              "last_modified": "2026-01-12T21:34:48.528029Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "60e0ca4d-b770-4978-aa2f-75e07813c6c5",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "421aab34-c54d-481b-a9fa-9a001bfa084d",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1287475.5983140506",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 1287475.5983140506
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "83ab83c9-f747-4b23-8ce6-702f8c787a54",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.1
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "8baca5bd-6013-4032-aa63-912edb7209b2",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "6998786a-5255-4796-ba80-34d1c40fca02",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.3",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.3
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "e3586fc6-ce69-455c-b302-731503666764",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "aecd540f-31c5-4a7d-8ef1-f0ab80a9f92d",
+    "created": "2026-01-12T21:34:53.763299Z",
+    "last_modified": "2026-01-12T21:34:53.763303Z",
+    "name": "Algae Transporation from WWTP to HTL biorefinery",
+    "notes": "Reference: \nCai, Hao, Ou, Longwen, Wang, Michael, Davis, Ryan, Dutta, Abhijit, Harris, Kylee, Wiatrowski, Matthew R., Tan, Eric, Bartling, Andrew, Bruno, Klein, Hartley, Damon, Burli, Pralhad H, Lin, Yingqian, Roni, Mohammad, Thompson, David N., Snowden-Swan, Lesley, Zhu, Yunhua, and Li, Shuyun. Supply Chain Sustainability Analysis of Renewable Hydrocarbon Fuels via Indirect Liquefaction, Hydrothermal Liquefaction, Combined Algal Processing, and Biochemical Conversion: Update of the 2021 State-of-Technology Cases. 2022. doi:10.2172/1862925.",
+    "transported_flow_id": "733838d7-8caf-45bd-9ccb-7f945c38ab7f",
+    "loss_ratio": {
+      "id": "d765a2c8-bdf1-4e45-bb3f-1430c4f740b2",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "3e8c9267-056b-4139-9f4d-1a72a77d8e17",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "74b84892-10b6-4b23-8c53-c72e29a1796d",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.8",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.8
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "1f81e167-82c6-46fc-8d9a-c455ccc31d2a",
+        "created": "2026-01-12T21:34:53.805792Z",
+        "last_modified": "2026-01-12T21:34:53.805796Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "e10b3604-b004-4128-b048-62ec8a105880",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "80467.224894628162",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 80467.22489462816
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "7cf4e7a2-5204-4ada-bd98-ca77e513842d",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "c8be853a-83ce-4fc8-b148-cab4766415ce",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "c936ed65-2955-44b3-9710-2c0f125d9148",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.5",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.5
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "40760559-9365-4382-bd8d-8b3342919337",
+        "destination_id": "db00a7e2-ad58-4fef-b2e2-ac5a3537444e"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "b0cfc3f3-8c39-478e-a272-797722497714",
+    "created": "2026-01-12T21:34:53.763318Z",
+    "last_modified": "2026-01-12T21:34:53.763322Z",
+    "name": "Ethanol Transportation (Produced in Brazil Used in Chile)",
+    "notes": "Reference(s): \r\n\"Well to wheels energy use and greenhouse gas emissions of ethanol from corn, sugarcane and cellulosic biomass for US use\"--Page 5\r\nhttp://iopscience.iop.org/1748-9326/7/4/045905/pdf/1748-9326_7_4_045905.pdf\r\n\r\n\"Updated sugarcane parameters in GREET1_2012, second revision\"--page 5\r\nhttp://greet.es.anl.gov/publication-greet-updated-sugarcane\r\n",
+    "transported_flow_id": "fdd32fa2-3105-4a9e-9f05-5f27957305cc",
+    "loss_ratio": {
+      "id": "3df09250-0afc-46af-a13a-dc4f082f1fe9",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.00050424399325454906",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0005042439932545491
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "e3940b3c-7f61-49a8-a6f1-45eb89c470d6",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "efcc1d98-fd23-4a0b-9aa0-cebd42afee9d",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "c2f02671-49bf-4aea-b483-6e9e7261af4e",
+        "created": "2026-01-12T21:34:53.805841Z",
+        "last_modified": "2026-01-12T21:34:53.805845Z",
+        "fuel_group": {
+          "id": "6db03f67-aec7-41ac-807e-cbdc9fa93575",
+          "created": "2026-01-12T21:34:48.524818Z",
+          "last_modified": "2026-01-12T21:34:48.524821Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "c437f5e3-f89f-4025-b543-2c482b37eed1",
+              "created": "2026-01-12T21:34:48.527822Z",
+              "last_modified": "2026-01-12T21:34:48.527826Z",
+              "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+              "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
+              "source_mix_id": null,
+              "share": {
+                "id": "448969ba-d08a-4fb3-b577-0aa4606eb3bf",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
+              "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
+            }
+          ],
+          "transportation_mode_id": "97361418-c9c8-4889-9242-0686a8396bf1"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "8646013a-9c2e-47d3-8422-f7e3c02daf1d",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "7222738.1065418245",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 7222738.1065418245
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "d6db8c27-8e69-4a19-be68-74f3ece3449f",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "50e1bf6e-6d10-402d-8bb9-1679a412e181",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "029343b9-ac63-4804-818d-fcde3e519148",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "977c5ba6-a14d-4413-83fb-7a28e58ab8c8",
+        "destination_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15"
+      },
+      {
+        "id": "331c82e9-ff08-4b84-aa9a-06273700f3ed",
+        "created": "2026-01-12T21:34:53.805817Z",
+        "last_modified": "2026-01-12T21:34:53.805820Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "6281d9fb-90bb-479c-90d5-82112daa0b19",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "32186.889957851268",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 32186.88995785127
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "455722c9-750f-4f6e-b0af-cb24094563f3",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "c478b96c-16e5-4ae0-b302-2cd4ae442dc5",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "3211d2a2-a946-4490-b18d-88410c70c1cd",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "6b0adc33-17ac-413a-8658-7e776ae2cc15",
+        "destination_id": "ad5f62e3-072d-4397-bfcb-318fa65a8bce"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "c118940c-9650-4bc8-84de-81436d4f2dee",
+    "created": "2026-01-12T21:34:53.763337Z",
+    "last_modified": "2026-01-12T21:34:53.763341Z",
+    "name": "Transportation of solid waste from sludge HTL with NH3 removal",
+    "notes": "",
+    "transported_flow_id": "e008adc0-99ff-4b8c-8343-9c52ae694520",
+    "loss_ratio": {
+      "id": "0f2a6ad7-595d-44cc-a0e0-f73ec489209c",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "c04cbf1d-a01c-46ef-b92e-5852b7fdd835",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "736ca435-64b8-4dcd-884e-955e4dd69aaf",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "a4d3166c-2bc5-473a-83ca-656b93879835",
+        "created": "2026-01-12T21:34:53.805866Z",
+        "last_modified": "2026-01-12T21:34:53.805870Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "11fc6b9d-6440-4a1c-9462-1b243594f215",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "80467.224894628162",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 80467.22489462816
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "e7be6346-5ba5-4d97-9fe3-d500783b0a01",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "f9f2cc43-fe60-4bd0-a892-b1cdb4df2d79",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "494bfdec-bfa4-4faf-8636-9d07595eb2a5",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "db00a7e2-ad58-4fef-b2e2-ac5a3537444e",
+        "destination_id": "95b65ed3-5e2c-4d6f-89d6-6044caaba423"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "dbc4199c-0fc8-4bfa-8998-14af0502c617",
+    "created": "2026-01-12T21:34:53.763356Z",
+    "last_modified": "2026-01-12T21:34:53.763360Z",
+    "name": "Transportation of Olivine 222",
+    "notes": "Reference:\n\nZhichao Wang, Jennifer B. Dunn, Donald C. Cronauer. \nDevelopment of GREET Catalyst Module\nReport number: ANL/ESD-14/12\n",
+    "transported_flow_id": "2b55a3a2-6635-4a97-a8bc-21e575287fcd",
+    "loss_ratio": {
+      "id": "26cc5128-6e61-45a0-a923-5a8092061929",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "71e96dbe-b5a0-42d4-b250-094692c132d0",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "639d1d75-4e15-4aa3-975b-361d52feff49",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "a7568418-8cee-49c7-9b5c-dde3afe93624",
+        "created": "2026-01-12T21:34:53.805939Z",
+        "last_modified": "2026-01-12T21:34:53.805943Z",
+        "fuel_group": {
+          "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+          "created": "2026-01-12T21:34:48.524288Z",
+          "last_modified": "2026-01-12T21:34:48.524291Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
+              "created": "2026-01-12T21:34:48.527105Z",
+              "last_modified": "2026-01-12T21:34:48.527109Z",
+              "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+              "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
+              "source_mix_id": null,
+              "share": {
+                "id": "4b56ea44-c899-483a-bc2b-76ffe4e4743d",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
+              "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
+            }
+          ],
+          "transportation_mode_id": "15b0f95f-0ed2-4237-ab05-af7478524a8a"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "ca2d9fa9-f16d-48ee-910a-5aef0c32fee1",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "5954572.8",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 5954572.8
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "41e3b5a2-9958-478b-a409-cfde3f567981",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "94cb15f2-0155-40a2-a340-769df35ccdb6",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "c4b69686-f437-4174-a9c8-a7f26d9e5a6a",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.67",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.67
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "7a1cdbce-91a8-48b5-b147-0712b5423010",
+        "destination_id": "d4321ffb-48a4-40f7-bd8e-f18b0d29e61c"
+      },
+      {
+        "id": "ece305d7-057c-4b56-8d5b-bdc8a9cebf27",
+        "created": "2026-01-12T21:34:53.805915Z",
+        "last_modified": "2026-01-12T21:34:53.805918Z",
+        "fuel_group": {
+          "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
+          "created": "2026-01-12T21:34:48.524891Z",
+          "last_modified": "2026-01-12T21:34:48.524895Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
+              "created": "2026-01-12T21:34:48.528026Z",
+              "last_modified": "2026-01-12T21:34:48.528029Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "60e0ca4d-b770-4978-aa2f-75e07813c6c5",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "c96243b2-e030-45e4-86f0-9e292d4ca380",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "160934.4",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 160934.4
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "92015b3f-f48b-463e-a66e-bd739f9be3a3",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "1bc456cf-ed87-4b4b-aeb6-eca2966a060c",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "49a6571d-44e1-4024-99cc-7363fc931422",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.33",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.33
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "0c0f991a-5114-4981-8709-4cd53f68bcac",
+        "destination_id": "db00a7e2-ad58-4fef-b2e2-ac5a3537444e"
+      },
+      {
+        "id": "eda644d2-e5c5-4fb4-915f-c4d56794ce09",
+        "created": "2026-01-12T21:34:53.805890Z",
+        "last_modified": "2026-01-12T21:34:53.805894Z",
+        "fuel_group": {
+          "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
+          "created": "2026-01-12T21:34:48.524891Z",
+          "last_modified": "2026-01-12T21:34:48.524895Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
+              "created": "2026-01-12T21:34:48.528026Z",
+              "last_modified": "2026-01-12T21:34:48.528029Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "60e0ca4d-b770-4978-aa2f-75e07813c6c5",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "6f84c1f6-bef3-4e83-9070-48f907373fe4",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "160934.4",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 160934.4
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "13811516-6d8f-4b96-8797-66756846c1d9",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.05",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.05
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "eadd3797-f4c8-4b57-9551-74dc69057d6b",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "170a20bb-8885-496c-b4bf-a4a3234f0cee",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.67",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.67
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "d4321ffb-48a4-40f7-bd8e-f18b0d29e61c",
+        "destination_id": "db00a7e2-ad58-4fef-b2e2-ac5a3537444e"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "e1575caf-9c72-419c-adbd-0892fa3c9224",
+    "created": "2026-01-12T21:34:53.763376Z",
+    "last_modified": "2026-01-12T21:34:53.763379Z",
+    "name": "Uranium (Milling to Conversion)",
+    "notes": "Publication Details\r\nTitle : Well-to-Wheels Analysis of Energy Use and Greenhouse Gas Emissions of Hydrogen Produced with Nuclear Energy\r\nPublication Date : June 1, 2004\r\nAuthors : Y. Wu, M. Wang, A. Vyas, D. Wade\r\nhttp://greet.es.anl.gov/publication-xu5rq4um",
+    "transported_flow_id": "03f47d21-4bea-4c3f-b872-62d9d2058eaf",
+    "loss_ratio": {
+      "id": "e8ac46aa-cb5c-45fc-91c2-d484a4005966",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "89220ee8-85ad-4191-9870-b5e1d72d37ff",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "9cfdf88f-03b1-4f82-a905-493ddace734d",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "dd3bb741-5e61-4b6b-b34f-cf7c11a91e0e",
+        "created": "2026-01-12T21:34:53.805964Z",
+        "last_modified": "2026-01-12T21:34:53.805967Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": false,
+        "distance": {
+          "id": "dbcc7b79-12e0-4da2-809b-4c607d6bbea7",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "2188708.517133886",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 2188708.517133886
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "ea0daa85-f4f8-4282-8110-9ffccdc9e405",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "95c79480-618a-49cd-807e-0714ffe4ec50",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "6a2d8760-64da-4ef6-a299-b051fe25ae4f",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "abe67faf-e921-4e3f-a863-133424463cdf",
+        "destination_id": "bea2ead8-c7b5-40fc-a015-1bc5d55852c9"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  },
+  {
+    "id": "eff4668d-4fd5-4166-a879-0036d575788c",
+    "created": "2026-01-12T21:34:53.763394Z",
+    "last_modified": "2026-01-12T21:34:53.763398Z",
+    "name": "Canola Oil to Renewable Diesel Plant",
+    "notes": "Publication Details\r\nTitle : Life Cycle Analysis of Alternative Aviation Fuels in GREET\r\nPublication Date : June 30, 2012\r\nAuthors : A. Elgowainy, J. Han, M. Wang, N. Carter, R. Stratton, J. Hileman, A. Malwitz, S. Balasubramanian\r\nhttp://greet.es.anl.gov/publication-aviation-lca",
+    "transported_flow_id": "5484a881-f4e1-424e-9189-44e8f8ec7519",
+    "loss_ratio": {
+      "id": "db9d00b4-4fae-436c-8f3b-657ec0fa7280",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0.0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "urban_share": {
+      "id": "b402e72f-2073-4d02-bb59-f5b32b995692",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "moisture_content": {
+      "id": "99862056-c964-4bfa-8af9-710453410aa0",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.0
+          }
+        },
+        "parameters_used": []
+      }
+    },
+    "steps": [
+      {
+        "id": "5a2240ef-80c6-4555-b2dd-b69510de9807",
+        "created": "2026-01-12T21:34:53.806012Z",
+        "last_modified": "2026-01-12T21:34:53.806016Z",
+        "fuel_group": {
+          "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
+          "created": "2026-01-12T21:34:48.524891Z",
+          "last_modified": "2026-01-12T21:34:48.524895Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
+              "created": "2026-01-12T21:34:48.528026Z",
+              "last_modified": "2026-01-12T21:34:48.528029Z",
+              "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "60e0ca4d-b770-4978-aa2f-75e07813c6c5",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
+              "technology_at_journey_end_id": null
+            }
+          ],
+          "transportation_mode_id": "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7"
+        },
+        "is_backhauling_used": null,
+        "distance": {
+          "id": "64cfd47b-fe6d-4458-ae02-fee70fbf29b2",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1126540.8",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 1126540.8
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "330ba275-ffd6-48ba-b9e0-2cb8f648f5cb",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.1
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "da6a80a2-60c5-466e-8d0c-86d2b400853e",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "03d6bc93-1ff6-4179-996b-1d438ddd65e5",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.33",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.33
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "51338eaf-ca5d-4b56-8dcf-5f1f7555a66c",
+        "destination_id": "9bf259a2-ae85-4b41-a4d8-bfc049298d53"
+      },
+      {
+        "id": "8c7272f9-1ed8-4aa5-89ff-00af5dcca20a",
+        "created": "2026-01-12T21:34:53.805988Z",
+        "last_modified": "2026-01-12T21:34:53.805991Z",
+        "fuel_group": {
+          "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
+          "created": "2026-01-12T21:34:48.524975Z",
+          "last_modified": "2026-01-12T21:34:48.524979Z",
+          "name": "Default",
+          "fuel_shares": [
+            {
+              "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
+              "created": "2026-01-12T21:34:48.528166Z",
+              "last_modified": "2026-01-12T21:34:48.528169Z",
+              "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
+              "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
+              "source_mix_id": null,
+              "share": {
+                "id": "e82fd12e-0df4-4b0b-8379-1bd814802bdc",
+                "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                "values_by_year": {
+                  "years": {
+                    "0": {
+                      "value_or_formula": "1",
+                      "is_estimated": false,
+                      "user_selected_display_unit": "%",
+                      "resolved_value": 1.0
+                    }
+                  },
+                  "parameters_used": []
+                }
+              },
+              "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
+              "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
+            }
+          ],
+          "transportation_mode_id": "aee8dd44-f2be-459e-ab6a-d23e996031ac"
+        },
+        "is_backhauling_used": true,
+        "distance": {
+          "id": "6a08826e-60f5-4db1-b7b3-156f55073d40",
+          "unit_id": "8b87e3ec-0e2a-4080-98da-dbe52548db97",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "128747.52",
+                "is_estimated": false,
+                "user_selected_display_unit": "m",
+                "resolved_value": 128747.52
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "urban_share": {
+          "id": "fb845d6e-127f-43d2-ad76-565e83eb6021",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.1
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "e2ab438c-1792-4664-9f94-2790fa1666c4",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_type": "mass",
+        "transportation_step_loss_type": "ratio",
+        "share": {
+          "id": "867a52b0-8dd6-421d-b037-e5f44ede5179",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0.67",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.67
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "payload": null,
+        "energy_intensity_to": null,
+        "energy_intensity_from": null,
+        "origin_id": "51338eaf-ca5d-4b56-8dcf-5f1f7555a66c",
+        "destination_id": "9bf259a2-ae85-4b41-a4d8-bfc049298d53"
+      }
+    ],
+    "is_draft": false,
+    "content_type": {
+      "id": 32,
+      "model_name": "transportationprocess",
+      "app_label": "transportation_processes"
+    }
+  }
+]

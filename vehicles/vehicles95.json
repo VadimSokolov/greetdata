@@ -1,0 +1,2578 @@
+[
+  {
+    "id": "25ba1e27-ed74-441a-8eae-cf2f912965c6",
+    "created": "2026-01-12T21:34:55.239515Z",
+    "last_modified": "2026-01-12T21:34:55.239519Z",
+    "name": "Car: SIDI ICEV - E10",
+    "notes": "Old name: SIDI Vehicle: Low-Level EtOH Blend with Gasoline Car\nExcel Name: SIDI Vehicle: Low-Level EtOH Blend with Gasoline (E10, Corn)",
+    "vehicle_type": {
+      "id": "496eec3d-83a9-4633-8dc8-7af57a401950",
+      "created": "2026-01-12T21:34:46.652094Z",
+      "last_modified": "2026-01-12T21:34:46.652098Z",
+      "name": "Car",
+      "tech_lag_year": {
+        "id": "568dd10d-39db-4203-9fdd-177bc38aae87",
+        "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+        "values_by_year": {
+          "years": {
+            "0": {
+              "value_or_formula": "5",
+              "is_estimated": false,
+              "user_selected_display_unit": "count"
+            }
+          },
+          "parameters_used": []
+        }
+      }
+    },
+    "urban_share": {
+      "id": "f429146b-278d-41f9-949d-10e034f56cbc",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "years": {
+          "0": {
+            "value_or_formula": {
+              "formula_string": "parameter_1",
+              "local_variables": {
+                "parameter_1": {
+                  "parameter": "1adf43db-e0f1-42ad-87ea-33de4c0896d2::0",
+                  "local_variable_name": "parameter_1",
+                  "source": "Global Parameter: c5789de3-49fb-4283-b70a-40e533dd0a9d -> parameter::0",
+                  "description": ""
+                }
+              }
+            },
+            "is_estimated": false,
+            "user_selected_display_unit": "%",
+            "resolved_value": 0.7
+          }
+        },
+        "parameters_used": [
+          "1adf43db-e0f1-42ad-87ea-33de4c0896d2::0"
+        ]
+      }
+    },
+    "payload": null,
+    "lifetime_vmt": null,
+    "electric_range": null,
+    "passengers": null,
+    "modes": [
+      {
+        "name": "Car: SIDI ICEV - E10 - Regular",
+        "id": "00000010-0000-0001-0000-000000000100",
+        "created": "2026-01-12T21:34:55.327219Z",
+        "last_modified": "2026-01-12T21:34:55.327222Z",
+        "type": "Regular",
+        "is_draft": false,
+        "miles_of_travel_shared": {
+          "id": "6c6d02a4-8971-42db-b7e4-344ef7f0796c",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "powerplants": [
+          {
+            "id": "00000010-0000-0001-0000-000000000000",
+            "created": "2026-01-12T21:34:55.338018Z",
+            "last_modified": "2026-01-12T21:34:55.338021Z",
+            "is_template": false,
+            "is_draft": false,
+            "fuels": [
+              {
+                "id": "d7156f83-88ef-4c0a-b04a-01d96bae7e59",
+                "created": "2026-01-12T21:34:55.353546Z",
+                "last_modified": "2026-01-12T21:34:55.353550Z",
+                "consumption": {
+                  "id": "182b7ef8-1543-486b-8e34-d1be84d594da",
+                  "unit_id": "335190aa-5f0f-43ae-b94f-61e0fff08900",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.000",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 3328.1433042877493
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.000",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 3389.491567961257
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.000",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 3343.271228398148
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.150",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 2733.2577861300365
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.150",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 2452.386203812993
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.150",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 2445.085618350658
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.150",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 2282.4614140631215
+                      },
+                      "2025": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.150",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2025",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2025",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 2186.7576362647164
+                      },
+                      "2030": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.150",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2030",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2030",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 1936.5623393444625
+                      },
+                      "2035": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.150",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2035",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2035",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 1795.3236363933177
+                      },
+                      "2050": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.150",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2050",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::2050",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 1547.343942655717
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1/1.000",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Fuel: 2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa -> consumption::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "J/m",
+                        "resolved_value": 3328.1433042877493
+                      }
+                    },
+                    "parameters_used": [
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2000",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2010",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::1990",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2050",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2020",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2015",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2035",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2030",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2025",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2005",
+                      "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::1995"
+                    ]
+                  }
+                },
+                "refueling_or_charging_efficiency": {
+                  "id": "ad4eadc2-5d94-4586-9828-55c16d9fff36",
+                  "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+                  "values_by_year": {
+                    "years": {
+                      "0": {
+                        "value_or_formula": "1",
+                        "is_estimated": false,
+                        "user_selected_display_unit": "%",
+                        "resolved_value": 1.0
+                      }
+                    },
+                    "parameters_used": []
+                  }
+                },
+                "source_mix_id": null,
+                "source_pathway_id": "a0964777-1e93-430a-8a13-b0cae7963529",
+                "flow_id": "2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa",
+                "source_type": "Pathway",
+                "content_type": {
+                  "id": 55,
+                  "model_name": "powerplantfuel",
+                  "app_label": "powerplants"
+                },
+                "consumption_type": "Consumption"
+              }
+            ],
+            "emissions": [
+              {
+                "id": "b2ef2f71-fc19-44b3-905f-198438ee354c",
+                "created": "2026-01-12T21:34:55.453369Z",
+                "last_modified": "2026-01-12T21:34:55.453372Z",
+                "quantity": {
+                  "id": "1fe4aac7-59c0-4584-8585-9fa694d1f0fb",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "7c46fc67-9360-44d5-b487-5bf000ae7781::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 28cf6f42-a329-4d0c-afd9-48ef12b9cf73 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 6.653305835245605e-07
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "7c46fc67-9360-44d5-b487-5bf000ae7781::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 28cf6f42-a329-4d0c-afd9-48ef12b9cf73 -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 4.085621213236506e-07
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "7c46fc67-9360-44d5-b487-5bf000ae7781::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 28cf6f42-a329-4d0c-afd9-48ef12b9cf73 -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.5179365912274132e-07
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "7c46fc67-9360-44d5-b487-5bf000ae7781::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 28cf6f42-a329-4d0c-afd9-48ef12b9cf73 -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 7.123698099688191e-08
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "7c46fc67-9360-44d5-b487-5bf000ae7781::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 28cf6f42-a329-4d0c-afd9-48ef12b9cf73 -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 4.619437844220006e-08
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "7c46fc67-9360-44d5-b487-5bf000ae7781::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 28cf6f42-a329-4d0c-afd9-48ef12b9cf73 -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 4.2720091022173424e-08
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "7c46fc67-9360-44d5-b487-5bf000ae7781::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 28cf6f42-a329-4d0c-afd9-48ef12b9cf73 -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.47444622818788e-08
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "7c46fc67-9360-44d5-b487-5bf000ae7781::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 28cf6f42-a329-4d0c-afd9-48ef12b9cf73 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 6.653305835245605e-07
+                      }
+                    },
+                    "parameters_used": [
+                      "7c46fc67-9360-44d5-b487-5bf000ae7781::1995",
+                      "7c46fc67-9360-44d5-b487-5bf000ae7781::2010",
+                      "7c46fc67-9360-44d5-b487-5bf000ae7781::1990",
+                      "7c46fc67-9360-44d5-b487-5bf000ae7781::2000",
+                      "7c46fc67-9360-44d5-b487-5bf000ae7781::2015",
+                      "7c46fc67-9360-44d5-b487-5bf000ae7781::2020",
+                      "7c46fc67-9360-44d5-b487-5bf000ae7781::2005"
+                    ]
+                  }
+                },
+                "flow_id": "28cf6f42-a329-4d0c-afd9-48ef12b9cf73"
+              },
+              {
+                "id": "0ef5e46e-817f-47c3-bd85-fdbf7bee2316",
+                "created": "2026-01-12T21:34:55.453355Z",
+                "last_modified": "2026-01-12T21:34:55.453359Z",
+                "quantity": {
+                  "id": "969d379f-c1b0-478e-af4e-9859b92a6b8a",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "2fe184ca-9f29-4148-8409-4fd0f06f9753::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: dd54ff20-bb17-4b60-82ee-884721b7beac -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 8.172563811157686e-06
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "2fe184ca-9f29-4148-8409-4fd0f06f9753::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: dd54ff20-bb17-4b60-82ee-884721b7beac -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 5.885607720402615e-06
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "2fe184ca-9f29-4148-8409-4fd0f06f9753::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: dd54ff20-bb17-4b60-82ee-884721b7beac -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 3.5986516296475556e-06
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "2fe184ca-9f29-4148-8409-4fd0f06f9753::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: dd54ff20-bb17-4b60-82ee-884721b7beac -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.4054334936746475e-06
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "2fe184ca-9f29-4148-8409-4fd0f06f9753::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: dd54ff20-bb17-4b60-82ee-884721b7beac -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.85547008975075e-06
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "2fe184ca-9f29-4148-8409-4fd0f06f9753::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: dd54ff20-bb17-4b60-82ee-884721b7beac -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.7032877082638808e-06
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "2fe184ca-9f29-4148-8409-4fd0f06f9753::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: dd54ff20-bb17-4b60-82ee-884721b7beac -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 9.106695715615821e-07
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "2fe184ca-9f29-4148-8409-4fd0f06f9753::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: dd54ff20-bb17-4b60-82ee-884721b7beac -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 8.172563811157686e-06
+                      }
+                    },
+                    "parameters_used": [
+                      "2fe184ca-9f29-4148-8409-4fd0f06f9753::2015",
+                      "2fe184ca-9f29-4148-8409-4fd0f06f9753::1995",
+                      "2fe184ca-9f29-4148-8409-4fd0f06f9753::2005",
+                      "2fe184ca-9f29-4148-8409-4fd0f06f9753::1990",
+                      "2fe184ca-9f29-4148-8409-4fd0f06f9753::2000",
+                      "2fe184ca-9f29-4148-8409-4fd0f06f9753::2010",
+                      "2fe184ca-9f29-4148-8409-4fd0f06f9753::2020"
+                    ]
+                  }
+                },
+                "flow_id": "dd54ff20-bb17-4b60-82ee-884721b7beac"
+              },
+              {
+                "id": "ce73dd3c-0ecc-4e56-b1ae-cdb149cb8e68",
+                "created": "2026-01-12T21:34:55.453341Z",
+                "last_modified": "2026-01-12T21:34:55.453345Z",
+                "quantity": {
+                  "id": "f03a775f-dfce-413d-976c-ea84a1e1118e",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "306af040-9d6e-42a0-aeb4-ce18023f8a39::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 5f1479e4-4ea7-4c8c-851e-d3690ef77521 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.807163782186476e-06
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "306af040-9d6e-42a0-aeb4-ce18023f8a39::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 5f1479e4-4ea7-4c8c-851e-d3690ef77521 -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.1557776229615958e-06
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "306af040-9d6e-42a0-aeb4-ce18023f8a39::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 5f1479e4-4ea7-4c8c-851e-d3690ef77521 -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 5.043914637367183e-07
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "306af040-9d6e-42a0-aeb4-ce18023f8a39::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 5f1479e4-4ea7-4c8c-851e-d3690ef77521 -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.258723989016883e-07
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "306af040-9d6e-42a0-aeb4-ce18023f8a39::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 5f1479e4-4ea7-4c8c-851e-d3690ef77521 -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 5.583816123961849e-08
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "306af040-9d6e-42a0-aeb4-ce18023f8a39::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 5f1479e4-4ea7-4c8c-851e-d3690ef77521 -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 5.1193535535046376e-08
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "306af040-9d6e-42a0-aeb4-ce18023f8a39::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 5f1479e4-4ea7-4c8c-851e-d3690ef77521 -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.44148252544659e-08
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "306af040-9d6e-42a0-aeb4-ce18023f8a39::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 5f1479e4-4ea7-4c8c-851e-d3690ef77521 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.807163782186476e-06
+                      }
+                    },
+                    "parameters_used": [
+                      "306af040-9d6e-42a0-aeb4-ce18023f8a39::2005",
+                      "306af040-9d6e-42a0-aeb4-ce18023f8a39::2015",
+                      "306af040-9d6e-42a0-aeb4-ce18023f8a39::2020",
+                      "306af040-9d6e-42a0-aeb4-ce18023f8a39::2010",
+                      "306af040-9d6e-42a0-aeb4-ce18023f8a39::1990",
+                      "306af040-9d6e-42a0-aeb4-ce18023f8a39::1995",
+                      "306af040-9d6e-42a0-aeb4-ce18023f8a39::2000"
+                    ]
+                  }
+                },
+                "flow_id": "5f1479e4-4ea7-4c8c-851e-d3690ef77521"
+              },
+              {
+                "id": "c7def867-45a5-40cd-a0d1-204b9ea6ef89",
+                "created": "2026-01-12T21:34:55.453327Z",
+                "last_modified": "2026-01-12T21:34:55.453331Z",
+                "quantity": {
+                  "id": "10950ffa-8db1-4bb1-b2dc-4e5b483eadf0",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "122ea15a-58e8-44f3-901a-a1e83ddf181e::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: d15ee111-065b-44a6-ab98-915eb5bd75a1 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.294778880728902e-08
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "122ea15a-58e8-44f3-901a-a1e83ddf181e::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: d15ee111-065b-44a6-ab98-915eb5bd75a1 -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 8.461836765568456e-09
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "122ea15a-58e8-44f3-901a-a1e83ddf181e::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: d15ee111-065b-44a6-ab98-915eb5bd75a1 -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 3.975884723847918e-09
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "122ea15a-58e8-44f3-901a-a1e83ddf181e::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: d15ee111-065b-44a6-ab98-915eb5bd75a1 -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.1349206245070606e-09
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "122ea15a-58e8-44f3-901a-a1e83ddf181e::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: d15ee111-065b-44a6-ab98-915eb5bd75a1 -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.3941430234887359e-09
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "122ea15a-58e8-44f3-901a-a1e83ddf181e::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: d15ee111-065b-44a6-ab98-915eb5bd75a1 -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.3621307451430327e-09
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "122ea15a-58e8-44f3-901a-a1e83ddf181e::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: d15ee111-065b-44a6-ab98-915eb5bd75a1 -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.788064531198863e-09
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "122ea15a-58e8-44f3-901a-a1e83ddf181e::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: d15ee111-065b-44a6-ab98-915eb5bd75a1 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.294778880728902e-08
+                      }
+                    },
+                    "parameters_used": [
+                      "122ea15a-58e8-44f3-901a-a1e83ddf181e::2000",
+                      "122ea15a-58e8-44f3-901a-a1e83ddf181e::1990",
+                      "122ea15a-58e8-44f3-901a-a1e83ddf181e::2015",
+                      "122ea15a-58e8-44f3-901a-a1e83ddf181e::2005",
+                      "122ea15a-58e8-44f3-901a-a1e83ddf181e::2020",
+                      "122ea15a-58e8-44f3-901a-a1e83ddf181e::1995",
+                      "122ea15a-58e8-44f3-901a-a1e83ddf181e::2010"
+                    ]
+                  }
+                },
+                "flow_id": "d15ee111-065b-44a6-ab98-915eb5bd75a1"
+              },
+              {
+                "id": "086d066b-9ed6-4aa8-96ba-95c5fbc70624",
+                "created": "2026-01-12T21:34:55.453313Z",
+                "last_modified": "2026-01-12T21:34:55.453317Z",
+                "quantity": {
+                  "id": "903cf111-8678-487e-894d-ce3410da7249",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "17479358-b314-499c-be76-0152f3c1a2f3::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ec4e4ae9-903d-40c7-a1e5-226b211eece7 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.1453862221430273e-08
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "17479358-b314-499c-be76-0152f3c1a2f3::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ec4e4ae9-903d-40c7-a1e5-226b211eece7 -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 7.485502803189513e-09
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "17479358-b314-499c-be76-0152f3c1a2f3::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ec4e4ae9-903d-40c7-a1e5-226b211eece7 -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 3.5171433849488014e-09
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "17479358-b314-499c-be76-0152f3c1a2f3::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ec4e4ae9-903d-40c7-a1e5-226b211eece7 -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.0039748440896983e-09
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "17479358-b314-499c-be76-0152f3c1a2f3::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ec4e4ae9-903d-40c7-a1e5-226b211eece7 -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.2332883376793514e-09
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "17479358-b314-499c-be76-0152f3c1a2f3::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ec4e4ae9-903d-40c7-a1e5-226b211eece7 -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.0895859895670815e-09
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "17479358-b314-499c-be76-0152f3c1a2f3::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ec4e4ae9-903d-40c7-a1e5-226b211eece7 -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.466367753498386e-09
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "17479358-b314-499c-be76-0152f3c1a2f3::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ec4e4ae9-903d-40c7-a1e5-226b211eece7 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.1453862221430273e-08
+                      }
+                    },
+                    "parameters_used": [
+                      "17479358-b314-499c-be76-0152f3c1a2f3::2015",
+                      "17479358-b314-499c-be76-0152f3c1a2f3::1990",
+                      "17479358-b314-499c-be76-0152f3c1a2f3::2010",
+                      "17479358-b314-499c-be76-0152f3c1a2f3::1995",
+                      "17479358-b314-499c-be76-0152f3c1a2f3::2020",
+                      "17479358-b314-499c-be76-0152f3c1a2f3::2000",
+                      "17479358-b314-499c-be76-0152f3c1a2f3::2005"
+                    ]
+                  }
+                },
+                "flow_id": "ec4e4ae9-903d-40c7-a1e5-226b211eece7"
+              },
+              {
+                "id": "ca5af8a5-c08f-40ba-a191-48da9940edfd",
+                "created": "2026-01-12T21:34:55.453300Z",
+                "last_modified": "2026-01-12T21:34:55.453303Z",
+                "quantity": {
+                  "id": "2eaca2da-56ae-4c44-b7ea-a597b912f02e",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "10d57a98-a017-4476-a78d-5de04ee30fe6::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 2d3d0bfc-6fb2-4012-b3df-4372951165a7 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.1140547144698352e-07
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "10d57a98-a017-4476-a78d-5de04ee30fe6::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 2d3d0bfc-6fb2-4012-b3df-4372951165a7 -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 6.853280080492495e-08
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "10d57a98-a017-4476-a78d-5de04ee30fe6::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 2d3d0bfc-6fb2-4012-b3df-4372951165a7 -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.5660130162866497e-08
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "10d57a98-a017-4476-a78d-5de04ee30fe6::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 2d3d0bfc-6fb2-4012-b3df-4372951165a7 -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.3966142621645436e-08
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "10d57a98-a017-4476-a78d-5de04ee30fe6::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 2d3d0bfc-6fb2-4012-b3df-4372951165a7 -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 9.817286597010093e-09
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "10d57a98-a017-4476-a78d-5de04ee30fe6::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 2d3d0bfc-6fb2-4012-b3df-4372951165a7 -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 9.099045075691538e-09
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "10d57a98-a017-4476-a78d-5de04ee30fe6::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 2d3d0bfc-6fb2-4012-b3df-4372951165a7 -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 4.941304164857392e-09
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "10d57a98-a017-4476-a78d-5de04ee30fe6::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 2d3d0bfc-6fb2-4012-b3df-4372951165a7 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.1140547144698352e-07
+                      }
+                    },
+                    "parameters_used": [
+                      "10d57a98-a017-4476-a78d-5de04ee30fe6::2005",
+                      "10d57a98-a017-4476-a78d-5de04ee30fe6::1990",
+                      "10d57a98-a017-4476-a78d-5de04ee30fe6::2010",
+                      "10d57a98-a017-4476-a78d-5de04ee30fe6::2015",
+                      "10d57a98-a017-4476-a78d-5de04ee30fe6::2000",
+                      "10d57a98-a017-4476-a78d-5de04ee30fe6::2020",
+                      "10d57a98-a017-4476-a78d-5de04ee30fe6::1995"
+                    ]
+                  }
+                },
+                "flow_id": "2d3d0bfc-6fb2-4012-b3df-4372951165a7"
+              },
+              {
+                "id": "212cb71d-abb9-41b5-b513-2f55f98d1331",
+                "created": "2026-01-12T21:34:55.453286Z",
+                "last_modified": "2026-01-12T21:34:55.453290Z",
+                "quantity": {
+                  "id": "ccbb9830-1c50-4966-a1b8-0692b22573c2",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "28102298-0a3f-4214-b650-6dcef6723f58::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ee3bef9c-8bd5-4545-9797-caa2f2e771b2 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.4806436359788842e-08
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "28102298-0a3f-4214-b650-6dcef6723f58::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ee3bef9c-8bd5-4545-9797-caa2f2e771b2 -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.6886759038792114e-08
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "28102298-0a3f-4214-b650-6dcef6723f58::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ee3bef9c-8bd5-4545-9797-caa2f2e771b2 -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 8.967081717795447e-09
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "28102298-0a3f-4214-b650-6dcef6723f58::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ee3bef9c-8bd5-4545-9797-caa2f2e771b2 -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 3.5900206740052183e-09
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "28102298-0a3f-4214-b650-6dcef6723f58::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ee3bef9c-8bd5-4545-9797-caa2f2e771b2 -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 3.619362714537532e-09
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "28102298-0a3f-4214-b650-6dcef6723f58::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ee3bef9c-8bd5-4545-9797-caa2f2e771b2 -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.429065969361596e-09
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "28102298-0a3f-4214-b650-6dcef6723f58::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ee3bef9c-8bd5-4545-9797-caa2f2e771b2 -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.395605920285655e-09
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "28102298-0a3f-4214-b650-6dcef6723f58::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: ee3bef9c-8bd5-4545-9797-caa2f2e771b2 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.4806436359788842e-08
+                      }
+                    },
+                    "parameters_used": [
+                      "28102298-0a3f-4214-b650-6dcef6723f58::2020",
+                      "28102298-0a3f-4214-b650-6dcef6723f58::2000",
+                      "28102298-0a3f-4214-b650-6dcef6723f58::2010",
+                      "28102298-0a3f-4214-b650-6dcef6723f58::1995",
+                      "28102298-0a3f-4214-b650-6dcef6723f58::2015",
+                      "28102298-0a3f-4214-b650-6dcef6723f58::1990",
+                      "28102298-0a3f-4214-b650-6dcef6723f58::2005"
+                    ]
+                  }
+                },
+                "flow_id": "ee3bef9c-8bd5-4545-9797-caa2f2e771b2"
+              },
+              {
+                "id": "681fec49-1f62-4f8b-ac21-803d41509f14",
+                "created": "2026-01-12T21:34:55.453273Z",
+                "last_modified": "2026-01-12T21:34:55.453276Z",
+                "quantity": {
+                  "id": "a3352ce7-9947-4c36-9606-9e39cb456bd9",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "0685200a-c183-4675-90a8-7ee91b8784cb::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: aa2a3fac-dcba-411a-8062-5704407cd31b -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.3330902466034652e-09
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "0685200a-c183-4675-90a8-7ee91b8784cb::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: aa2a3fac-dcba-411a-8062-5704407cd31b -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.576093341317168e-09
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "0685200a-c183-4675-90a8-7ee91b8784cb::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: aa2a3fac-dcba-411a-8062-5704407cd31b -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 8.19096436030871e-10
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "0685200a-c183-4675-90a8-7ee91b8784cb::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: aa2a3fac-dcba-411a-8062-5704407cd31b -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.2579244003292788e-10
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "0685200a-c183-4675-90a8-7ee91b8784cb::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: aa2a3fac-dcba-411a-8062-5704407cd31b -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 4.574128703108388e-10
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "0685200a-c183-4675-90a8-7ee91b8784cb::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: aa2a3fac-dcba-411a-8062-5704407cd31b -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.2630244727993443e-09
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "0685200a-c183-4675-90a8-7ee91b8784cb::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: aa2a3fac-dcba-411a-8062-5704407cd31b -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.7427050082491787e-09
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "0685200a-c183-4675-90a8-7ee91b8784cb::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: aa2a3fac-dcba-411a-8062-5704407cd31b -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 2.3330902466034652e-09
+                      }
+                    },
+                    "parameters_used": [
+                      "0685200a-c183-4675-90a8-7ee91b8784cb::1995",
+                      "0685200a-c183-4675-90a8-7ee91b8784cb::1990",
+                      "0685200a-c183-4675-90a8-7ee91b8784cb::2005",
+                      "0685200a-c183-4675-90a8-7ee91b8784cb::2015",
+                      "0685200a-c183-4675-90a8-7ee91b8784cb::2020",
+                      "0685200a-c183-4675-90a8-7ee91b8784cb::2000",
+                      "0685200a-c183-4675-90a8-7ee91b8784cb::2010"
+                    ]
+                  }
+                },
+                "flow_id": "aa2a3fac-dcba-411a-8062-5704407cd31b"
+              },
+              {
+                "id": "1272da6b-3910-495f-ae73-dd1fa7121c8b",
+                "created": "2026-01-12T21:34:55.453259Z",
+                "last_modified": "2026-01-12T21:34:55.453262Z",
+                "quantity": {
+                  "id": "2a739052-e98b-43d4-957f-aa0061667011",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "d6786307-40ac-47b4-a009-76898aff680c::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 83108355-6ac7-4125-bd11-11062fabdec3 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 6.078668264917964e-09
+                      },
+                      "1995": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "d6786307-40ac-47b4-a009-76898aff680c::1995",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 83108355-6ac7-4125-bd11-11062fabdec3 -> quantity::1995",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 3.997727528119273e-09
+                      },
+                      "2000": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "d6786307-40ac-47b4-a009-76898aff680c::2000",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 83108355-6ac7-4125-bd11-11062fabdec3 -> quantity::2000",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 1.916786791320576e-09
+                      },
+                      "2005": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "d6786307-40ac-47b4-a009-76898aff680c::2005",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 83108355-6ac7-4125-bd11-11062fabdec3 -> quantity::2005",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 5.396109112806729e-10
+                      },
+                      "2010": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "d6786307-40ac-47b4-a009-76898aff680c::2010",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 83108355-6ac7-4125-bd11-11062fabdec3 -> quantity::2010",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 5.692533867382761e-10
+                      },
+                      "2015": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "d6786307-40ac-47b4-a009-76898aff680c::2015",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 83108355-6ac7-4125-bd11-11062fabdec3 -> quantity::2015",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 6.552412119223754e-10
+                      },
+                      "2020": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "d6786307-40ac-47b4-a009-76898aff680c::2020",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 83108355-6ac7-4125-bd11-11062fabdec3 -> quantity::2020",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 6.168825456107055e-10
+                      },
+                      "0": {
+                        "value_or_formula": {
+                          "formula_string": "parameter_1*1",
+                          "local_variables": {
+                            "parameter_1": {
+                              "parameter": "d6786307-40ac-47b4-a009-76898aff680c::1990",
+                              "local_variable_name": "parameter_1",
+                              "source": "Vehicle Powertrain: 00000001-0000-0001-0000-000000000000 -> Emission Factor: 83108355-6ac7-4125-bd11-11062fabdec3 -> quantity::1990",
+                              "description": ""
+                            }
+                          }
+                        },
+                        "is_estimated": false,
+                        "user_selected_display_unit": "kg/m",
+                        "resolved_value": 6.078668264917964e-09
+                      }
+                    },
+                    "parameters_used": [
+                      "d6786307-40ac-47b4-a009-76898aff680c::2000",
+                      "d6786307-40ac-47b4-a009-76898aff680c::2010",
+                      "d6786307-40ac-47b4-a009-76898aff680c::1990",
+                      "d6786307-40ac-47b4-a009-76898aff680c::2020",
+                      "d6786307-40ac-47b4-a009-76898aff680c::2005",
+                      "d6786307-40ac-47b4-a009-76898aff680c::2015",
+                      "d6786307-40ac-47b4-a009-76898aff680c::1995"
+                    ]
+                  }
+                },
+                "flow_id": "83108355-6ac7-4125-bd11-11062fabdec3"
+              },
+              {
+                "id": "716908fd-935e-478d-ac0d-65fc77f8b829",
+                "created": "2026-01-12T21:34:55.453245Z",
+                "last_modified": "2026-01-12T21:34:55.453249Z",
+                "quantity": {
+                  "id": "6280b646-a51a-4d2c-8c27-5a3a0d667f16",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "1995": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2000": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2005": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2010": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2015": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2020": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "0": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      }
+                    },
+                    "parameters_used": []
+                  }
+                },
+                "flow_id": "7689c69d-5fa4-4bba-995e-1c5446994c41"
+              },
+              {
+                "id": "7347815a-c08a-4710-b806-87818d82b406",
+                "created": "2026-01-12T21:34:55.453231Z",
+                "last_modified": "2026-01-12T21:34:55.453235Z",
+                "quantity": {
+                  "id": "43ce1f14-c00c-4af3-87fa-5d44179fa863",
+                  "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+                  "values_by_year": {
+                    "years": {
+                      "1990": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "1995": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2000": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2005": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2010": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2015": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "2020": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      },
+                      "0": {
+                        "is_estimated": true,
+                        "user_selected_display_unit": "kg/m",
+                        "value_or_formula": "0.0"
+                      }
+                    },
+                    "parameters_used": []
+                  }
+                },
+                "flow_id": "835e0f7a-89c3-4a3b-ad93-24da649eb177"
+              }
+            ],
+            "name": "Car: SIDI ICEV - E10 - Regular - Internal Combustion Engine"
+          }
+        ]
+      }
+    ],
+    "vehicle_materials_group": [],
+    "non_combustible_emissions": [
+      {
+        "id": "7e9f5324-4776-437d-9648-65012b1c2384",
+        "created": "2026-01-12T21:34:55.271904Z",
+        "last_modified": "2026-01-12T21:34:55.271907Z",
+        "flow_id": "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
+        "quantity": {
+          "id": "9784c5d0-f3c2-4af3-bdab-f759232c87a4",
+          "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+          "values_by_year": {
+            "years": {
+              "1990": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "95d45fa5-e320-478f-877c-d6403096f5a4::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 74cd5372-2133-4f1b-a96d-d13adc4e36f0 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.6410905899375828e-06
+              },
+              "1995": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "95d45fa5-e320-478f-877c-d6403096f5a4::1995",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 74cd5372-2133-4f1b-a96d-d13adc4e36f0 -> quantity::1995",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.6317394142678632e-06
+              },
+              "2000": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "95d45fa5-e320-478f-877c-d6403096f5a4::2000",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 74cd5372-2133-4f1b-a96d-d13adc4e36f0 -> quantity::2000",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.6223882385981438e-06
+              },
+              "2005": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "95d45fa5-e320-478f-877c-d6403096f5a4::2005",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 74cd5372-2133-4f1b-a96d-d13adc4e36f0 -> quantity::2005",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.033880270909061e-07
+              },
+              "2010": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "95d45fa5-e320-478f-877c-d6403096f5a4::2010",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 74cd5372-2133-4f1b-a96d-d13adc4e36f0 -> quantity::2010",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.0197745630744072e-07
+              },
+              "2015": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "95d45fa5-e320-478f-877c-d6403096f5a4::2015",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 74cd5372-2133-4f1b-a96d-d13adc4e36f0 -> quantity::2015",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.0012348092244941e-07
+              },
+              "2020": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "95d45fa5-e320-478f-877c-d6403096f5a4::2020",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 74cd5372-2133-4f1b-a96d-d13adc4e36f0 -> quantity::2020",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 7.058982240592029e-08
+              },
+              "0": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "95d45fa5-e320-478f-877c-d6403096f5a4::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 74cd5372-2133-4f1b-a96d-d13adc4e36f0 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.6410905899375828e-06
+              }
+            },
+            "parameters_used": [
+              "95d45fa5-e320-478f-877c-d6403096f5a4::2010",
+              "95d45fa5-e320-478f-877c-d6403096f5a4::2020",
+              "95d45fa5-e320-478f-877c-d6403096f5a4::2000",
+              "95d45fa5-e320-478f-877c-d6403096f5a4::2015",
+              "95d45fa5-e320-478f-877c-d6403096f5a4::2005",
+              "95d45fa5-e320-478f-877c-d6403096f5a4::1995",
+              "95d45fa5-e320-478f-877c-d6403096f5a4::1990"
+            ]
+          }
+        }
+      },
+      {
+        "id": "2a56aff0-b64f-441d-b459-ec1c583fdcfb",
+        "created": "2026-01-12T21:34:55.271891Z",
+        "last_modified": "2026-01-12T21:34:55.271894Z",
+        "flow_id": "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
+        "quantity": {
+          "id": "f409435f-ef60-40db-92a9-c9e79764ac29",
+          "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+          "values_by_year": {
+            "years": {
+              "1990": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "5242d305-59d0-4520-8d58-4ad4983a79b0::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.9076426931949534e-08
+              },
+              "1995": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "5242d305-59d0-4520-8d58-4ad4983a79b0::1995",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7 -> quantity::1995",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.907635966087722e-08
+              },
+              "2000": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "5242d305-59d0-4520-8d58-4ad4983a79b0::2000",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7 -> quantity::2000",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.9076292389804905e-08
+              },
+              "2005": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "5242d305-59d0-4520-8d58-4ad4983a79b0::2005",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7 -> quantity::2005",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.9076154557421352e-08
+              },
+              "2010": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "5242d305-59d0-4520-8d58-4ad4983a79b0::2010",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7 -> quantity::2010",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.9076474444110293e-08
+              },
+              "2015": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "5242d305-59d0-4520-8d58-4ad4983a79b0::2015",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7 -> quantity::2015",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.9076467492563865e-08
+              },
+              "2020": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "5242d305-59d0-4520-8d58-4ad4983a79b0::2020",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7 -> quantity::2020",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.907647262719757e-08
+              },
+              "0": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "5242d305-59d0-4520-8d58-4ad4983a79b0::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 1.9076426931949534e-08
+              }
+            },
+            "parameters_used": [
+              "5242d305-59d0-4520-8d58-4ad4983a79b0::2000",
+              "5242d305-59d0-4520-8d58-4ad4983a79b0::2015",
+              "5242d305-59d0-4520-8d58-4ad4983a79b0::2020",
+              "5242d305-59d0-4520-8d58-4ad4983a79b0::1990",
+              "5242d305-59d0-4520-8d58-4ad4983a79b0::2010",
+              "5242d305-59d0-4520-8d58-4ad4983a79b0::2005",
+              "5242d305-59d0-4520-8d58-4ad4983a79b0::1995"
+            ]
+          }
+        }
+      },
+      {
+        "id": "98c0aa0c-b092-4d32-b4a3-9d254bc015b6",
+        "created": "2026-01-12T21:34:55.271877Z",
+        "last_modified": "2026-01-12T21:34:55.271881Z",
+        "flow_id": "c666c37c-5e84-421f-b4f7-e46b58a759c2",
+        "quantity": {
+          "id": "bfa4a6c7-74e0-4099-8280-59a0f6653cc4",
+          "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+          "values_by_year": {
+            "years": {
+              "1990": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "cc208739-3692-42b5-80c3-7f12453ac016::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: c666c37c-5e84-421f-b4f7-e46b58a759c2 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 2.5174660704131656e-09
+              },
+              "1995": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "cc208739-3692-42b5-80c3-7f12453ac016::1995",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: c666c37c-5e84-421f-b4f7-e46b58a759c2 -> quantity::1995",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 2.517455663021981e-09
+              },
+              "2000": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "cc208739-3692-42b5-80c3-7f12453ac016::2000",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: c666c37c-5e84-421f-b4f7-e46b58a759c2 -> quantity::2000",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 2.5174452556307962e-09
+              },
+              "2005": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "cc208739-3692-42b5-80c3-7f12453ac016::2005",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: c666c37c-5e84-421f-b4f7-e46b58a759c2 -> quantity::2005",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 2.5174278890170687e-09
+              },
+              "2010": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "cc208739-3692-42b5-80c3-7f12453ac016::2010",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: c666c37c-5e84-421f-b4f7-e46b58a759c2 -> quantity::2010",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 2.517473801340463e-09
+              },
+              "2015": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "cc208739-3692-42b5-80c3-7f12453ac016::2015",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: c666c37c-5e84-421f-b4f7-e46b58a759c2 -> quantity::2015",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 2.5174682266782124e-09
+              },
+              "2020": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "cc208739-3692-42b5-80c3-7f12453ac016::2020",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: c666c37c-5e84-421f-b4f7-e46b58a759c2 -> quantity::2020",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 2.517469428429828e-09
+              },
+              "0": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "cc208739-3692-42b5-80c3-7f12453ac016::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: c666c37c-5e84-421f-b4f7-e46b58a759c2 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 2.5174660704131656e-09
+              }
+            },
+            "parameters_used": [
+              "cc208739-3692-42b5-80c3-7f12453ac016::2010",
+              "cc208739-3692-42b5-80c3-7f12453ac016::2015",
+              "cc208739-3692-42b5-80c3-7f12453ac016::1990",
+              "cc208739-3692-42b5-80c3-7f12453ac016::2005",
+              "cc208739-3692-42b5-80c3-7f12453ac016::2000",
+              "cc208739-3692-42b5-80c3-7f12453ac016::1995",
+              "cc208739-3692-42b5-80c3-7f12453ac016::2020"
+            ]
+          }
+        }
+      },
+      {
+        "id": "d9ff18aa-d22f-4748-b82f-68e3f9baa7ad",
+        "created": "2026-01-12T21:34:55.271864Z",
+        "last_modified": "2026-01-12T21:34:55.271867Z",
+        "flow_id": "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
+        "quantity": {
+          "id": "84c5eb92-da7d-4a96-9c8f-fb552347ce88",
+          "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+          "values_by_year": {
+            "years": {
+              "1990": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: a3ef2d36-a902-4c55-93b0-62ec99cf27a2 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 3.599386543880926e-10
+              },
+              "1995": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::1995",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: a3ef2d36-a902-4c55-93b0-62ec99cf27a2 -> quantity::1995",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 3.599371663750374e-10
+              },
+              "2000": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2000",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: a3ef2d36-a902-4c55-93b0-62ec99cf27a2 -> quantity::2000",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 3.5993567836198225e-10
+              },
+              "2005": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2005",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: a3ef2d36-a902-4c55-93b0-62ec99cf27a2 -> quantity::2005",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 3.599331953431842e-10
+              },
+              "2010": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2010",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: a3ef2d36-a902-4c55-93b0-62ec99cf27a2 -> quantity::2010",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 3.5993975972953145e-10
+              },
+              "2015": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2015",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: a3ef2d36-a902-4c55-93b0-62ec99cf27a2 -> quantity::2015",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 3.5993896268346487e-10
+              },
+              "2020": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2020",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: a3ef2d36-a902-4c55-93b0-62ec99cf27a2 -> quantity::2020",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 3.5993913450578437e-10
+              },
+              "0": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: a3ef2d36-a902-4c55-93b0-62ec99cf27a2 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 3.599386543880926e-10
+              }
+            },
+            "parameters_used": [
+              "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2015",
+              "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2000",
+              "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2020",
+              "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2010",
+              "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::1995",
+              "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2005",
+              "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::1990"
+            ]
+          }
+        }
+      },
+      {
+        "id": "dbb4d827-d247-4292-9a06-6c169b21a5bd",
+        "created": "2026-01-12T21:34:55.271850Z",
+        "last_modified": "2026-01-12T21:34:55.271854Z",
+        "flow_id": "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
+        "quantity": {
+          "id": "ceabe07e-0e5d-4ab8-ba43-ac9b2cd7c021",
+          "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
+          "values_by_year": {
+            "years": {
+              "1990": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "b068651d-3ded-499d-8257-b8a002ce3fe6::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 565e0bab-3d27-4e5a-b9af-3aaf7365aa83 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 4.500062914430986e-10
+              },
+              "1995": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "b068651d-3ded-499d-8257-b8a002ce3fe6::1995",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 565e0bab-3d27-4e5a-b9af-3aaf7365aa83 -> quantity::1995",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 4.5000443108376127e-10
+              },
+              "2000": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "b068651d-3ded-499d-8257-b8a002ce3fe6::2000",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 565e0bab-3d27-4e5a-b9af-3aaf7365aa83 -> quantity::2000",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 4.5000257072442386e-10
+              },
+              "2005": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "b068651d-3ded-499d-8257-b8a002ce3fe6::2005",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 565e0bab-3d27-4e5a-b9af-3aaf7365aa83 -> quantity::2005",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 4.4999946637853805e-10
+              },
+              "2010": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "b068651d-3ded-499d-8257-b8a002ce3fe6::2010",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 565e0bab-3d27-4e5a-b9af-3aaf7365aa83 -> quantity::2010",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 4.500076733747018e-10
+              },
+              "2015": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "b068651d-3ded-499d-8257-b8a002ce3fe6::2015",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 565e0bab-3d27-4e5a-b9af-3aaf7365aa83 -> quantity::2015",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 4.5000667688338257e-10
+              },
+              "2020": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "b068651d-3ded-499d-8257-b8a002ce3fe6::2020",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 565e0bab-3d27-4e5a-b9af-3aaf7365aa83 -> quantity::2020",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 4.5000689170089063e-10
+              },
+              "0": {
+                "value_or_formula": {
+                  "formula_string": "parameter_1*1",
+                  "local_variables": {
+                    "parameter_1": {
+                      "parameter": "b068651d-3ded-499d-8257-b8a002ce3fe6::1990",
+                      "local_variable_name": "parameter_1",
+                      "source": "Vehicle: 529b691d-d6be-4728-aab8-1d15d8ab024d -> Non-Combustion Emission: 565e0bab-3d27-4e5a-b9af-3aaf7365aa83 -> quantity::1990",
+                      "description": ""
+                    }
+                  }
+                },
+                "is_estimated": false,
+                "user_selected_display_unit": "kg/m",
+                "resolved_value": 4.500062914430986e-10
+              }
+            },
+            "parameters_used": [
+              "b068651d-3ded-499d-8257-b8a002ce3fe6::2015",
+              "b068651d-3ded-499d-8257-b8a002ce3fe6::2000",
+              "b068651d-3ded-499d-8257-b8a002ce3fe6::1995",
+              "b068651d-3ded-499d-8257-b8a002ce3fe6::2005",
+              "b068651d-3ded-499d-8257-b8a002ce3fe6::2020",
+              "b068651d-3ded-499d-8257-b8a002ce3fe6::2010",
+              "b068651d-3ded-499d-8257-b8a002ce3fe6::1990"
+            ]
+          }
+        }
+      }
+    ],
+    "is_draft": false,
+    "is_standard_vehicle": true,
+    "is_hidden": false,
+    "content_type": {
+      "id": 41,
+      "model_name": "vehicle",
+      "app_label": "vehicles"
+    },
+    "warning": null
+  }
+]

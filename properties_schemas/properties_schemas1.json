@@ -1,0 +1,380 @@
+[
+  {
+    "id": "03ea6103-6983-48c6-b70e-b0c93d379315",
+    "name": "resource_schema",
+    "notes": "Schema used for resources.",
+    "created": "2026-01-12T21:34:44.914612Z",
+    "last_modified": "2026-01-12T21:34:44.914624Z",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "hhv": {
+          "type": "string",
+          "title": "High Heating Value",
+          "help_text": "High Heating Value of the resource",
+          "required": false,
+          "shown_in_ui": true
+        },
+        "lhv": {
+          "type": "string",
+          "title": "Low Heating Value",
+          "help_text": "Low Heating Value of the resource",
+          "required": false,
+          "shown_in_ui": true
+        },
+        "market_value": {
+          "type": "string",
+          "title": "Market Value",
+          "help_text": "Market Value of the resource",
+          "required": false,
+          "shown_in_ui": true
+        },
+        "density": {
+          "type": "string",
+          "title": "Density",
+          "help_text": "Density of the resource",
+          "required": false,
+          "shown_in_ui": true
+        },
+        "cratio": {
+          "type": "string",
+          "title": "Carbon Ratio",
+          "help_text": "Carbon Ratio of the resource",
+          "required": false,
+          "shown_in_ui": true
+        },
+        "sratio": {
+          "type": "string",
+          "title": "Sulfur Ratio",
+          "help_text": "Sulfur Ratio of the resource",
+          "required": false,
+          "shown_in_ui": true
+        },
+        "state": {
+          "type": "string",
+          "title": "Physical State",
+          "help_text": "Physical State of the resource",
+          "choices": [
+            "solid",
+            "liquid",
+            "gaseous",
+            "item",
+            "energy"
+          ],
+          "required": true,
+          "shown_in_ui": true
+        },
+        "family": {
+          "type": "list",
+          "title": "Resource Family",
+          "help_text": "List of family or group to what a resource could belong to",
+          "items": {
+            "type": "string"
+          },
+          "required": false,
+          "shown_in_ui": false
+        },
+        "alternative_names": {
+          "type": "list",
+          "title": "Alternative Names",
+          "help_text": "List of alternative names to denote a resource",
+          "items": {
+            "type": "string"
+          },
+          "required": false,
+          "shown_in_ui": true
+        },
+        "carbon_content": {
+          "type": "string",
+          "title": "Biogenic Carbon Content",
+          "help_text": "Biogenic Carbon Content of the resource",
+          "required": false,
+          "shown_in_ui": true
+        }
+      }
+    }
+  },
+  {
+    "id": "275ab2f4-bb82-4c67-89e7-c6ed8ddfd6c9",
+    "name": "emission_schema",
+    "notes": "Schema used for emissions.",
+    "created": "2026-01-12T21:34:44.914667Z",
+    "last_modified": "2026-01-12T21:34:44.914672Z",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "cratio": {
+          "type": "string",
+          "title": "Carbon Ratio",
+          "help_text": "Carbon Ratio of the emission",
+          "required": false,
+          "shown_in_ui": true
+        },
+        "sratio": {
+          "type": "string",
+          "title": "Sulfur Ratio",
+          "help_text": "Sulfur Ratio of the emission",
+          "required": false,
+          "shown_in_ui": true
+        },
+        "is_dissociated_to_co2": {
+          "type": "boolean",
+          "title": "Is Completely Dissociated to CO2?",
+          "help_text": "Whether the emission is completely dissociated to CO2 for GHG counting.",
+          "required": false,
+          "default": false,
+          "shown_in_ui": true
+        },
+        "can_use_carbon_balance": {
+          "type": "boolean",
+          "title": "Carbon Balance",
+          "help_text": "Whether the emission factor can be calculated using carbon balance",
+          "required": false,
+          "default": false,
+          "shown_in_ui": false
+        },
+        "is_used_in_carbon_balance": {
+          "type": "boolean",
+          "title": "Whether is used in Carbon Balance",
+          "help_text": "Whether the emission factor is used in carbon balance",
+          "required": false,
+          "default": false,
+          "shown_in_ui": false
+        },
+        "can_use_sulfur_balance": {
+          "type": "boolean",
+          "title": "Sulfur Balance",
+          "help_text": "Whether the emission factor can be calculated using sulfur balance",
+          "required": false,
+          "default": false,
+          "shown_in_ui": false
+        },
+        "can_use_biogenic_carbon_balance": {
+          "type": "boolean",
+          "title": "Biogenic Carbon Balance",
+          "help_text": "Whether the emission factor can be calculated using biogenic carbon balance",
+          "required": false,
+          "default": false,
+          "shown_in_ui": false
+        }
+      }
+    }
+  },
+  {
+    "id": "6d01e9db-677f-47b8-b18e-802826d1960b",
+    "name": "Rail",
+    "notes": "Schema used for Rail.",
+    "created": "2026-01-12T21:34:44.914694Z",
+    "last_modified": "2026-01-12T21:34:44.914698Z",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "average_speed": {
+          "type": "string",
+          "title": "Average Speed",
+          "help_text": "Average speed for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "17.8816"
+        }
+      }
+    }
+  },
+  {
+    "id": "6d0b2efa-a281-4fab-bc3b-0b06b0877c2b",
+    "name": "Tanker",
+    "notes": "Schema used for Tanker.",
+    "created": "2026-01-12T21:34:44.914711Z",
+    "last_modified": "2026-01-12T21:34:44.914715Z",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "average_speed": {
+          "type": "string",
+          "title": "Average Speed",
+          "help_text": "Transportation mode average speed.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "8.9408"
+        },
+        "load_factor_to": {
+          "type": "string",
+          "title": "Load Factor To",
+          "help_text": "Transportation mode load factor for the initial trip.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.83"
+        },
+        "load_factor_from": {
+          "type": "string",
+          "title": "Load Factor From",
+          "help_text": "Transportation mode load factor for the return trip.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.7"
+        },
+        "bsfc_adjustment": {
+          "type": "string",
+          "title": "Brake Spec. Fuel Cons.",
+          "help_text": "Brake-specific fuel consumption adjustment for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.0"
+        },
+        "typical_hp": {
+          "type": "string",
+          "title": "Typical HP",
+          "help_text": "Typical horsepower for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "6763609.246830723"
+        },
+        "hp_factor": {
+          "type": "string",
+          "title": "HP/Payload Factor",
+          "help_text": "HP/Payload factor for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.08302260253542133"
+        },
+        "typical_fc": {
+          "type": "string",
+          "title": "BSFC/Load Factor",
+          "help_text": "BSFC/Load factor for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.0000000542"
+        }
+      }
+    }
+  },
+  {
+    "id": "774954c8-50d0-490d-933a-15d5aa7f3143",
+    "name": "MagicMove",
+    "notes": "Schema used for MagicMove.",
+    "created": "2026-01-12T21:34:44.914734Z",
+    "last_modified": "2026-01-12T21:34:44.914738Z",
+    "schema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "id": "bf703565-f79e-406a-a1a3-f67ae3132621",
+    "name": "Barge",
+    "notes": "Schema used for Barge.",
+    "created": "2026-01-12T21:34:44.914749Z",
+    "last_modified": "2026-01-12T21:34:44.914753Z",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "average_speed": {
+          "type": "string",
+          "title": "Average Speed",
+          "help_text": "Transportation mode average speed.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "8.9408"
+        },
+        "load_factor_to": {
+          "type": "string",
+          "title": "Load Factor To",
+          "help_text": "Transportation mode load factor for the initial trip.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.83"
+        },
+        "load_factor_from": {
+          "type": "string",
+          "title": "Load Factor From",
+          "help_text": "Transportation mode load factor for the return trip.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.7"
+        },
+        "bsfc_adjustment": {
+          "type": "string",
+          "title": "Brake Spec. Fuel Cons.",
+          "help_text": "Brake-specific fuel consumption adjustment for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.0"
+        },
+        "typical_hp": {
+          "type": "string",
+          "title": "Typical HP",
+          "help_text": "Typical horsepower for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "6763609.246830723"
+        },
+        "hp_factor": {
+          "type": "string",
+          "title": "HP/Payload Factor",
+          "help_text": "HP/Payload factor for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.08302260253542133"
+        },
+        "typical_fc": {
+          "type": "string",
+          "title": "BSFC/Load Factor",
+          "help_text": "BSFC/Load factor for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "0.0000000542"
+        }
+      }
+    }
+  },
+  {
+    "id": "e3ee5302-9dcd-46df-a76d-e3ea01ed8399",
+    "name": "Pipeline",
+    "notes": "Schema used for Pipeline.",
+    "created": "2026-01-12T21:34:44.914771Z",
+    "last_modified": "2026-01-12T21:34:44.914775Z",
+    "schema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "id": "fa8a76f6-d382-43a3-bed1-372ade71ed63",
+    "name": "Generic",
+    "notes": "Schema used for Generic.",
+    "created": "2026-01-12T21:34:44.914786Z",
+    "last_modified": "2026-01-12T21:34:44.914790Z",
+    "schema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "id": "fc4ec8d7-8c37-4627-9ffb-8f6077768905",
+    "name": "Truck",
+    "notes": "Schema used for Truck.",
+    "created": "2026-01-12T21:34:44.914800Z",
+    "last_modified": "2026-01-12T21:34:44.914804Z",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "fuel_economy_from": {
+          "type": "string",
+          "title": "Fuel Economy From",
+          "help_text": "Fuel economy from for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "3752581.6389645161"
+        },
+        "fuel_economy_to": {
+          "type": "string",
+          "title": "Fuel Economy To",
+          "help_text": "Fuel economy to for the transportation mode.",
+          "required": true,
+          "shown_in_ui": true,
+          "default_value": "2978239.3959428496"
+        }
+      }
+    }
+  }
+]
