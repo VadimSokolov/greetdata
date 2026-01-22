@@ -6327,6 +6327,136 @@
     "external_import_id": null
   },
   {
+    "id": "b51c4096-b16e-4052-a1db-62f3727edd0d",
+    "created": "2026-01-22T14:54:47.144536Z",
+    "last_modified": "2026-01-22T14:54:47.144553Z",
+    "name": "sp2",
+    "is_draft": false,
+    "notes": "",
+    "urban_share": {
+      "id": "70585008-aba3-492d-9d07-f07801c1bcf7",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "parameters_used": [],
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "ratio"
+          }
+        }
+      }
+    },
+    "allocation_method": "none",
+    "is_carbon_relation_enabled": false,
+    "carbon_relations": {
+      "16d9d309-c3d5-45bd-bc12-ecd52ac1c872": {
+        "413e822e-0eca-4ced-961e-50e056f1dea3": {
+          "id": "959aecc3-9d45-465f-97e7-7ba966a5a634",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "parameters_used": [],
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    "causal_allocation_factors": [],
+    "input_groups": [],
+    "input_streams": [
+      {
+        "id": "413e822e-0eca-4ced-961e-50e056f1dea3",
+        "created": "2026-01-22T14:54:47.181241Z",
+        "last_modified": "2026-01-22T14:54:47.181249Z",
+        "notes": "",
+        "amount": {
+          "id": "171334af-a2d6-4405-8b40-650a5c9c887b",
+          "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
+          "values_by_year": {
+            "parameters_used": [],
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "kg"
+              }
+            }
+          }
+        },
+        "flow_id": "f6c54a4b-33c8-402b-820d-7b8750099d5b",
+        "source_type": "Mix",
+        "source_mix_id": "3b13fc09-5b9b-4835-a0e6-e6c2b41c6fff",
+        "source_pathway_id": null,
+        "emission_ratios": [],
+        "technology_shares": [],
+        "content_type": {
+          "id": 19,
+          "model_name": "inputstream",
+          "app_label": "stationary_processes"
+        }
+      }
+    ],
+    "output_streams": [
+      {
+        "id": "16d9d309-c3d5-45bd-bc12-ecd52ac1c872",
+        "created": "2026-01-22T14:54:47.168774Z",
+        "last_modified": "2026-01-22T14:54:47.168788Z",
+        "is_main": true,
+        "flow_id": "f6c54a4b-33c8-402b-820d-7b8750099d5b",
+        "amount": {
+          "id": "32e9af83-cbde-4540-aea3-96c4533e72f9",
+          "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "kg"
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "loss_ratio": {
+          "id": "f8909ee3-7378-4b1a-a52a-cdde4acf3256",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%"
+              }
+            },
+            "parameters_used": []
+          }
+        },
+        "is_used_for_displacement": false,
+        "displaced_conventional_products": [],
+        "content_type": {
+          "id": 22,
+          "model_name": "outputstream",
+          "app_label": "stationary_processes"
+        }
+      }
+    ],
+    "emission_streams": [],
+    "content_type": {
+      "id": 27,
+      "model_name": "stationaryprocess",
+      "app_label": "stationary_processes"
+    },
+    "warning": null,
+    "external_import_id": null
+  },
+  {
     "id": "bf09d9b7-6dc9-4017-80ad-5620aab173fd",
     "created": "2025-06-05T15:40:56.134563Z",
     "last_modified": "2025-06-05T15:40:56.310837Z",
