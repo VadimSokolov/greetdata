@@ -19,7 +19,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:18.592383Z",
+      "last_modified": "2025-06-05T16:17:15.962281Z",
+      "parameter_path": [
+        [
+          "10ce59ed-cc03-4ddb-b7c8-b1c1a4724610",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "ee09ff31-3a3e-4817-885b-bd3df941e82b",
@@ -34,7 +44,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:18.571270Z",
+      "last_modified": "2025-06-05T16:17:15.929982Z",
+      "parameter_path": [
+        [
+          "10ce59ed-cc03-4ddb-b7c8-b1c1a4724610",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "29009249-fb5c-45c5-b2f8-6fd49a212e5d",
@@ -49,23 +69,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:18.584525Z",
+      "last_modified": "2025-06-05T16:17:15.948006Z",
+      "parameter_path": [
+        [
+          "10ce59ed-cc03-4ddb-b7c8-b1c1a4724610",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "104c02dd-8365-41e0-a9b3-6db412819186",
-        "created": "2026-01-22T14:58:15.101830Z",
-        "last_modified": "2026-01-22T14:58:15.101834Z",
+        "created": "2025-06-05T15:47:18.691438Z",
+        "last_modified": "2025-06-05T15:47:18.691438Z",
         "fuel_group": {
           "id": "f544a289-e87d-42d8-90c4-bae264931341",
-          "created": "2026-01-22T14:58:07.798824Z",
-          "last_modified": "2026-01-22T14:58:07.798827Z",
+          "created": "2025-06-05T15:45:19.236327Z",
+          "last_modified": "2025-06-05T15:45:19.236327Z",
           "name": "NG + Electricity",
           "fuel_shares": [
             {
               "id": "01b92e05-60ee-49eb-a39f-200ff7522659",
-              "created": "2026-01-22T14:58:07.802322Z",
-              "last_modified": "2026-01-22T14:58:07.802326Z",
+              "created": "2025-06-05T15:45:19.251575Z",
+              "last_modified": "2025-06-05T15:45:19.251575Z",
               "flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
               "source_pathway_id": "1da237e0-bcf9-439d-a104-e843155dd8ea",
               "source_mix_id": null,
@@ -82,15 +112,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.242334Z",
+                "last_modified": "2025-06-05T16:16:45.393202Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "f544a289-e87d-42d8-90c4-bae264931341",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "b0c1c760-a912-4be0-a7f9-52c4eaeeaf8f",
               "technology_at_journey_end_id": null
             },
             {
               "id": "d08768d3-4616-4f59-b27c-67cd168be70e",
-              "created": "2026-01-22T14:58:07.802340Z",
-              "last_modified": "2026-01-22T14:58:07.802344Z",
+              "created": "2025-06-05T15:45:19.278676Z",
+              "last_modified": "2025-06-05T15:45:19.278676Z",
               "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
               "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
               "source_mix_id": null,
@@ -107,7 +157,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.268618Z",
+                "last_modified": "2025-06-05T16:16:45.401080Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "f544a289-e87d-42d8-90c4-bae264931341",
+                    "fuel_groups"
+                  ],
+                  [
+                    "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
               "technology_at_journey_end_id": null
@@ -129,7 +199,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:18.676997Z",
+          "last_modified": "2025-06-05T16:06:08.279215Z",
+          "parameter_path": [
+            [
+              "10ce59ed-cc03-4ddb-b7c8-b1c1a4724610",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "104c02dd-8365-41e0-a9b3-6db412819186",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "c1a0c50c-7685-44f1-ade1-64b82b5a4b34",
@@ -144,7 +229,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:18.654671Z",
+          "last_modified": "2025-06-05T16:17:15.993668Z",
+          "parameter_path": [
+            [
+              "10ce59ed-cc03-4ddb-b7c8-b1c1a4724610",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "104c02dd-8365-41e0-a9b3-6db412819186",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "1db06e4c-177f-4e8e-b058-dba5c055a340",
@@ -159,7 +259,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:18.645199Z",
+          "last_modified": "2025-06-05T16:17:15.975788Z",
+          "parameter_path": [
+            [
+              "10ce59ed-cc03-4ddb-b7c8-b1c1a4724610",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "104c02dd-8365-41e0-a9b3-6db412819186",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -176,7 +291,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:18.665182Z",
+          "last_modified": "2025-06-05T16:17:16.005911Z",
+          "parameter_path": [
+            [
+              "10ce59ed-cc03-4ddb-b7c8-b1c1a4724610",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "104c02dd-8365-41e0-a9b3-6db412819186",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -212,7 +342,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:21.647353Z",
+      "last_modified": "2025-06-05T16:16:55.122554Z",
+      "parameter_path": [
+        [
+          "17744e24-f313-400a-a354-6d9eb9ae9d04",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "fa4d935a-7076-4e9f-83c7-eb55ea616c6e",
@@ -227,7 +367,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:21.625695Z",
+      "last_modified": "2025-06-05T16:16:55.104375Z",
+      "parameter_path": [
+        [
+          "17744e24-f313-400a-a354-6d9eb9ae9d04",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "f0fc41e8-41a2-4ca7-915b-4f41d325eca8",
@@ -242,23 +392,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:21.637707Z",
+      "last_modified": "2025-06-05T16:16:55.113451Z",
+      "parameter_path": [
+        [
+          "17744e24-f313-400a-a354-6d9eb9ae9d04",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "128154cc-8a70-464c-b3eb-72eb07207f82",
-        "created": "2026-01-22T14:58:15.101856Z",
-        "last_modified": "2026-01-22T14:58:15.101860Z",
+        "created": "2025-06-05T15:46:22.022812Z",
+        "last_modified": "2025-06-05T15:46:22.022812Z",
         "fuel_group": {
           "id": "1808cdaa-68f1-4d63-a984-6152b6274ffa",
-          "created": "2026-01-22T14:58:07.798744Z",
-          "last_modified": "2026-01-22T14:58:07.798748Z",
+          "created": "2025-06-05T15:45:19.203133Z",
+          "last_modified": "2025-06-05T15:45:19.203133Z",
           "name": "Electricity",
           "fuel_shares": [
             {
               "id": "593c70ae-d4e6-4c9e-bc28-4544154a9abf",
-              "created": "2026-01-22T14:58:07.802097Z",
-              "last_modified": "2026-01-22T14:58:07.802100Z",
+              "created": "2025-06-05T15:45:19.221468Z",
+              "last_modified": "2025-06-05T15:45:19.221468Z",
               "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
               "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
               "source_mix_id": null,
@@ -275,7 +435,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.210647Z",
+                "last_modified": "2025-06-05T16:16:45.384087Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1808cdaa-68f1-4d63-a984-6152b6274ffa",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
               "technology_at_journey_end_id": null
@@ -297,7 +477,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:22.010380Z",
+          "last_modified": "2025-06-05T16:05:46.246456Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "128154cc-8a70-464c-b3eb-72eb07207f82",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "f51e2327-e966-45ac-b18e-589b37e811f7",
@@ -312,7 +507,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.987750Z",
+          "last_modified": "2025-06-05T16:16:55.227331Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "128154cc-8a70-464c-b3eb-72eb07207f82",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "d99ad712-2cfb-44bc-9c9c-e012f9bf5342",
@@ -327,7 +537,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.975297Z",
+          "last_modified": "2025-06-05T16:16:55.217822Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "128154cc-8a70-464c-b3eb-72eb07207f82",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -344,7 +569,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.998621Z",
+          "last_modified": "2025-06-05T16:16:55.236341Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "128154cc-8a70-464c-b3eb-72eb07207f82",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -354,18 +594,18 @@
       },
       {
         "id": "751b3133-26f4-4f8a-9a5a-4099b5616487",
-        "created": "2026-01-22T14:58:15.101881Z",
-        "last_modified": "2026-01-22T14:58:15.101885Z",
+        "created": "2025-06-05T15:46:22.112779Z",
+        "last_modified": "2025-06-05T15:46:22.112779Z",
         "fuel_group": {
           "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
-          "created": "2026-01-22T14:58:07.799059Z",
-          "last_modified": "2026-01-22T14:58:07.799063Z",
+          "created": "2025-06-05T15:45:01.576346Z",
+          "last_modified": "2025-06-05T15:45:01.576346Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
-              "created": "2026-01-22T14:58:07.802840Z",
-              "last_modified": "2026-01-22T14:58:07.802843Z",
+              "created": "2025-06-05T15:45:01.595257Z",
+              "last_modified": "2025-06-05T15:45:01.595257Z",
               "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -382,7 +622,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:01.583857Z",
+                "last_modified": "2025-06-05T16:16:45.228786Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "aee8dd44-f2be-459e-ab6a-d23e996031ac",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "b5a563b2-997a-4653-91e6-2229b0283c4d",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "be10e8a8-0a24-4406-b54f-306b17e0477d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
               "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
@@ -404,7 +664,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:22.102092Z",
+          "last_modified": "2025-06-05T16:05:46.287940Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "751b3133-26f4-4f8a-9a5a-4099b5616487",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "c95e4cd3-07ea-4287-b9a3-5a8131a33506",
@@ -419,7 +694,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:22.079602Z",
+          "last_modified": "2025-06-05T16:16:55.253853Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "751b3133-26f4-4f8a-9a5a-4099b5616487",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "06bcba8f-a9d8-49db-9374-7c8f87fd47cb",
@@ -434,7 +724,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:22.069427Z",
+          "last_modified": "2025-06-05T16:16:55.245346Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "751b3133-26f4-4f8a-9a5a-4099b5616487",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -451,7 +756,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:22.091615Z",
+          "last_modified": "2025-06-05T16:16:55.263386Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "751b3133-26f4-4f8a-9a5a-4099b5616487",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -461,18 +781,18 @@
       },
       {
         "id": "9c079cac-664d-4960-8588-ca9c138ae02c",
-        "created": "2026-01-22T14:58:15.101906Z",
-        "last_modified": "2026-01-22T14:58:15.101910Z",
+        "created": "2025-06-05T15:46:21.928483Z",
+        "last_modified": "2025-06-05T15:46:21.928483Z",
         "fuel_group": {
           "id": "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
-          "created": "2026-01-22T14:58:07.798710Z",
-          "last_modified": "2026-01-22T14:58:07.798713Z",
+          "created": "2025-06-05T15:44:48.576872Z",
+          "last_modified": "2025-06-05T15:44:48.576872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "9617cc8a-de06-407a-9bc9-28d6d6983a12",
-              "created": "2026-01-22T14:58:07.801976Z",
-              "last_modified": "2026-01-22T14:58:07.801980Z",
+              "created": "2025-06-05T15:44:48.622401Z",
+              "last_modified": "2025-06-05T15:44:48.623905Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -489,15 +809,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:48.612893Z",
+                "last_modified": "2025-06-05T16:16:45.164856Z",
+                "parameter_path": [
+                  [
+                    "6d336d5b-d0be-4e1e-8943-afa63b042876",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "a71c5296-dfd5-48f8-a68f-e0d6924fdfe5",
               "technology_at_journey_end_id": "56a132ed-6546-4575-a846-b107800d519b"
             },
             {
               "id": "c8d004df-3ed5-419b-ac2a-d9f79dadb015",
-              "created": "2026-01-22T14:58:07.801996Z",
-              "last_modified": "2026-01-22T14:58:07.802000Z",
+              "created": "2025-06-05T15:44:48.595882Z",
+              "last_modified": "2025-06-05T15:44:48.595882Z",
               "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -514,7 +854,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:48.584374Z",
+                "last_modified": "2025-06-05T16:16:45.156422Z",
+                "parameter_path": [
+                  [
+                    "6d336d5b-d0be-4e1e-8943-afa63b042876",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "95948a15-bb7f-4868-b023-2ada23518f2c",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "2cdb4177-55da-4822-bd7b-e2874eab8d56",
               "technology_at_journey_end_id": "04d4e3ac-e261-4205-a242-51c5cb708016"
@@ -536,7 +896,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.917264Z",
+          "last_modified": "2025-06-05T16:05:46.202585Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "9c079cac-664d-4960-8588-ca9c138ae02c",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "ffa502a2-556b-42c4-8b44-0495aba41ac0",
@@ -551,7 +926,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.898258Z",
+          "last_modified": "2025-06-05T16:16:55.198809Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "9c079cac-664d-4960-8588-ca9c138ae02c",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "c2b908d3-b335-4c76-aee5-db5d5db5e645",
@@ -566,7 +956,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.886128Z",
+          "last_modified": "2025-06-05T16:16:55.189304Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "9c079cac-664d-4960-8588-ca9c138ae02c",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -583,7 +988,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.906756Z",
+          "last_modified": "2025-06-05T16:16:55.208316Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "9c079cac-664d-4960-8588-ca9c138ae02c",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -593,18 +1013,18 @@
       },
       {
         "id": "c918ddab-7758-42a7-803a-e067919603d2",
-        "created": "2026-01-22T14:58:15.101931Z",
-        "last_modified": "2026-01-22T14:58:15.101934Z",
+        "created": "2025-06-05T15:46:21.743150Z",
+        "last_modified": "2025-06-05T15:46:21.743150Z",
         "fuel_group": {
           "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
-          "created": "2026-01-22T14:58:07.798309Z",
-          "last_modified": "2026-01-22T14:58:07.798315Z",
+          "created": "2025-06-05T15:44:40.282872Z",
+          "last_modified": "2025-06-05T15:44:40.282872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
-              "created": "2026-01-22T14:58:07.801661Z",
-              "last_modified": "2026-01-22T14:58:07.801668Z",
+              "created": "2025-06-05T15:44:40.301361Z",
+              "last_modified": "2025-06-05T15:44:40.301361Z",
               "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -621,7 +1041,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:40.288350Z",
+                "last_modified": "2025-06-05T16:16:45.023317Z",
+                "parameter_path": [
+                  [
+                    "15b0f95f-0ed2-4237-ab05-af7478524a8a",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
               "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
@@ -643,7 +1083,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.730053Z",
+          "last_modified": "2025-06-05T16:05:46.113541Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c918ddab-7758-42a7-803a-e067919603d2",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "85e11aee-7060-4ce6-87e0-c91c7de87d95",
@@ -658,7 +1113,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.708608Z",
+          "last_modified": "2025-06-05T16:16:55.140350Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c918ddab-7758-42a7-803a-e067919603d2",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "b6797c4f-b00d-470e-82e7-a3a35a96b5ec",
@@ -673,7 +1143,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.696854Z",
+          "last_modified": "2025-06-05T16:16:55.131094Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c918ddab-7758-42a7-803a-e067919603d2",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -690,7 +1175,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.717636Z",
+          "last_modified": "2025-06-05T16:16:55.150414Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c918ddab-7758-42a7-803a-e067919603d2",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -700,18 +1200,18 @@
       },
       {
         "id": "e55e8bfe-a04b-4f8a-b5e7-6f3c1ef396a4",
-        "created": "2026-01-22T14:58:15.101955Z",
-        "last_modified": "2026-01-22T14:58:15.101958Z",
+        "created": "2025-06-05T15:46:21.838100Z",
+        "last_modified": "2025-06-05T15:46:21.838100Z",
         "fuel_group": {
           "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
-          "created": "2026-01-22T14:58:07.798967Z",
-          "last_modified": "2026-01-22T14:58:07.798971Z",
+          "created": "2025-06-05T15:45:35.508639Z",
+          "last_modified": "2025-06-05T23:54:54.622709Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
-              "created": "2026-01-22T14:58:07.802652Z",
-              "last_modified": "2026-01-22T14:58:07.802656Z",
+              "created": "2025-06-05T15:45:35.527533Z",
+              "last_modified": "2025-06-05T23:54:54.777663Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -728,7 +1228,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:35.515282Z",
+                "last_modified": "2025-06-05T23:54:54.734479Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7",
+                    "transportation_modes"
+                  ],
+                  [
+                    "21563c37-3e85-4a9e-a961-da7b81e48e84",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
               "technology_at_journey_end_id": null
@@ -750,7 +1270,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.825680Z",
+          "last_modified": "2025-06-05T16:05:46.158734Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "e55e8bfe-a04b-4f8a-b5e7-6f3c1ef396a4",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "c0507531-a97e-47d5-8b1e-33f1390309ce",
@@ -765,7 +1300,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.803787Z",
+          "last_modified": "2025-06-05T16:16:55.170292Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "e55e8bfe-a04b-4f8a-b5e7-6f3c1ef396a4",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "5d2f1e0f-8d3e-4575-949a-d5edc470fc91",
@@ -780,7 +1330,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.792339Z",
+          "last_modified": "2025-06-05T16:16:55.159784Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "e55e8bfe-a04b-4f8a-b5e7-6f3c1ef396a4",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -797,7 +1362,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:21.814556Z",
+          "last_modified": "2025-06-05T16:16:55.179798Z",
+          "parameter_path": [
+            [
+              "17744e24-f313-400a-a354-6d9eb9ae9d04",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "e55e8bfe-a04b-4f8a-b5e7-6f3c1ef396a4",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -833,7 +1413,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:57.834683Z",
+      "last_modified": "2025-06-05T16:17:30.783642Z",
+      "parameter_path": [
+        [
+          "2476e87b-caa4-41b6-8341-7c9cd3162500",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "dd70cfdb-53b7-41ea-8d80-e042bc593608",
@@ -848,7 +1438,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:57.811998Z",
+      "last_modified": "2025-06-05T16:17:30.761813Z",
+      "parameter_path": [
+        [
+          "2476e87b-caa4-41b6-8341-7c9cd3162500",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "935ceb8a-4b9a-4ac3-b9e8-aa55b57edabd",
@@ -863,23 +1463,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:57.824042Z",
+      "last_modified": "2025-06-05T16:17:30.773401Z",
+      "parameter_path": [
+        [
+          "2476e87b-caa4-41b6-8341-7c9cd3162500",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "a11618e2-bd7e-4fbd-b778-be88a398dc99",
-        "created": "2026-01-22T14:58:15.101979Z",
-        "last_modified": "2026-01-22T14:58:15.101983Z",
+        "created": "2025-06-05T15:47:57.927038Z",
+        "last_modified": "2025-06-05T15:47:57.927038Z",
         "fuel_group": {
           "id": "1808cdaa-68f1-4d63-a984-6152b6274ffa",
-          "created": "2026-01-22T14:58:07.798744Z",
-          "last_modified": "2026-01-22T14:58:07.798748Z",
+          "created": "2025-06-05T15:45:19.203133Z",
+          "last_modified": "2025-06-05T15:45:19.203133Z",
           "name": "Electricity",
           "fuel_shares": [
             {
               "id": "593c70ae-d4e6-4c9e-bc28-4544154a9abf",
-              "created": "2026-01-22T14:58:07.802097Z",
-              "last_modified": "2026-01-22T14:58:07.802100Z",
+              "created": "2025-06-05T15:45:19.221468Z",
+              "last_modified": "2025-06-05T15:45:19.221468Z",
               "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
               "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
               "source_mix_id": null,
@@ -896,7 +1506,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.210647Z",
+                "last_modified": "2025-06-05T16:16:45.384087Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1808cdaa-68f1-4d63-a984-6152b6274ffa",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
               "technology_at_journey_end_id": null
@@ -918,7 +1548,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:57.914016Z",
+          "last_modified": "2025-06-05T16:06:24.890571Z",
+          "parameter_path": [
+            [
+              "2476e87b-caa4-41b6-8341-7c9cd3162500",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a11618e2-bd7e-4fbd-b778-be88a398dc99",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "5e4810b9-99f4-4b79-9f71-12ca4b6cb513",
@@ -933,7 +1578,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:57.892994Z",
+          "last_modified": "2025-06-05T16:17:30.804826Z",
+          "parameter_path": [
+            [
+              "2476e87b-caa4-41b6-8341-7c9cd3162500",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a11618e2-bd7e-4fbd-b778-be88a398dc99",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "62c9b044-eedc-46f5-81f6-5c25bd44d856",
@@ -948,7 +1608,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:57.880999Z",
+          "last_modified": "2025-06-05T16:17:30.793947Z",
+          "parameter_path": [
+            [
+              "2476e87b-caa4-41b6-8341-7c9cd3162500",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a11618e2-bd7e-4fbd-b778-be88a398dc99",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -965,7 +1640,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:57.903510Z",
+          "last_modified": "2025-06-05T16:17:30.815578Z",
+          "parameter_path": [
+            [
+              "2476e87b-caa4-41b6-8341-7c9cd3162500",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a11618e2-bd7e-4fbd-b778-be88a398dc99",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1001,7 +1691,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:22.981476Z",
+      "last_modified": "2025-06-05T16:16:55.538374Z",
+      "parameter_path": [
+        [
+          "40c513a3-be62-430b-83e3-d57c39983e9e",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "707bac62-6197-419b-a3af-a620630d6e80",
@@ -1016,7 +1716,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:22.957459Z",
+      "last_modified": "2025-06-05T16:16:55.519816Z",
+      "parameter_path": [
+        [
+          "40c513a3-be62-430b-83e3-d57c39983e9e",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "5e98fc05-5741-41a0-b428-900c2d523cd3",
@@ -1031,23 +1741,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:22.970311Z",
+      "last_modified": "2025-06-05T16:16:55.529558Z",
+      "parameter_path": [
+        [
+          "40c513a3-be62-430b-83e3-d57c39983e9e",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "262ebf0f-a19e-49a3-8e06-36a38413089d",
-        "created": "2026-01-22T14:58:15.102004Z",
-        "last_modified": "2026-01-22T14:58:15.102007Z",
+        "created": "2025-06-05T15:46:23.630134Z",
+        "last_modified": "2025-06-05T15:46:23.630134Z",
         "fuel_group": {
           "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
-          "created": "2026-01-22T14:58:07.799059Z",
-          "last_modified": "2026-01-22T14:58:07.799063Z",
+          "created": "2025-06-05T15:45:01.576346Z",
+          "last_modified": "2025-06-05T15:45:01.576346Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
-              "created": "2026-01-22T14:58:07.802840Z",
-              "last_modified": "2026-01-22T14:58:07.802843Z",
+              "created": "2025-06-05T15:45:01.595257Z",
+              "last_modified": "2025-06-05T15:45:01.595257Z",
               "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -1064,7 +1784,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:01.583857Z",
+                "last_modified": "2025-06-05T16:16:45.228786Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "aee8dd44-f2be-459e-ab6a-d23e996031ac",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "b5a563b2-997a-4653-91e6-2229b0283c4d",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "be10e8a8-0a24-4406-b54f-306b17e0477d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
               "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
@@ -1086,7 +1826,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.617565Z",
+          "last_modified": "2025-06-05T16:05:46.948300Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "262ebf0f-a19e-49a3-8e06-36a38413089d",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "60e5c8b4-b00a-49c5-9eab-5e351d2996ab",
@@ -1101,7 +1856,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.595809Z",
+          "last_modified": "2025-06-05T16:16:55.711013Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "262ebf0f-a19e-49a3-8e06-36a38413089d",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "1ec95225-a32c-45e2-a7ad-a74af1e912f4",
@@ -1116,7 +1886,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.583780Z",
+          "last_modified": "2025-06-05T16:16:55.702504Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "262ebf0f-a19e-49a3-8e06-36a38413089d",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -1133,7 +1918,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.606384Z",
+          "last_modified": "2025-06-05T16:16:55.719522Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "262ebf0f-a19e-49a3-8e06-36a38413089d",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1143,18 +1943,18 @@
       },
       {
         "id": "36482ac1-6292-4111-9974-e8812d4a776e",
-        "created": "2026-01-22T14:58:15.102028Z",
-        "last_modified": "2026-01-22T14:58:15.102032Z",
+        "created": "2025-06-05T15:46:23.449245Z",
+        "last_modified": "2025-06-05T15:46:23.449245Z",
         "fuel_group": {
           "id": "1808cdaa-68f1-4d63-a984-6152b6274ffa",
-          "created": "2026-01-22T14:58:07.798744Z",
-          "last_modified": "2026-01-22T14:58:07.798748Z",
+          "created": "2025-06-05T15:45:19.203133Z",
+          "last_modified": "2025-06-05T15:45:19.203133Z",
           "name": "Electricity",
           "fuel_shares": [
             {
               "id": "593c70ae-d4e6-4c9e-bc28-4544154a9abf",
-              "created": "2026-01-22T14:58:07.802097Z",
-              "last_modified": "2026-01-22T14:58:07.802100Z",
+              "created": "2025-06-05T15:45:19.221468Z",
+              "last_modified": "2025-06-05T15:45:19.221468Z",
               "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
               "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
               "source_mix_id": null,
@@ -1171,7 +1971,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.210647Z",
+                "last_modified": "2025-06-05T16:16:45.384087Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1808cdaa-68f1-4d63-a984-6152b6274ffa",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
               "technology_at_journey_end_id": null
@@ -1193,7 +2013,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.436245Z",
+          "last_modified": "2025-06-05T16:05:46.870824Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "36482ac1-6292-4111-9974-e8812d4a776e",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "d0beffa4-c5f6-4ab2-8b89-2fa08506433b",
@@ -1208,7 +2043,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.414380Z",
+          "last_modified": "2025-06-05T16:16:55.661218Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "36482ac1-6292-4111-9974-e8812d4a776e",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "3d7576c1-8f94-477e-8c76-a6abdd6147f7",
@@ -1223,7 +2073,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.402581Z",
+          "last_modified": "2025-06-05T16:16:55.652709Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "36482ac1-6292-4111-9974-e8812d4a776e",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -1240,7 +2105,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.425441Z",
+          "last_modified": "2025-06-05T16:16:55.669097Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "36482ac1-6292-4111-9974-e8812d4a776e",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1250,18 +2130,18 @@
       },
       {
         "id": "5e4c62ff-90ed-4cd3-bcec-71cc87ded926",
-        "created": "2026-01-22T14:58:15.102052Z",
-        "last_modified": "2026-01-22T14:58:15.102056Z",
+        "created": "2025-06-05T15:46:23.173722Z",
+        "last_modified": "2025-06-05T15:46:23.173722Z",
         "fuel_group": {
           "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
-          "created": "2026-01-22T14:58:07.798309Z",
-          "last_modified": "2026-01-22T14:58:07.798315Z",
+          "created": "2025-06-05T15:44:40.282872Z",
+          "last_modified": "2025-06-05T15:44:40.282872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
-              "created": "2026-01-22T14:58:07.801661Z",
-              "last_modified": "2026-01-22T14:58:07.801668Z",
+              "created": "2025-06-05T15:44:40.301361Z",
+              "last_modified": "2025-06-05T15:44:40.301361Z",
               "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -1278,7 +2158,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:40.288350Z",
+                "last_modified": "2025-06-05T16:16:45.023317Z",
+                "parameter_path": [
+                  [
+                    "15b0f95f-0ed2-4237-ab05-af7478524a8a",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
               "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
@@ -1300,7 +2200,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.161593Z",
+          "last_modified": "2025-06-05T16:05:46.743552Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "5e4c62ff-90ed-4cd3-bcec-71cc87ded926",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "1605804f-f7e8-4f0d-a348-d07807329fd5",
@@ -1315,7 +2230,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.141370Z",
+          "last_modified": "2025-06-05T16:16:55.584215Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "5e4c62ff-90ed-4cd3-bcec-71cc87ded926",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "d9e22902-b2c8-494d-8bff-cede8f0b6e24",
@@ -1330,7 +2260,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.128693Z",
+          "last_modified": "2025-06-05T16:16:55.575413Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "5e4c62ff-90ed-4cd3-bcec-71cc87ded926",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -1347,7 +2292,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.151573Z",
+          "last_modified": "2025-06-05T16:16:55.593722Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "5e4c62ff-90ed-4cd3-bcec-71cc87ded926",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1357,18 +2317,18 @@
       },
       {
         "id": "9e336da1-3fb5-4687-acfb-1c5fc0311bde",
-        "created": "2026-01-22T14:58:15.102077Z",
-        "last_modified": "2026-01-22T14:58:15.102080Z",
+        "created": "2025-06-05T15:46:23.537399Z",
+        "last_modified": "2025-06-05T15:46:23.537399Z",
         "fuel_group": {
           "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
-          "created": "2026-01-22T14:58:07.798967Z",
-          "last_modified": "2026-01-22T14:58:07.798971Z",
+          "created": "2025-06-05T15:45:35.508639Z",
+          "last_modified": "2025-06-05T23:54:54.622709Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
-              "created": "2026-01-22T14:58:07.802652Z",
-              "last_modified": "2026-01-22T14:58:07.802656Z",
+              "created": "2025-06-05T15:45:35.527533Z",
+              "last_modified": "2025-06-05T23:54:54.777663Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -1385,7 +2345,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:35.515282Z",
+                "last_modified": "2025-06-05T23:54:54.734479Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7",
+                    "transportation_modes"
+                  ],
+                  [
+                    "21563c37-3e85-4a9e-a961-da7b81e48e84",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
               "technology_at_journey_end_id": null
@@ -1407,7 +2387,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.525373Z",
+          "last_modified": "2025-06-05T16:05:46.910001Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "9e336da1-3fb5-4687-acfb-1c5fc0311bde",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "a59b5453-19a8-40b2-ac55-536fcb4a8643",
@@ -1422,7 +2417,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.503953Z",
+          "last_modified": "2025-06-05T16:16:55.685702Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "9e336da1-3fb5-4687-acfb-1c5fc0311bde",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "d7bf373f-a33e-4dbb-93fc-257d1d5951ea",
@@ -1437,7 +2447,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.492095Z",
+          "last_modified": "2025-06-05T16:16:55.677603Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "9e336da1-3fb5-4687-acfb-1c5fc0311bde",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -1454,7 +2479,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.514458Z",
+          "last_modified": "2025-06-05T16:16:55.694880Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "9e336da1-3fb5-4687-acfb-1c5fc0311bde",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1464,18 +2504,18 @@
       },
       {
         "id": "a9405df9-e0aa-4686-b767-0fa151745405",
-        "created": "2026-01-22T14:58:15.102101Z",
-        "last_modified": "2026-01-22T14:58:15.102105Z",
+        "created": "2025-06-05T15:46:23.266421Z",
+        "last_modified": "2025-06-05T15:46:23.266421Z",
         "fuel_group": {
           "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
-          "created": "2026-01-22T14:58:07.798309Z",
-          "last_modified": "2026-01-22T14:58:07.798315Z",
+          "created": "2025-06-05T15:44:40.282872Z",
+          "last_modified": "2025-06-05T15:44:40.282872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
-              "created": "2026-01-22T14:58:07.801661Z",
-              "last_modified": "2026-01-22T14:58:07.801668Z",
+              "created": "2025-06-05T15:44:40.301361Z",
+              "last_modified": "2025-06-05T15:44:40.301361Z",
               "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -1492,7 +2532,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:40.288350Z",
+                "last_modified": "2025-06-05T16:16:45.023317Z",
+                "parameter_path": [
+                  [
+                    "15b0f95f-0ed2-4237-ab05-af7478524a8a",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
               "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
@@ -1514,7 +2574,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.251984Z",
+          "last_modified": "2025-06-05T16:05:46.791450Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a9405df9-e0aa-4686-b767-0fa151745405",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "1e22fdb5-2e43-45be-9c55-4b9f372d5cd1",
@@ -1529,7 +2604,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.230067Z",
+          "last_modified": "2025-06-05T16:16:55.610579Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a9405df9-e0aa-4686-b767-0fa151745405",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "7084e328-39f6-4258-a6d6-6d0e620cdc1e",
@@ -1544,7 +2634,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.218377Z",
+          "last_modified": "2025-06-05T16:16:55.601462Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a9405df9-e0aa-4686-b767-0fa151745405",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -1561,7 +2666,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.240582Z",
+          "last_modified": "2025-06-05T16:16:55.618713Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a9405df9-e0aa-4686-b767-0fa151745405",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1571,12 +2691,12 @@
       },
       {
         "id": "b2060e49-941b-4d46-9dc8-e9940588f884",
-        "created": "2026-01-22T14:58:15.102126Z",
-        "last_modified": "2026-01-22T14:58:15.102129Z",
+        "created": "2025-06-05T15:46:23.073823Z",
+        "last_modified": "2025-06-05T15:46:23.073823Z",
         "fuel_group": {
           "id": "a4922187-5e34-4cf3-b15f-99eaed15ab04",
-          "created": "2026-01-22T14:58:07.799140Z",
-          "last_modified": "2026-01-22T14:58:07.799144Z",
+          "created": "2025-06-05T15:45:47.365703Z",
+          "last_modified": "2025-06-05T15:45:47.365703Z",
           "name": "Default",
           "fuel_shares": [],
           "transportation_mode_id": "d85541ae-d757-470e-b433-ef1ff3ed40a5"
@@ -1595,7 +2715,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.062638Z",
+          "last_modified": "2025-06-05T16:05:46.703354Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "b2060e49-941b-4d46-9dc8-e9940588f884",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "5b95fa47-f3f8-4783-83e5-91b24320fe01",
@@ -1610,7 +2745,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.040749Z",
+          "last_modified": "2025-06-05T16:16:55.556393Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "b2060e49-941b-4d46-9dc8-e9940588f884",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "d41cf218-119f-4ad8-b5c6-ab45b4340a43",
@@ -1625,7 +2775,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.029954Z",
+          "last_modified": "2025-06-05T16:16:55.546883Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "b2060e49-941b-4d46-9dc8-e9940588f884",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -1642,7 +2807,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.051508Z",
+          "last_modified": "2025-06-05T16:16:55.565398Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "b2060e49-941b-4d46-9dc8-e9940588f884",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1652,18 +2832,18 @@
       },
       {
         "id": "f0db5126-d474-41ad-8f81-59d6dea6b619",
-        "created": "2026-01-22T14:58:15.102156Z",
-        "last_modified": "2026-01-22T14:58:15.102159Z",
+        "created": "2025-06-05T15:46:23.353940Z",
+        "last_modified": "2025-06-05T15:46:23.353940Z",
         "fuel_group": {
           "id": "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
-          "created": "2026-01-22T14:58:07.798710Z",
-          "last_modified": "2026-01-22T14:58:07.798713Z",
+          "created": "2025-06-05T15:44:48.576872Z",
+          "last_modified": "2025-06-05T15:44:48.576872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "9617cc8a-de06-407a-9bc9-28d6d6983a12",
-              "created": "2026-01-22T14:58:07.801976Z",
-              "last_modified": "2026-01-22T14:58:07.801980Z",
+              "created": "2025-06-05T15:44:48.622401Z",
+              "last_modified": "2025-06-05T15:44:48.623905Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -1680,15 +2860,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:48.612893Z",
+                "last_modified": "2025-06-05T16:16:45.164856Z",
+                "parameter_path": [
+                  [
+                    "6d336d5b-d0be-4e1e-8943-afa63b042876",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "a71c5296-dfd5-48f8-a68f-e0d6924fdfe5",
               "technology_at_journey_end_id": "56a132ed-6546-4575-a846-b107800d519b"
             },
             {
               "id": "c8d004df-3ed5-419b-ac2a-d9f79dadb015",
-              "created": "2026-01-22T14:58:07.801996Z",
-              "last_modified": "2026-01-22T14:58:07.802000Z",
+              "created": "2025-06-05T15:44:48.595882Z",
+              "last_modified": "2025-06-05T15:44:48.595882Z",
               "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -1705,7 +2905,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:48.584374Z",
+                "last_modified": "2025-06-05T16:16:45.156422Z",
+                "parameter_path": [
+                  [
+                    "6d336d5b-d0be-4e1e-8943-afa63b042876",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "95948a15-bb7f-4868-b023-2ada23518f2c",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "2cdb4177-55da-4822-bd7b-e2874eab8d56",
               "technology_at_journey_end_id": "04d4e3ac-e261-4205-a242-51c5cb708016"
@@ -1727,7 +2947,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.341113Z",
+          "last_modified": "2025-06-05T16:05:46.833053Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f0db5126-d474-41ad-8f81-59d6dea6b619",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "15ec6926-d230-42b2-be64-44f86e0b6ab5",
@@ -1742,7 +2977,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.320358Z",
+          "last_modified": "2025-06-05T16:16:55.636726Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f0db5126-d474-41ad-8f81-59d6dea6b619",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "d89fe483-d09f-460d-a006-84cfa86631a8",
@@ -1757,7 +3007,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.309917Z",
+          "last_modified": "2025-06-05T16:16:55.627728Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f0db5126-d474-41ad-8f81-59d6dea6b619",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -1774,7 +3039,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:23.330926Z",
+          "last_modified": "2025-06-05T16:16:55.645235Z",
+          "parameter_path": [
+            [
+              "40c513a3-be62-430b-83e3-d57c39983e9e",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f0db5126-d474-41ad-8f81-59d6dea6b619",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1810,7 +3090,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:34.918900Z",
+      "last_modified": "2025-06-05T16:17:00.103384Z",
+      "parameter_path": [
+        [
+          "498b62b0-1744-4539-af59-9cc9c0db57c9",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "e7875392-83ea-41ae-aa2b-f4b266e2b97f",
@@ -1825,7 +3115,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:34.885425Z",
+      "last_modified": "2025-06-05T16:17:00.083867Z",
+      "parameter_path": [
+        [
+          "498b62b0-1744-4539-af59-9cc9c0db57c9",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "7327e817-83df-4189-9942-d1216134e2a4",
@@ -1840,23 +3140,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:34.904016Z",
+      "last_modified": "2025-06-05T16:17:00.093383Z",
+      "parameter_path": [
+        [
+          "498b62b0-1744-4539-af59-9cc9c0db57c9",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "435d6ef7-a366-4843-854e-6cd07c0b1960",
-        "created": "2026-01-22T14:58:15.102180Z",
-        "last_modified": "2026-01-22T14:58:15.102184Z",
+        "created": "2025-06-05T15:46:35.053643Z",
+        "last_modified": "2025-06-05T15:46:35.053643Z",
         "fuel_group": {
           "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
-          "created": "2026-01-22T14:58:07.799059Z",
-          "last_modified": "2026-01-22T14:58:07.799063Z",
+          "created": "2025-06-05T15:45:01.576346Z",
+          "last_modified": "2025-06-05T15:45:01.576346Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
-              "created": "2026-01-22T14:58:07.802840Z",
-              "last_modified": "2026-01-22T14:58:07.802843Z",
+              "created": "2025-06-05T15:45:01.595257Z",
+              "last_modified": "2025-06-05T15:45:01.595257Z",
               "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -1873,7 +3183,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:01.583857Z",
+                "last_modified": "2025-06-05T16:16:45.228786Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "aee8dd44-f2be-459e-ab6a-d23e996031ac",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "b5a563b2-997a-4653-91e6-2229b0283c4d",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "be10e8a8-0a24-4406-b54f-306b17e0477d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
               "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
@@ -1895,7 +3225,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:35.038007Z",
+          "last_modified": "2025-06-05T16:05:51.461161Z",
+          "parameter_path": [
+            [
+              "498b62b0-1744-4539-af59-9cc9c0db57c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "435d6ef7-a366-4843-854e-6cd07c0b1960",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "c0c374bd-3802-480d-b4da-ee046bb161ec",
@@ -1910,7 +3255,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:35.001487Z",
+          "last_modified": "2025-06-05T16:17:00.120692Z",
+          "parameter_path": [
+            [
+              "498b62b0-1744-4539-af59-9cc9c0db57c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "435d6ef7-a366-4843-854e-6cd07c0b1960",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "6edb8d9b-ff2a-4422-a531-5ac17d58ffb4",
@@ -1925,7 +3285,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:34.989972Z",
+          "last_modified": "2025-06-05T16:17:00.111608Z",
+          "parameter_path": [
+            [
+              "498b62b0-1744-4539-af59-9cc9c0db57c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "435d6ef7-a366-4843-854e-6cd07c0b1960",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -1942,7 +3317,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:35.013590Z",
+          "last_modified": "2025-06-05T16:17:00.129848Z",
+          "parameter_path": [
+            [
+              "498b62b0-1744-4539-af59-9cc9c0db57c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "435d6ef7-a366-4843-854e-6cd07c0b1960",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -1978,7 +3368,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:45:53.312455Z",
+      "last_modified": "2025-06-05T16:16:45.764143Z",
+      "parameter_path": [
+        [
+          "4b97eed0-bb31-42db-b8cc-a5d1e02e9e87",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "99ebc000-3af4-4863-b963-3af9aa06f215",
@@ -1993,7 +3393,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:45:53.288614Z",
+      "last_modified": "2025-06-05T16:16:45.744074Z",
+      "parameter_path": [
+        [
+          "4b97eed0-bb31-42db-b8cc-a5d1e02e9e87",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "35be42c9-9eb9-4241-82ae-cfc390d3a4c8",
@@ -2008,23 +3418,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:45:53.301925Z",
+      "last_modified": "2025-06-05T16:16:45.753399Z",
+      "parameter_path": [
+        [
+          "4b97eed0-bb31-42db-b8cc-a5d1e02e9e87",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "fb423af6-5565-43e1-9b9f-974059ac39ab",
-        "created": "2026-01-22T14:58:15.102205Z",
-        "last_modified": "2026-01-22T14:58:15.102208Z",
+        "created": "2025-06-05T15:45:53.415077Z",
+        "last_modified": "2025-06-05T15:45:53.415077Z",
         "fuel_group": {
           "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
-          "created": "2026-01-22T14:58:07.798309Z",
-          "last_modified": "2026-01-22T14:58:07.798315Z",
+          "created": "2025-06-05T15:44:40.282872Z",
+          "last_modified": "2025-06-05T15:44:40.282872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
-              "created": "2026-01-22T14:58:07.801661Z",
-              "last_modified": "2026-01-22T14:58:07.801668Z",
+              "created": "2025-06-05T15:44:40.301361Z",
+              "last_modified": "2025-06-05T15:44:40.301361Z",
               "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -2041,7 +3461,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:40.288350Z",
+                "last_modified": "2025-06-05T16:16:45.023317Z",
+                "parameter_path": [
+                  [
+                    "15b0f95f-0ed2-4237-ab05-af7478524a8a",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
               "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
@@ -2063,7 +3503,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:45:53.399986Z",
+          "last_modified": "2025-06-05T16:05:33.920690Z",
+          "parameter_path": [
+            [
+              "4b97eed0-bb31-42db-b8cc-a5d1e02e9e87",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "fb423af6-5565-43e1-9b9f-974059ac39ab",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "fb0f008d-2067-4e96-8cb8-ec373ab2998f",
@@ -2078,7 +3533,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:45:53.375357Z",
+          "last_modified": "2025-06-05T16:16:45.794673Z",
+          "parameter_path": [
+            [
+              "4b97eed0-bb31-42db-b8cc-a5d1e02e9e87",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "fb423af6-5565-43e1-9b9f-974059ac39ab",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "bcf48d50-0591-480e-860a-772f082de6f6",
@@ -2093,7 +3563,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:45:53.363777Z",
+          "last_modified": "2025-06-05T16:16:45.775304Z",
+          "parameter_path": [
+            [
+              "4b97eed0-bb31-42db-b8cc-a5d1e02e9e87",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "fb423af6-5565-43e1-9b9f-974059ac39ab",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -2110,7 +3595,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:45:53.387763Z",
+          "last_modified": "2025-06-05T16:16:45.808482Z",
+          "parameter_path": [
+            [
+              "4b97eed0-bb31-42db-b8cc-a5d1e02e9e87",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "fb423af6-5565-43e1-9b9f-974059ac39ab",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -2146,7 +3646,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:06.075043Z",
+      "last_modified": "2025-06-05T16:16:49.845123Z",
+      "parameter_path": [
+        [
+          "5fff9404-4f7a-40ef-a2d6-28777e51d570",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "5180eb34-2c6d-45a2-a2ce-93a25e33b293",
@@ -2161,7 +3671,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:06.054241Z",
+      "last_modified": "2025-06-05T16:16:49.828213Z",
+      "parameter_path": [
+        [
+          "5fff9404-4f7a-40ef-a2d6-28777e51d570",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "5e821cc5-1792-45bf-aba4-c7bca6df4850",
@@ -2176,23 +3696,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:06.064042Z",
+      "last_modified": "2025-06-05T16:16:49.834913Z",
+      "parameter_path": [
+        [
+          "5fff9404-4f7a-40ef-a2d6-28777e51d570",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "f40aa35d-5154-42b6-bd4a-d4f0cde5b4c4",
-        "created": "2026-01-22T14:58:15.102235Z",
-        "last_modified": "2026-01-22T14:58:15.102238Z",
+        "created": "2025-06-05T15:46:06.169319Z",
+        "last_modified": "2025-06-05T15:46:06.169319Z",
         "fuel_group": {
           "id": "f544a289-e87d-42d8-90c4-bae264931341",
-          "created": "2026-01-22T14:58:07.798824Z",
-          "last_modified": "2026-01-22T14:58:07.798827Z",
+          "created": "2025-06-05T15:45:19.236327Z",
+          "last_modified": "2025-06-05T15:45:19.236327Z",
           "name": "NG + Electricity",
           "fuel_shares": [
             {
               "id": "01b92e05-60ee-49eb-a39f-200ff7522659",
-              "created": "2026-01-22T14:58:07.802322Z",
-              "last_modified": "2026-01-22T14:58:07.802326Z",
+              "created": "2025-06-05T15:45:19.251575Z",
+              "last_modified": "2025-06-05T15:45:19.251575Z",
               "flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
               "source_pathway_id": "1da237e0-bcf9-439d-a104-e843155dd8ea",
               "source_mix_id": null,
@@ -2209,15 +3739,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.242334Z",
+                "last_modified": "2025-06-05T16:16:45.393202Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "f544a289-e87d-42d8-90c4-bae264931341",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "b0c1c760-a912-4be0-a7f9-52c4eaeeaf8f",
               "technology_at_journey_end_id": null
             },
             {
               "id": "d08768d3-4616-4f59-b27c-67cd168be70e",
-              "created": "2026-01-22T14:58:07.802340Z",
-              "last_modified": "2026-01-22T14:58:07.802344Z",
+              "created": "2025-06-05T15:45:19.278676Z",
+              "last_modified": "2025-06-05T15:45:19.278676Z",
               "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
               "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
               "source_mix_id": null,
@@ -2234,7 +3784,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.268618Z",
+                "last_modified": "2025-06-05T16:16:45.401080Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "f544a289-e87d-42d8-90c4-bae264931341",
+                    "fuel_groups"
+                  ],
+                  [
+                    "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
               "technology_at_journey_end_id": null
@@ -2256,7 +3826,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:06.156910Z",
+          "last_modified": "2025-06-05T16:05:39.258868Z",
+          "parameter_path": [
+            [
+              "5fff9404-4f7a-40ef-a2d6-28777e51d570",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f40aa35d-5154-42b6-bd4a-d4f0cde5b4c4",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "9a6e5fc1-9a3f-49c6-9d6b-d9f3bf1cb757",
@@ -2271,7 +3856,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:06.133915Z",
+          "last_modified": "2025-06-05T16:16:49.861479Z",
+          "parameter_path": [
+            [
+              "5fff9404-4f7a-40ef-a2d6-28777e51d570",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f40aa35d-5154-42b6-bd4a-d4f0cde5b4c4",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "a9fa7611-66a0-48e6-940b-8e6dcc799542",
@@ -2312,7 +3912,22 @@
               "44da33e2-e2d3-4ae4-adec-319b4e29eb34::0",
               "c10041c9-09e1-47c6-81fc-10fb717ae39f::0"
             ]
-          }
+          },
+          "created": "2025-06-05T15:46:06.122982Z",
+          "last_modified": "2025-06-05T16:16:49.853928Z",
+          "parameter_path": [
+            [
+              "5fff9404-4f7a-40ef-a2d6-28777e51d570",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f40aa35d-5154-42b6-bd4a-d4f0cde5b4c4",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -2329,7 +3944,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:06.145331Z",
+          "last_modified": "2025-06-05T16:16:49.869945Z",
+          "parameter_path": [
+            [
+              "5fff9404-4f7a-40ef-a2d6-28777e51d570",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f40aa35d-5154-42b6-bd4a-d4f0cde5b4c4",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -2365,7 +3995,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:25.301580Z",
+      "last_modified": "2025-06-05T16:16:56.582040Z",
+      "parameter_path": [
+        [
+          "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "ad03df33-51f3-456a-865e-4a36a36e3c4e",
@@ -2380,7 +4020,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:25.275431Z",
+      "last_modified": "2025-06-05T16:16:56.562373Z",
+      "parameter_path": [
+        [
+          "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "6014fc29-977c-40a8-b9f8-4732e3f69e78",
@@ -2395,23 +4045,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:25.287666Z",
+      "last_modified": "2025-06-05T16:16:56.573692Z",
+      "parameter_path": [
+        [
+          "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+          "Transportation Process",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "2c6ea3bd-fe38-4035-a2a0-5efb7faf42f2",
-        "created": "2026-01-22T14:58:15.102260Z",
-        "last_modified": "2026-01-22T14:58:15.102263Z",
+        "created": "2025-06-05T15:46:25.864519Z",
+        "last_modified": "2025-06-05T15:46:25.864519Z",
         "fuel_group": {
           "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
-          "created": "2026-01-22T14:58:07.798309Z",
-          "last_modified": "2026-01-22T14:58:07.798315Z",
+          "created": "2025-06-05T15:44:40.282872Z",
+          "last_modified": "2025-06-05T15:44:40.282872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
-              "created": "2026-01-22T14:58:07.801661Z",
-              "last_modified": "2026-01-22T14:58:07.801668Z",
+              "created": "2025-06-05T15:44:40.301361Z",
+              "last_modified": "2025-06-05T15:44:40.301361Z",
               "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -2428,7 +4088,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:40.288350Z",
+                "last_modified": "2025-06-05T16:16:45.023317Z",
+                "parameter_path": [
+                  [
+                    "15b0f95f-0ed2-4237-ab05-af7478524a8a",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
               "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
@@ -2450,7 +4130,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.851486Z",
+          "last_modified": "2025-06-05T16:05:47.835002Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "2c6ea3bd-fe38-4035-a2a0-5efb7faf42f2",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "0b6f8785-1f62-4f5e-aa37-10b4c70c0991",
@@ -2465,7 +4160,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.827566Z",
+          "last_modified": "2025-06-05T16:16:56.736459Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "2c6ea3bd-fe38-4035-a2a0-5efb7faf42f2",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "ab31aaf1-89b0-48b0-9a4d-cf566fa71647",
@@ -2480,7 +4190,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.816366Z",
+          "last_modified": "2025-06-05T16:16:56.728324Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "2c6ea3bd-fe38-4035-a2a0-5efb7faf42f2",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -2497,7 +4222,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.837950Z",
+          "last_modified": "2025-06-05T16:16:56.745724Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "2c6ea3bd-fe38-4035-a2a0-5efb7faf42f2",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -2507,18 +4247,18 @@
       },
       {
         "id": "2e95199e-6e15-4cf6-8fac-50633cfa0e3d",
-        "created": "2026-01-22T14:58:15.102291Z",
-        "last_modified": "2026-01-22T14:58:15.102296Z",
+        "created": "2025-06-05T15:46:25.393731Z",
+        "last_modified": "2025-06-05T15:46:25.393731Z",
         "fuel_group": {
           "id": "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
-          "created": "2026-01-22T14:58:07.798710Z",
-          "last_modified": "2026-01-22T14:58:07.798713Z",
+          "created": "2025-06-05T15:44:48.576872Z",
+          "last_modified": "2025-06-05T15:44:48.576872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "9617cc8a-de06-407a-9bc9-28d6d6983a12",
-              "created": "2026-01-22T14:58:07.801976Z",
-              "last_modified": "2026-01-22T14:58:07.801980Z",
+              "created": "2025-06-05T15:44:48.622401Z",
+              "last_modified": "2025-06-05T15:44:48.623905Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -2535,15 +4275,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:48.612893Z",
+                "last_modified": "2025-06-05T16:16:45.164856Z",
+                "parameter_path": [
+                  [
+                    "6d336d5b-d0be-4e1e-8943-afa63b042876",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "a71c5296-dfd5-48f8-a68f-e0d6924fdfe5",
               "technology_at_journey_end_id": "56a132ed-6546-4575-a846-b107800d519b"
             },
             {
               "id": "c8d004df-3ed5-419b-ac2a-d9f79dadb015",
-              "created": "2026-01-22T14:58:07.801996Z",
-              "last_modified": "2026-01-22T14:58:07.802000Z",
+              "created": "2025-06-05T15:44:48.595882Z",
+              "last_modified": "2025-06-05T15:44:48.595882Z",
               "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -2560,7 +4320,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:48.584374Z",
+                "last_modified": "2025-06-05T16:16:45.156422Z",
+                "parameter_path": [
+                  [
+                    "6d336d5b-d0be-4e1e-8943-afa63b042876",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "95948a15-bb7f-4868-b023-2ada23518f2c",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "2cdb4177-55da-4822-bd7b-e2874eab8d56",
               "technology_at_journey_end_id": "04d4e3ac-e261-4205-a242-51c5cb708016"
@@ -2582,7 +4362,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.382563Z",
+          "last_modified": "2025-06-05T16:05:47.649260Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "2e95199e-6e15-4cf6-8fac-50633cfa0e3d",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "e7f553ee-4881-4758-b53a-7118551032ab",
@@ -2597,7 +4392,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.360692Z",
+          "last_modified": "2025-06-05T16:16:56.599366Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "2e95199e-6e15-4cf6-8fac-50633cfa0e3d",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "73c8c208-b5a9-4f93-ad90-fab4ea5f78b2",
@@ -2612,7 +4422,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.349152Z",
+          "last_modified": "2025-06-05T16:16:56.590782Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "2e95199e-6e15-4cf6-8fac-50633cfa0e3d",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -2629,7 +4454,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.371572Z",
+          "last_modified": "2025-06-05T16:16:56.608395Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "2e95199e-6e15-4cf6-8fac-50633cfa0e3d",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -2639,18 +4479,18 @@
       },
       {
         "id": "96893b8a-f969-488a-9a1e-29343a0013de",
-        "created": "2026-01-22T14:58:15.102325Z",
-        "last_modified": "2026-01-22T14:58:15.102329Z",
+        "created": "2025-06-05T15:46:25.673717Z",
+        "last_modified": "2025-06-05T15:46:25.673717Z",
         "fuel_group": {
           "id": "478af4ef-26c8-4cc0-a37b-51b2ac67a76c",
-          "created": "2026-01-22T14:58:07.798767Z",
-          "last_modified": "2026-01-22T14:58:07.798771Z",
+          "created": "2025-06-05T15:45:19.084611Z",
+          "last_modified": "2025-06-05T15:45:19.084611Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "0a2dd1f4-6ad0-4ef2-a92c-12d106cd6ced",
-              "created": "2026-01-22T14:58:07.802134Z",
-              "last_modified": "2026-01-22T14:58:07.802138Z",
+              "created": "2025-06-05T15:45:19.158314Z",
+              "last_modified": "2025-06-05T15:45:19.158314Z",
               "flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
               "source_pathway_id": "1da237e0-bcf9-439d-a104-e843155dd8ea",
               "source_mix_id": null,
@@ -2667,15 +4507,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.146660Z",
+                "last_modified": "2025-06-05T16:16:45.363540Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "478af4ef-26c8-4cc0-a37b-51b2ac67a76c",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "b0c1c760-a912-4be0-a7f9-52c4eaeeaf8f",
               "technology_at_journey_end_id": null
             },
             {
               "id": "53389727-e2a1-4ec6-87f6-23de7dbbc11c",
-              "created": "2026-01-22T14:58:07.802153Z",
-              "last_modified": "2026-01-22T14:58:07.802157Z",
+              "created": "2025-06-05T15:45:19.186810Z",
+              "last_modified": "2025-06-05T15:45:19.186810Z",
               "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
               "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
               "source_mix_id": null,
@@ -2692,15 +4552,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.176177Z",
+                "last_modified": "2025-06-05T16:16:45.374577Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "478af4ef-26c8-4cc0-a37b-51b2ac67a76c",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
               "technology_at_journey_end_id": null
             },
             {
               "id": "a68d7ad0-64fd-43de-b081-af2d623a4bc6",
-              "created": "2026-01-22T14:58:07.802172Z",
-              "last_modified": "2026-01-22T14:58:07.802176Z",
+              "created": "2025-06-05T15:45:19.102325Z",
+              "last_modified": "2025-06-05T15:45:19.102325Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -2717,15 +4597,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.092155Z",
+                "last_modified": "2025-06-05T16:16:45.344549Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "478af4ef-26c8-4cc0-a37b-51b2ac67a76c",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "da243eaf-dbea-4fd8-8c9c-5ae370b2da00",
               "technology_at_journey_end_id": null
             },
             {
               "id": "d1a83df5-1e9f-4b5f-8d23-2d5cd2e110c8",
-              "created": "2026-01-22T14:58:07.802191Z",
-              "last_modified": "2026-01-22T14:58:07.802194Z",
+              "created": "2025-06-05T15:45:19.129501Z",
+              "last_modified": "2025-06-05T15:45:19.129501Z",
               "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -2742,7 +4642,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.119245Z",
+                "last_modified": "2025-06-05T16:16:45.355032Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "478af4ef-26c8-4cc0-a37b-51b2ac67a76c",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "95948a15-bb7f-4868-b023-2ada23518f2c",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "3f96230e-b9ec-40bb-b8aa-dbcf34abe65a",
               "technology_at_journey_end_id": null
@@ -2764,7 +4684,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.661560Z",
+          "last_modified": "2025-06-05T16:05:47.759251Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "96893b8a-f969-488a-9a1e-29343a0013de",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "467a77d1-d785-4086-8c9e-cc01e4433cb3",
@@ -2779,7 +4714,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.640532Z",
+          "last_modified": "2025-06-05T16:16:56.681963Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "96893b8a-f969-488a-9a1e-29343a0013de",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "60b43e0e-848e-4de6-b3bd-c65c71fa80b2",
@@ -2794,7 +4744,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.629741Z",
+          "last_modified": "2025-06-05T16:16:56.672454Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "96893b8a-f969-488a-9a1e-29343a0013de",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -2811,7 +4776,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.651049Z",
+          "last_modified": "2025-06-05T16:16:56.693414Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "96893b8a-f969-488a-9a1e-29343a0013de",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -2821,18 +4801,18 @@
       },
       {
         "id": "b5b12be7-fd6e-490a-a36d-154988b37529",
-        "created": "2026-01-22T14:58:15.102350Z",
-        "last_modified": "2026-01-22T14:58:15.102353Z",
+        "created": "2025-06-05T15:46:25.489444Z",
+        "last_modified": "2025-06-05T15:46:25.489444Z",
         "fuel_group": {
           "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
-          "created": "2026-01-22T14:58:07.798967Z",
-          "last_modified": "2026-01-22T14:58:07.798971Z",
+          "created": "2025-06-05T15:45:35.508639Z",
+          "last_modified": "2025-06-05T23:54:54.622709Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
-              "created": "2026-01-22T14:58:07.802652Z",
-              "last_modified": "2026-01-22T14:58:07.802656Z",
+              "created": "2025-06-05T15:45:35.527533Z",
+              "last_modified": "2025-06-05T23:54:54.777663Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -2849,7 +4829,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:35.515282Z",
+                "last_modified": "2025-06-05T23:54:54.734479Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7",
+                    "transportation_modes"
+                  ],
+                  [
+                    "21563c37-3e85-4a9e-a961-da7b81e48e84",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
               "technology_at_journey_end_id": null
@@ -2871,7 +4871,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.479418Z",
+          "last_modified": "2025-06-05T16:05:47.684807Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "b5b12be7-fd6e-490a-a36d-154988b37529",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "1d16abe6-d3cc-4fe3-af78-aee066b8790b",
@@ -2886,7 +4901,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.454287Z",
+          "last_modified": "2025-06-05T16:16:56.627300Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "b5b12be7-fd6e-490a-a36d-154988b37529",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "5d7dc24d-fab5-4768-a5ad-d7d4461b71c4",
@@ -2901,7 +4931,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.443779Z",
+          "last_modified": "2025-06-05T16:16:56.617746Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "b5b12be7-fd6e-490a-a36d-154988b37529",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -2918,7 +4963,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.467401Z",
+          "last_modified": "2025-06-05T16:16:56.634999Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "b5b12be7-fd6e-490a-a36d-154988b37529",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -2928,18 +4988,18 @@
       },
       {
         "id": "f34a8f05-8bd8-4284-b6d9-487e9390bf32",
-        "created": "2026-01-22T14:58:15.102374Z",
-        "last_modified": "2026-01-22T14:58:15.102378Z",
+        "created": "2025-06-05T15:46:25.769554Z",
+        "last_modified": "2025-06-05T15:46:25.769554Z",
         "fuel_group": {
           "id": "eb6dffb3-bc4b-491e-93af-6059076ac09e",
-          "created": "2026-01-22T14:58:07.799163Z",
-          "last_modified": "2026-01-22T14:58:07.799167Z",
+          "created": "2025-06-05T15:45:17.056271Z",
+          "last_modified": "2025-06-05T15:45:17.056271Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "348d4f2c-9ee2-4197-a708-c233d3649a2e",
-              "created": "2026-01-22T14:58:07.802900Z",
-              "last_modified": "2026-01-22T14:58:07.802904Z",
+              "created": "2025-06-05T15:45:17.073299Z",
+              "last_modified": "2025-06-05T15:45:17.073299Z",
               "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -2956,7 +5016,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:17.063270Z",
+                "last_modified": "2025-06-05T16:16:45.335042Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "dd278e6c-44bf-4350-8a52-fa44a0bc15e7",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "eb6dffb3-bc4b-491e-93af-6059076ac09e",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "be10e8a8-0a24-4406-b54f-306b17e0477d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "3db58a79-24e7-425d-aaf9-97a1fa4a82f0",
               "technology_at_journey_end_id": "3e540d50-e6a2-4287-8d63-0d396b89be56"
@@ -2978,7 +5058,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.756048Z",
+          "last_modified": "2025-06-05T16:05:47.797906Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f34a8f05-8bd8-4284-b6d9-487e9390bf32",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "e3fa7d81-c146-4e10-ba98-720eca4f1e9a",
@@ -2993,7 +5088,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.734207Z",
+          "last_modified": "2025-06-05T16:16:56.710865Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f34a8f05-8bd8-4284-b6d9-487e9390bf32",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "d8226596-0ac4-4625-b09e-5a2cc5633f81",
@@ -3008,7 +5118,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.722119Z",
+          "last_modified": "2025-06-05T16:16:56.702174Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f34a8f05-8bd8-4284-b6d9-487e9390bf32",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -3025,7 +5150,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.745531Z",
+          "last_modified": "2025-06-05T16:16:56.719499Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "f34a8f05-8bd8-4284-b6d9-487e9390bf32",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -3035,18 +5175,18 @@
       },
       {
         "id": "fdeab92e-164b-42d9-911f-3bf66b83253b",
-        "created": "2026-01-22T14:58:15.102398Z",
-        "last_modified": "2026-01-22T14:58:15.102402Z",
+        "created": "2025-06-05T15:46:25.581108Z",
+        "last_modified": "2025-06-05T15:46:25.581108Z",
         "fuel_group": {
           "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
-          "created": "2026-01-22T14:58:07.799059Z",
-          "last_modified": "2026-01-22T14:58:07.799063Z",
+          "created": "2025-06-05T15:45:01.576346Z",
+          "last_modified": "2025-06-05T15:45:01.576346Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
-              "created": "2026-01-22T14:58:07.802840Z",
-              "last_modified": "2026-01-22T14:58:07.802843Z",
+              "created": "2025-06-05T15:45:01.595257Z",
+              "last_modified": "2025-06-05T15:45:01.595257Z",
               "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -3063,7 +5203,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:01.583857Z",
+                "last_modified": "2025-06-05T16:16:45.228786Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "aee8dd44-f2be-459e-ab6a-d23e996031ac",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "b5a563b2-997a-4653-91e6-2229b0283c4d",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "be10e8a8-0a24-4406-b54f-306b17e0477d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
               "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
@@ -3085,7 +5245,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.566604Z",
+          "last_modified": "2025-06-05T16:05:47.722172Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "fdeab92e-164b-42d9-911f-3bf66b83253b",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "b2348e82-2b30-454b-b72c-9f4220d55de5",
@@ -3100,7 +5275,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.543869Z",
+          "last_modified": "2025-06-05T16:16:56.654525Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "fdeab92e-164b-42d9-911f-3bf66b83253b",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "e219330c-3564-42e3-a6b3-3d2725cbda48",
@@ -3115,7 +5305,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.534046Z",
+          "last_modified": "2025-06-05T16:16:56.645002Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "fdeab92e-164b-42d9-911f-3bf66b83253b",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -3132,7 +5337,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:25.555886Z",
+          "last_modified": "2025-06-05T16:16:56.663810Z",
+          "parameter_path": [
+            [
+              "984b8f75-c9c7-4a74-a4e7-79bb5b7c75c9",
+              "Transportation Process",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "fdeab92e-164b-42d9-911f-3bf66b83253b",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -3168,7 +5388,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:36.821777Z",
+      "last_modified": "2025-06-05T16:17:22.872163Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "be3ae3c9-aaef-46f1-82ae-62cc228f9b59",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "5b8a14bd-0ba2-4cfb-aabd-f61cdb6e53e9",
@@ -3183,7 +5413,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:36.798236Z",
+      "last_modified": "2025-06-05T16:17:22.852477Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "be3ae3c9-aaef-46f1-82ae-62cc228f9b59",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "b912d54f-ffd4-4b75-b647-6b4629c3cbad",
@@ -3198,23 +5438,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:47:36.809643Z",
+      "last_modified": "2025-06-05T16:17:22.861456Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "be3ae3c9-aaef-46f1-82ae-62cc228f9b59",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "68723838-52cb-48da-a6d6-fbfb63313443",
-        "created": "2026-01-22T14:58:15.102423Z",
-        "last_modified": "2026-01-22T14:58:15.102426Z",
+        "created": "2025-06-05T15:47:36.913691Z",
+        "last_modified": "2025-06-05T15:47:36.913691Z",
         "fuel_group": {
           "id": "f544a289-e87d-42d8-90c4-bae264931341",
-          "created": "2026-01-22T14:58:07.798824Z",
-          "last_modified": "2026-01-22T14:58:07.798827Z",
+          "created": "2025-06-05T15:45:19.236327Z",
+          "last_modified": "2025-06-05T15:45:19.236327Z",
           "name": "NG + Electricity",
           "fuel_shares": [
             {
               "id": "01b92e05-60ee-49eb-a39f-200ff7522659",
-              "created": "2026-01-22T14:58:07.802322Z",
-              "last_modified": "2026-01-22T14:58:07.802326Z",
+              "created": "2025-06-05T15:45:19.251575Z",
+              "last_modified": "2025-06-05T15:45:19.251575Z",
               "flow_id": "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
               "source_pathway_id": "1da237e0-bcf9-439d-a104-e843155dd8ea",
               "source_mix_id": null,
@@ -3231,15 +5481,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.242334Z",
+                "last_modified": "2025-06-05T16:16:45.393202Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "f544a289-e87d-42d8-90c4-bae264931341",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "a0d31e70-f6a6-460a-a9ec-912d830d3f1d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "b0c1c760-a912-4be0-a7f9-52c4eaeeaf8f",
               "technology_at_journey_end_id": null
             },
             {
               "id": "d08768d3-4616-4f59-b27c-67cd168be70e",
-              "created": "2026-01-22T14:58:07.802340Z",
-              "last_modified": "2026-01-22T14:58:07.802344Z",
+              "created": "2025-06-05T15:45:19.278676Z",
+              "last_modified": "2025-06-05T15:45:19.278676Z",
               "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
               "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
               "source_mix_id": null,
@@ -3256,7 +5526,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.268618Z",
+                "last_modified": "2025-06-05T16:16:45.401080Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "f544a289-e87d-42d8-90c4-bae264931341",
+                    "fuel_groups"
+                  ],
+                  [
+                    "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
               "technology_at_journey_end_id": null
@@ -3278,7 +5568,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:36.901476Z",
+          "last_modified": "2025-06-05T16:06:15.838823Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "be3ae3c9-aaef-46f1-82ae-62cc228f9b59",
+              "transportation_processes"
+            ],
+            [
+              "68723838-52cb-48da-a6d6-fbfb63313443",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "f0b0fb92-db4a-4e24-b31e-8fc84def836f",
@@ -3293,7 +5598,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:36.880492Z",
+          "last_modified": "2025-06-05T16:17:22.898952Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "be3ae3c9-aaef-46f1-82ae-62cc228f9b59",
+              "transportation_processes"
+            ],
+            [
+              "68723838-52cb-48da-a6d6-fbfb63313443",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "e1fc2809-3557-4c6d-9d48-e2a1597515db",
@@ -3334,7 +5654,22 @@
               "7f57c592-aab1-43c1-b83f-e12920273997::0",
               "c10041c9-09e1-47c6-81fc-10fb717ae39f::0"
             ]
-          }
+          },
+          "created": "2025-06-05T15:47:36.867399Z",
+          "last_modified": "2025-06-05T16:17:22.887205Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "be3ae3c9-aaef-46f1-82ae-62cc228f9b59",
+              "transportation_processes"
+            ],
+            [
+              "68723838-52cb-48da-a6d6-fbfb63313443",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -3351,7 +5686,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:47:36.890158Z",
+          "last_modified": "2025-06-05T16:17:22.908218Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "be3ae3c9-aaef-46f1-82ae-62cc228f9b59",
+              "transportation_processes"
+            ],
+            [
+              "68723838-52cb-48da-a6d6-fbfb63313443",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -3387,7 +5737,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:46.548659Z",
+      "last_modified": "2025-06-05T16:17:04.330506Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "d3667861-b557-4ba2-91da-9c06e216c643",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "d3791a37-06a2-45e6-ad99-c0f994321967",
@@ -3402,7 +5762,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:46.526528Z",
+      "last_modified": "2025-06-05T16:17:04.306480Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "d3667861-b557-4ba2-91da-9c06e216c643",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "eb5e7467-45be-4967-830a-b58f30e3289a",
@@ -3417,23 +5787,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:46.537980Z",
+      "last_modified": "2025-06-05T16:17:04.316991Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "d3667861-b557-4ba2-91da-9c06e216c643",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "c0640ae8-52d2-441a-a2e8-838c772b057a",
-        "created": "2026-01-22T14:58:15.102447Z",
-        "last_modified": "2026-01-22T14:58:15.102451Z",
+        "created": "2025-06-05T15:46:46.655895Z",
+        "last_modified": "2025-06-05T15:46:46.655895Z",
         "fuel_group": {
           "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
-          "created": "2026-01-22T14:58:07.798967Z",
-          "last_modified": "2026-01-22T14:58:07.798971Z",
+          "created": "2025-06-05T15:45:35.508639Z",
+          "last_modified": "2025-06-05T23:54:54.622709Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
-              "created": "2026-01-22T14:58:07.802652Z",
-              "last_modified": "2026-01-22T14:58:07.802656Z",
+              "created": "2025-06-05T15:45:35.527533Z",
+              "last_modified": "2025-06-05T23:54:54.777663Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -3450,7 +5830,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:35.515282Z",
+                "last_modified": "2025-06-05T23:54:54.734479Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7",
+                    "transportation_modes"
+                  ],
+                  [
+                    "21563c37-3e85-4a9e-a961-da7b81e48e84",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
               "technology_at_journey_end_id": null
@@ -3472,7 +5872,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:46.638869Z",
+          "last_modified": "2025-06-05T16:05:55.441448Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "d3667861-b557-4ba2-91da-9c06e216c643",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c0640ae8-52d2-441a-a2e8-838c772b057a",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "32d54157-cc6a-424b-a017-bcd3b3f058f7",
@@ -3487,7 +5902,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:46.613234Z",
+          "last_modified": "2025-06-05T16:17:04.357325Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "d3667861-b557-4ba2-91da-9c06e216c643",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c0640ae8-52d2-441a-a2e8-838c772b057a",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "e7529804-7bcf-4601-a70c-a6511c08eefe",
@@ -3502,7 +5932,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:46.599731Z",
+          "last_modified": "2025-06-05T16:17:04.345316Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "d3667861-b557-4ba2-91da-9c06e216c643",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c0640ae8-52d2-441a-a2e8-838c772b057a",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -3519,7 +5964,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:46.626469Z",
+          "last_modified": "2025-06-05T16:17:04.369760Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "d3667861-b557-4ba2-91da-9c06e216c643",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c0640ae8-52d2-441a-a2e8-838c772b057a",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -3529,18 +5989,18 @@
       },
       {
         "id": "eac4a9bd-bfdf-4e7d-9b19-098f99e27504",
-        "created": "2026-01-22T14:58:15.102472Z",
-        "last_modified": "2026-01-22T14:58:15.102475Z",
+        "created": "2025-06-05T15:46:46.762718Z",
+        "last_modified": "2025-06-05T15:46:46.762718Z",
         "fuel_group": {
           "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
-          "created": "2026-01-22T14:58:07.799059Z",
-          "last_modified": "2026-01-22T14:58:07.799063Z",
+          "created": "2025-06-05T15:45:01.576346Z",
+          "last_modified": "2025-06-05T15:45:01.576346Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
-              "created": "2026-01-22T14:58:07.802840Z",
-              "last_modified": "2026-01-22T14:58:07.802843Z",
+              "created": "2025-06-05T15:45:01.595257Z",
+              "last_modified": "2025-06-05T15:45:01.595257Z",
               "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -3557,7 +6017,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:01.583857Z",
+                "last_modified": "2025-06-05T16:16:45.228786Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "aee8dd44-f2be-459e-ab6a-d23e996031ac",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "b5a563b2-997a-4653-91e6-2229b0283c4d",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "be10e8a8-0a24-4406-b54f-306b17e0477d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
               "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
@@ -3579,7 +6059,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:46.750202Z",
+          "last_modified": "2025-06-05T16:05:55.478037Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "d3667861-b557-4ba2-91da-9c06e216c643",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "eac4a9bd-bfdf-4e7d-9b19-098f99e27504",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "2a58e26d-4b01-4382-9210-601c64b70935",
@@ -3594,7 +6089,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:46.722528Z",
+          "last_modified": "2025-06-05T16:17:04.393508Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "d3667861-b557-4ba2-91da-9c06e216c643",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "eac4a9bd-bfdf-4e7d-9b19-098f99e27504",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "f7a02883-03d5-440c-8dca-f7f91e8586a6",
@@ -3609,7 +6119,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:46.709259Z",
+          "last_modified": "2025-06-05T16:17:04.383743Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "d3667861-b557-4ba2-91da-9c06e216c643",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "eac4a9bd-bfdf-4e7d-9b19-098f99e27504",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -3626,7 +6151,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:46.737517Z",
+          "last_modified": "2025-06-05T16:17:04.406814Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "d3667861-b557-4ba2-91da-9c06e216c643",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "eac4a9bd-bfdf-4e7d-9b19-098f99e27504",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -3662,7 +6202,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:03.857284Z",
+      "last_modified": "2025-06-05T16:16:49.107904Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "de37f106-a4fd-4a87-89d5-79a4035fa487",
@@ -3677,7 +6227,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:03.835264Z",
+      "last_modified": "2025-06-05T16:16:49.091145Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "34e1e63f-8e44-4867-b9c3-8b4c1dc51b78",
@@ -3692,23 +6252,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:46:03.846780Z",
+      "last_modified": "2025-06-05T16:16:49.099391Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "33ee076e-93d0-4bfa-abe5-3259550fe864",
-        "created": "2026-01-22T14:58:15.102496Z",
-        "last_modified": "2026-01-22T14:58:15.102500Z",
+        "created": "2025-06-05T15:46:04.045640Z",
+        "last_modified": "2025-06-05T15:46:04.045640Z",
         "fuel_group": {
           "id": "1bec8717-c072-47f1-bf78-3fa8f5241e75",
-          "created": "2026-01-22T14:58:07.798309Z",
-          "last_modified": "2026-01-22T14:58:07.798315Z",
+          "created": "2025-06-05T15:44:40.282872Z",
+          "last_modified": "2025-06-05T15:44:40.282872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "0e8c1167-10d4-4733-a044-f750b4e8c142",
-              "created": "2026-01-22T14:58:07.801661Z",
-              "last_modified": "2026-01-22T14:58:07.801668Z",
+              "created": "2025-06-05T15:44:40.301361Z",
+              "last_modified": "2025-06-05T15:44:40.301361Z",
               "flow_id": "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -3725,7 +6295,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:40.288350Z",
+                "last_modified": "2025-06-05T16:16:45.023317Z",
+                "parameter_path": [
+                  [
+                    "15b0f95f-0ed2-4237-ab05-af7478524a8a",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1bec8717-c072-47f1-bf78-3fa8f5241e75",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "412b8c5d-faf4-426b-81c7-e7b09098e5e1",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "fa4b223d-e77b-4a9e-9d57-41161c22cfd4",
               "technology_at_journey_end_id": "2094d4fa-8c16-4c0c-a563-259476fac997"
@@ -3747,7 +6337,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.032625Z",
+          "last_modified": "2025-06-05T16:05:38.424963Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "33ee076e-93d0-4bfa-abe5-3259550fe864",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "6663506d-fdea-4d26-aff3-b787c0cb899c",
@@ -3762,7 +6367,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.012109Z",
+          "last_modified": "2025-06-05T16:16:49.150268Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "33ee076e-93d0-4bfa-abe5-3259550fe864",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "b2388fb8-4e75-4573-ad81-53c19f9c0092",
@@ -3777,7 +6397,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.001603Z",
+          "last_modified": "2025-06-05T16:16:49.141809Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "33ee076e-93d0-4bfa-abe5-3259550fe864",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -3794,7 +6429,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.022117Z",
+          "last_modified": "2025-06-05T16:16:49.159193Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "33ee076e-93d0-4bfa-abe5-3259550fe864",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -3804,18 +6454,18 @@
       },
       {
         "id": "74168745-c726-4082-978e-2b7ce87d6635",
-        "created": "2026-01-22T14:58:15.102521Z",
-        "last_modified": "2026-01-22T14:58:15.102524Z",
+        "created": "2025-06-05T15:46:04.327208Z",
+        "last_modified": "2025-06-05T15:46:04.327208Z",
         "fuel_group": {
           "id": "21563c37-3e85-4a9e-a961-da7b81e48e84",
-          "created": "2026-01-22T14:58:07.798967Z",
-          "last_modified": "2026-01-22T14:58:07.798971Z",
+          "created": "2025-06-05T15:45:35.508639Z",
+          "last_modified": "2025-06-05T23:54:54.622709Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "8cea67b2-3313-4649-91bd-0009fc7902b9",
-              "created": "2026-01-22T14:58:07.802652Z",
-              "last_modified": "2026-01-22T14:58:07.802656Z",
+              "created": "2025-06-05T15:45:35.527533Z",
+              "last_modified": "2025-06-05T23:54:54.777663Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -3832,7 +6482,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:35.515282Z",
+                "last_modified": "2025-06-05T23:54:54.734479Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "a47a8bad-a35b-4ae8-b6f5-cccb98cff6c7",
+                    "transportation_modes"
+                  ],
+                  [
+                    "21563c37-3e85-4a9e-a961-da7b81e48e84",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "6be37f13-cf1d-413b-8873-b5e3a2b9f8de",
               "technology_at_journey_end_id": null
@@ -3854,7 +6524,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.315638Z",
+          "last_modified": "2025-06-05T16:05:38.536594Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "74168745-c726-4082-978e-2b7ce87d6635",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "f8379536-de54-4921-a3a6-8bfec6930b6b",
@@ -3869,7 +6554,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.292895Z",
+          "last_modified": "2025-06-05T16:16:49.228046Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "74168745-c726-4082-978e-2b7ce87d6635",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "87d82fa2-fef9-44fb-906f-4b33c9b94e9e",
@@ -3884,7 +6584,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.280972Z",
+          "last_modified": "2025-06-05T16:16:49.219155Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "74168745-c726-4082-978e-2b7ce87d6635",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -3901,7 +6616,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.304268Z",
+          "last_modified": "2025-06-05T16:16:49.236560Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "74168745-c726-4082-978e-2b7ce87d6635",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -3911,12 +6641,12 @@
       },
       {
         "id": "a66ea5d8-d0f3-4b56-86b1-0f0f70c98bb6",
-        "created": "2026-01-22T14:58:15.102545Z",
-        "last_modified": "2026-01-22T14:58:15.102548Z",
+        "created": "2025-06-05T15:46:03.953023Z",
+        "last_modified": "2025-06-05T15:46:03.953023Z",
         "fuel_group": {
           "id": "a4922187-5e34-4cf3-b15f-99eaed15ab04",
-          "created": "2026-01-22T14:58:07.799140Z",
-          "last_modified": "2026-01-22T14:58:07.799144Z",
+          "created": "2025-06-05T15:45:47.365703Z",
+          "last_modified": "2025-06-05T15:45:47.365703Z",
           "name": "Default",
           "fuel_shares": [],
           "transportation_mode_id": "d85541ae-d757-470e-b433-ef1ff3ed40a5"
@@ -3935,7 +6665,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:03.940955Z",
+          "last_modified": "2025-06-05T16:05:38.387742Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a66ea5d8-d0f3-4b56-86b1-0f0f70c98bb6",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "6593d3a6-5d63-4b5b-bc45-d37e5fe67366",
@@ -3950,7 +6695,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:03.917087Z",
+          "last_modified": "2025-06-05T16:16:49.124741Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a66ea5d8-d0f3-4b56-86b1-0f0f70c98bb6",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "b6a5d191-7ea1-432f-a443-70ea6bf97cda",
@@ -3965,7 +6725,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:03.905170Z",
+          "last_modified": "2025-06-05T16:16:49.116575Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a66ea5d8-d0f3-4b56-86b1-0f0f70c98bb6",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -3982,7 +6757,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:03.929967Z",
+          "last_modified": "2025-06-05T16:16:49.132989Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "a66ea5d8-d0f3-4b56-86b1-0f0f70c98bb6",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -3992,18 +6782,18 @@
       },
       {
         "id": "c8a51475-12f1-4069-b586-2fc1f878c4eb",
-        "created": "2026-01-22T14:58:15.102569Z",
-        "last_modified": "2026-01-22T14:58:15.102573Z",
+        "created": "2025-06-05T15:46:04.233769Z",
+        "last_modified": "2025-06-05T15:46:04.233769Z",
         "fuel_group": {
           "id": "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
-          "created": "2026-01-22T14:58:07.798710Z",
-          "last_modified": "2026-01-22T14:58:07.798713Z",
+          "created": "2025-06-05T15:44:48.576872Z",
+          "last_modified": "2025-06-05T15:44:48.576872Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "9617cc8a-de06-407a-9bc9-28d6d6983a12",
-              "created": "2026-01-22T14:58:07.801976Z",
-              "last_modified": "2026-01-22T14:58:07.801980Z",
+              "created": "2025-06-05T15:44:48.622401Z",
+              "last_modified": "2025-06-05T15:44:48.623905Z",
               "flow_id": "92186db6-7516-4988-899a-0b7b5db0258e",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -4020,15 +6810,35 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:48.612893Z",
+                "last_modified": "2025-06-05T16:16:45.164856Z",
+                "parameter_path": [
+                  [
+                    "6d336d5b-d0be-4e1e-8943-afa63b042876",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "92186db6-7516-4988-899a-0b7b5db0258e",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "a71c5296-dfd5-48f8-a68f-e0d6924fdfe5",
               "technology_at_journey_end_id": "56a132ed-6546-4575-a846-b107800d519b"
             },
             {
               "id": "c8d004df-3ed5-419b-ac2a-d9f79dadb015",
-              "created": "2026-01-22T14:58:07.801996Z",
-              "last_modified": "2026-01-22T14:58:07.802000Z",
+              "created": "2025-06-05T15:44:48.595882Z",
+              "last_modified": "2025-06-05T15:44:48.595882Z",
               "flow_id": "95948a15-bb7f-4868-b023-2ada23518f2c",
               "source_pathway_id": "a9867166-df89-46a9-9360-d89a7402b07a",
               "source_mix_id": null,
@@ -4045,7 +6855,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:44:48.584374Z",
+                "last_modified": "2025-06-05T16:16:45.156422Z",
+                "parameter_path": [
+                  [
+                    "6d336d5b-d0be-4e1e-8943-afa63b042876",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "0e0ed588-2c55-4d2c-974a-dd90da12bde9",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "95948a15-bb7f-4868-b023-2ada23518f2c",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "2cdb4177-55da-4822-bd7b-e2874eab8d56",
               "technology_at_journey_end_id": "04d4e3ac-e261-4205-a242-51c5cb708016"
@@ -4067,7 +6897,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.220308Z",
+          "last_modified": "2025-06-05T16:05:38.499929Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c8a51475-12f1-4069-b586-2fc1f878c4eb",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "c537e6c9-88b1-4c16-8ba5-74ee29c6e4bf",
@@ -4082,7 +6927,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.198260Z",
+          "last_modified": "2025-06-05T16:16:49.201637Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c8a51475-12f1-4069-b586-2fc1f878c4eb",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "ceafd828-a168-44bf-93be-9b601425fcd4",
@@ -4097,7 +6957,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.187922Z",
+          "last_modified": "2025-06-05T16:16:49.192506Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c8a51475-12f1-4069-b586-2fc1f878c4eb",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -4114,7 +6989,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.207266Z",
+          "last_modified": "2025-06-05T16:16:49.210637Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "c8a51475-12f1-4069-b586-2fc1f878c4eb",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -4124,18 +7014,18 @@
       },
       {
         "id": "cd7b775d-20f8-4181-8f5a-4828ea8eb381",
-        "created": "2026-01-22T14:58:15.104337Z",
-        "last_modified": "2026-01-22T14:58:15.104342Z",
+        "created": "2025-06-05T15:46:04.141877Z",
+        "last_modified": "2025-06-05T15:46:04.141877Z",
         "fuel_group": {
           "id": "b5a563b2-997a-4653-91e6-2229b0283c4d",
-          "created": "2026-01-22T14:58:07.799059Z",
-          "last_modified": "2026-01-22T14:58:07.799063Z",
+          "created": "2025-06-05T15:45:01.576346Z",
+          "last_modified": "2025-06-05T15:45:01.576346Z",
           "name": "Default",
           "fuel_shares": [
             {
               "id": "4bc55e2e-caeb-4164-9954-ec3f69e77c35",
-              "created": "2026-01-22T14:58:07.802840Z",
-              "last_modified": "2026-01-22T14:58:07.802843Z",
+              "created": "2025-06-05T15:45:01.595257Z",
+              "last_modified": "2025-06-05T15:45:01.595257Z",
               "flow_id": "be10e8a8-0a24-4406-b54f-306b17e0477d",
               "source_pathway_id": "0a8d279b-d9cf-4472-9ac0-ccf51a428079",
               "source_mix_id": null,
@@ -4152,7 +7042,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:01.583857Z",
+                "last_modified": "2025-06-05T16:16:45.228786Z",
+                "parameter_path": [
+                  [
+                    "Transportation Mode",
+                    "aee8dd44-f2be-459e-ab6a-d23e996031ac",
+                    "transportation_modes"
+                  ],
+                  [
+                    "Fuel Group",
+                    "b5a563b2-997a-4653-91e6-2229b0283c4d",
+                    "fuel_groups"
+                  ],
+                  [
+                    "Fuel Share",
+                    "be10e8a8-0a24-4406-b54f-306b17e0477d",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "790553e2-699f-4ab0-8f67-f07a113d8a2b",
               "technology_at_journey_end_id": "f7c52da0-04f8-45ad-8181-c8cc4ddbde5f"
@@ -4174,7 +7084,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.129366Z",
+          "last_modified": "2025-06-05T16:05:38.463098Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "cd7b775d-20f8-4181-8f5a-4828ea8eb381",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "c6f49def-52f2-4a18-9f16-4c3eeaad659a",
@@ -4189,7 +7114,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.107216Z",
+          "last_modified": "2025-06-05T16:16:49.176283Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "cd7b775d-20f8-4181-8f5a-4828ea8eb381",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "eda0a58d-872b-43d4-bc92-f303a90a21de",
@@ -4204,7 +7144,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.094910Z",
+          "last_modified": "2025-06-05T16:16:49.167483Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "cd7b775d-20f8-4181-8f5a-4828ea8eb381",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -4221,7 +7176,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:46:04.118344Z",
+          "last_modified": "2025-06-05T16:16:49.184287Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "ddc94586-1c21-41bf-b034-b0bc96d9d22a",
+              "transportation_processes"
+            ],
+            [
+              "Step",
+              "cd7b775d-20f8-4181-8f5a-4828ea8eb381",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,
@@ -4257,7 +7227,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:45:53.486949Z",
+      "last_modified": "2025-06-05T16:16:45.852514Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "fc8e17ca-a451-4505-8092-3e80f338fbd8",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "loss_ratio"
     },
     "urban_share": {
       "id": "45fdfcc8-31f8-45c4-ad5b-d74bb75f80c3",
@@ -4272,7 +7252,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:45:53.463322Z",
+      "last_modified": "2025-06-05T16:16:45.824314Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "fc8e17ca-a451-4505-8092-3e80f338fbd8",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "moisture_content": {
       "id": "746299dd-69a2-4fcf-a72a-f7b25af09cfc",
@@ -4287,23 +7277,33 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:45:53.475176Z",
+      "last_modified": "2025-06-05T16:16:45.837222Z",
+      "parameter_path": [
+        [
+          "Transportation Process",
+          "fc8e17ca-a451-4505-8092-3e80f338fbd8",
+          "transportation_processes"
+        ]
+      ],
+      "parameter_attr_name": "moisture_content"
     },
     "steps": [
       {
         "id": "185ed013-248b-4c2d-b65c-a8b7a2ddf4e1",
-        "created": "2026-01-22T14:58:15.104364Z",
-        "last_modified": "2026-01-22T14:58:15.104368Z",
+        "created": "2025-06-05T15:45:53.584763Z",
+        "last_modified": "2025-06-05T15:45:53.584763Z",
         "fuel_group": {
           "id": "1808cdaa-68f1-4d63-a984-6152b6274ffa",
-          "created": "2026-01-22T14:58:07.798744Z",
-          "last_modified": "2026-01-22T14:58:07.798748Z",
+          "created": "2025-06-05T15:45:19.203133Z",
+          "last_modified": "2025-06-05T15:45:19.203133Z",
           "name": "Electricity",
           "fuel_shares": [
             {
               "id": "593c70ae-d4e6-4c9e-bc28-4544154a9abf",
-              "created": "2026-01-22T14:58:07.802097Z",
-              "last_modified": "2026-01-22T14:58:07.802100Z",
+              "created": "2025-06-05T15:45:19.221468Z",
+              "last_modified": "2025-06-05T15:45:19.221468Z",
               "flow_id": "2e199587-a1b7-4b3b-bd28-af4480c019a8",
               "source_pathway_id": "5a41370a-e9db-42e1-8589-0efdcf86b554",
               "source_mix_id": null,
@@ -4320,7 +7320,27 @@
                     }
                   },
                   "parameters_used": []
-                }
+                },
+                "created": "2025-06-05T15:45:19.210647Z",
+                "last_modified": "2025-06-05T16:16:45.384087Z",
+                "parameter_path": [
+                  [
+                    "6f27d2b3-28a8-4c06-b2b6-c821e9be700c",
+                    "Transportation Mode",
+                    "transportation_modes"
+                  ],
+                  [
+                    "1808cdaa-68f1-4d63-a984-6152b6274ffa",
+                    "Fuel Group",
+                    "fuel_groups"
+                  ],
+                  [
+                    "2e199587-a1b7-4b3b-bd28-af4480c019a8",
+                    "Fuel Share",
+                    "flows"
+                  ]
+                ],
+                "parameter_attr_name": "share"
               },
               "technology_at_journey_start_id": "8e0e08e6-2ecd-4799-aecc-17aded2f7ecb",
               "technology_at_journey_end_id": null
@@ -4342,7 +7362,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:45:53.572985Z",
+          "last_modified": "2025-06-05T16:05:33.989915Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "fc8e17ca-a451-4505-8092-3e80f338fbd8",
+              "transportation_processes"
+            ],
+            [
+              "185ed013-248b-4c2d-b65c-a8b7a2ddf4e1",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "distance"
         },
         "urban_share": {
           "id": "f559a0a6-e49d-4287-9a47-1fb7b8cda9c8",
@@ -4357,7 +7392,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:45:53.548532Z",
+          "last_modified": "2025-06-05T16:16:45.882981Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "fc8e17ca-a451-4505-8092-3e80f338fbd8",
+              "transportation_processes"
+            ],
+            [
+              "185ed013-248b-4c2d-b65c-a8b7a2ddf4e1",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "urban_share"
         },
         "loss_ratio": {
           "id": "0860aa64-4e05-4cc9-ad4f-948edecfb48d",
@@ -4372,7 +7422,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:45:53.536230Z",
+          "last_modified": "2025-06-05T16:16:45.868476Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "fc8e17ca-a451-4505-8092-3e80f338fbd8",
+              "transportation_processes"
+            ],
+            [
+              "185ed013-248b-4c2d-b65c-a8b7a2ddf4e1",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
         },
         "loss_type": "mass",
         "transportation_step_loss_type": "ratio",
@@ -4389,7 +7454,22 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:45:53.560045Z",
+          "last_modified": "2025-06-05T16:16:45.895493Z",
+          "parameter_path": [
+            [
+              "Transportation Process",
+              "fc8e17ca-a451-4505-8092-3e80f338fbd8",
+              "transportation_processes"
+            ],
+            [
+              "185ed013-248b-4c2d-b65c-a8b7a2ddf4e1",
+              "Step",
+              "transportation_steps"
+            ]
+          ],
+          "parameter_attr_name": "share"
         },
         "payload": null,
         "energy_intensity_to": null,

@@ -22,7 +22,11 @@
             }
           },
           "parameters_used": []
-        }
+        },
+        "created": "2025-10-23T22:56:27.348939Z",
+        "last_modified": "2025-10-23T22:56:27.348939Z",
+        "parameter_path": [],
+        "parameter_attr_name": ""
       }
     },
     "urban_share": {
@@ -50,7 +54,17 @@
         "parameters_used": [
           "81b9e59e-4901-4c32-a831-20968dbbea63::0"
         ]
-      }
+      },
+      "created": "2025-06-05T15:51:48.274307Z",
+      "last_modified": "2025-06-05T16:17:53.252688Z",
+      "parameter_path": [
+        [
+          "179175aa-4394-41cc-8c2c-230d90fdc1e4",
+          "Vehicle",
+          "vehicles"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "payload": null,
     "lifetime_vmt": null,
@@ -266,7 +280,17 @@
           "67cd8c33-9120-490b-9d01-5782c2cf2c9f::2035",
           "67cd8c33-9120-490b-9d01-5782c2cf2c9f::2050"
         ]
-      }
+      },
+      "created": "2025-06-05T15:51:48.286398Z",
+      "last_modified": "2025-06-05T16:17:53.267880Z",
+      "parameter_path": [
+        [
+          "179175aa-4394-41cc-8c2c-230d90fdc1e4",
+          "Vehicle",
+          "vehicles"
+        ]
+      ],
+      "parameter_attr_name": "passengers"
     },
     "modes": [
       {
@@ -289,20 +313,30 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:51:48.474448Z",
+          "last_modified": "2025-06-05T16:17:53.278255Z",
+          "parameter_path": [
+            [
+              "Vehicle Mode",
+              "ff3dadde-b6a6-43b3-9729-c0da0c58111b",
+              "vehicle_modes"
+            ]
+          ],
+          "parameter_attr_name": "miles_of_travel_shared"
         },
         "powerplants": [
           {
             "id": "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
-            "created": "2026-01-22T14:58:16.690450Z",
-            "last_modified": "2026-01-22T14:58:16.690453Z",
+            "created": "2025-06-05T15:51:48.497371Z",
+            "last_modified": "2025-06-05T15:55:33.998646Z",
             "is_template": false,
             "is_draft": false,
             "fuels": [
               {
                 "id": "da49cf8a-0e4f-4b66-a837-370cf0fdc317",
-                "created": "2026-01-22T14:58:16.703490Z",
-                "last_modified": "2026-01-22T14:58:16.703493Z",
+                "created": "2025-06-05T15:51:48.525402Z",
+                "last_modified": "2025-06-05T15:51:48.525402Z",
                 "consumption": {
                   "id": "53855854-9e74-42d3-974c-b2245c158aa7",
                   "unit_id": "335190aa-5f0f-43ae-b94f-61e0fff08900",
@@ -514,7 +548,22 @@
                       "b6726d10-4dff-43ca-8ef5-689a109855a4::2010",
                       "b6726d10-4dff-43ca-8ef5-689a109855a4::2015"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.513767Z",
+                  "last_modified": "2025-06-05T16:06:56.117055Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "52376bba-305f-43ae-aac0-8d663a58498b",
+                      "Fuel",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "consumption"
                 },
                 "refueling_or_charging_efficiency": {
                   "id": "8744ea9e-8584-49d3-bb7d-8f042b80b430",
@@ -529,7 +578,22 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.502546Z",
+                  "last_modified": "2025-06-05T16:17:53.288503Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "52376bba-305f-43ae-aac0-8d663a58498b",
+                      "Fuel",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "refueling_or_charging_efficiency"
                 },
                 "source_mix_id": null,
                 "source_pathway_id": "5adc3ded-d209-49ce-8e32-65e892bf3dd3",
@@ -546,8 +610,8 @@
             "emissions": [
               {
                 "id": "1cb4eebc-0af2-47a5-afa9-e81b6c0cf846",
-                "created": "2026-01-22T14:58:16.735170Z",
-                "last_modified": "2026-01-22T14:58:16.735174Z",
+                "created": "2025-06-05T15:51:48.591237Z",
+                "last_modified": "2025-06-05T15:51:48.591237Z",
                 "quantity": {
                   "id": "1d42d666-29b9-4df6-b8e5-32bf1d685136",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -759,14 +823,29 @@
                       "f02e2049-490a-4769-ba3d-25a48300d4a3::2035",
                       "f02e2049-490a-4769-ba3d-25a48300d4a3::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.582264Z",
+                  "last_modified": "2025-06-05T16:06:56.147606Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "dd54ff20-bb17-4b60-82ee-884721b7beac",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "dd54ff20-bb17-4b60-82ee-884721b7beac"
               },
               {
                 "id": "2a29b81c-9217-4d98-9712-81fe27502bf6",
-                "created": "2026-01-22T14:58:16.735184Z",
-                "last_modified": "2026-01-22T14:58:16.735188Z",
+                "created": "2025-06-05T15:51:48.738744Z",
+                "last_modified": "2025-06-05T15:51:48.738744Z",
                 "quantity": {
                   "id": "1463ae16-f4fe-40c1-aa3a-b222c7a1abd9",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -978,14 +1057,29 @@
                       "8197a751-c994-4840-9d60-7c82138a36c3::2035",
                       "8197a751-c994-4840-9d60-7c82138a36c3::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.730597Z",
+                  "last_modified": "2025-06-05T16:06:56.226153Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "ee3bef9c-8bd5-4545-9797-caa2f2e771b2",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "ee3bef9c-8bd5-4545-9797-caa2f2e771b2"
               },
               {
                 "id": "3c02a47a-b99b-4208-9d01-32a2d72b9c8f",
-                "created": "2026-01-22T14:58:16.735198Z",
-                "last_modified": "2026-01-22T14:58:16.735201Z",
+                "created": "2025-06-05T15:51:48.562236Z",
+                "last_modified": "2025-06-05T15:51:48.562236Z",
                 "quantity": {
                   "id": "1a7fc676-a14b-48ba-9e12-3e3b2546f049",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -1197,14 +1291,29 @@
                       "d0aa182a-d7ea-4c6e-a5e9-145f8d45eda5::2035",
                       "d0aa182a-d7ea-4c6e-a5e9-145f8d45eda5::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.553926Z",
+                  "last_modified": "2025-06-05T16:06:56.132566Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "28cf6f42-a329-4d0c-afd9-48ef12b9cf73",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "28cf6f42-a329-4d0c-afd9-48ef12b9cf73"
               },
               {
                 "id": "3d49ffa9-93a6-408a-8d58-4d7fce02aed6",
-                "created": "2026-01-22T14:58:16.735211Z",
-                "last_modified": "2026-01-22T14:58:16.735215Z",
+                "created": "2025-06-05T15:51:48.651194Z",
+                "last_modified": "2025-06-05T15:51:48.651194Z",
                 "quantity": {
                   "id": "1c8405d2-7baa-4111-91d0-a0dd1680c86e",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -1416,14 +1525,29 @@
                       "e44d2216-206b-42eb-b74e-936fc6bfc03e::2035",
                       "e44d2216-206b-42eb-b74e-936fc6bfc03e::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.641653Z",
+                  "last_modified": "2025-06-05T16:06:56.178829Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "d15ee111-065b-44a6-ab98-915eb5bd75a1",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "d15ee111-065b-44a6-ab98-915eb5bd75a1"
               },
               {
                 "id": "44b0644e-8a8f-48e3-99ea-cf39b8e7bb3d",
-                "created": "2026-01-22T14:58:16.735225Z",
-                "last_modified": "2026-01-22T14:58:16.735229Z",
+                "created": "2025-06-05T15:51:48.798756Z",
+                "last_modified": "2025-06-05T15:51:48.798756Z",
                 "quantity": {
                   "id": "267129b0-652c-4cf9-be86-7d2b1443a3c5",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -1635,14 +1759,29 @@
                       "8b65a7b0-072b-435c-9975-18270d0625b9::2035",
                       "8b65a7b0-072b-435c-9975-18270d0625b9::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.789241Z",
+                  "last_modified": "2025-06-05T16:06:56.259057Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "83108355-6ac7-4125-bd11-11062fabdec3",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "83108355-6ac7-4125-bd11-11062fabdec3"
               },
               {
                 "id": "62b8cef7-e79f-4a51-a490-ff731dd7922d",
-                "created": "2026-01-22T14:58:16.735239Z",
-                "last_modified": "2026-01-22T14:58:16.735243Z",
+                "created": "2025-06-05T15:51:48.835798Z",
+                "last_modified": "2025-06-05T15:51:48.835798Z",
                 "quantity": {
                   "id": "7fb95134-cc80-4749-a3fe-c89637aa854c",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -1710,14 +1849,29 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.826278Z",
+                  "last_modified": "2025-06-05T16:06:56.273569Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "7689c69d-5fa4-4bba-995e-1c5446994c41",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "7689c69d-5fa4-4bba-995e-1c5446994c41"
               },
               {
                 "id": "6668a629-b70a-4dec-9ebe-f23303b3a472",
-                "created": "2026-01-22T14:58:16.735253Z",
-                "last_modified": "2026-01-22T14:58:16.735256Z",
+                "created": "2025-06-05T15:51:48.710168Z",
+                "last_modified": "2025-06-05T15:51:48.710168Z",
                 "quantity": {
                   "id": "fe1eb245-0b43-40d9-8ad6-09cec962499e",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -1929,14 +2083,29 @@
                       "f5458b26-5184-4cb3-9728-04ed0775cb8f::2035",
                       "f5458b26-5184-4cb3-9728-04ed0775cb8f::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.700147Z",
+                  "last_modified": "2025-06-05T16:06:56.211130Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "2d3d0bfc-6fb2-4012-b3df-4372951165a7",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "2d3d0bfc-6fb2-4012-b3df-4372951165a7"
               },
               {
                 "id": "719ede7d-ee90-470c-8684-a72bc000367d",
-                "created": "2026-01-22T14:58:16.735266Z",
-                "last_modified": "2026-01-22T14:58:16.735270Z",
+                "created": "2025-06-05T15:51:48.866379Z",
+                "last_modified": "2025-06-05T15:51:48.866379Z",
                 "quantity": {
                   "id": "895f52c6-a25c-4a6a-9cb7-2362ee7be372",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -2004,14 +2173,29 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.856841Z",
+                  "last_modified": "2025-06-05T16:06:56.287403Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "835e0f7a-89c3-4a3b-ad93-24da649eb177",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "835e0f7a-89c3-4a3b-ad93-24da649eb177"
               },
               {
                 "id": "7ce8b880-3326-499c-bba3-ab77c209b8ae",
-                "created": "2026-01-22T14:58:16.735280Z",
-                "last_modified": "2026-01-22T14:58:16.735284Z",
+                "created": "2025-06-05T15:51:48.678791Z",
+                "last_modified": "2025-06-05T15:51:48.678791Z",
                 "quantity": {
                   "id": "178922b7-ac81-46ec-ada7-cd17f995246e",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -2223,14 +2407,29 @@
                       "7a28393d-d66f-4579-8e9c-f84f377c3ba3::2035",
                       "7a28393d-d66f-4579-8e9c-f84f377c3ba3::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.670791Z",
+                  "last_modified": "2025-06-05T16:06:56.195072Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "ec4e4ae9-903d-40c7-a1e5-226b211eece7",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "ec4e4ae9-903d-40c7-a1e5-226b211eece7"
               },
               {
                 "id": "d56540f2-5e58-4d37-b505-f5bb440e7a90",
-                "created": "2026-01-22T14:58:16.735294Z",
-                "last_modified": "2026-01-22T14:58:16.735298Z",
+                "created": "2025-06-05T15:51:48.768674Z",
+                "last_modified": "2025-06-05T15:51:48.768674Z",
                 "quantity": {
                   "id": "7a241ae9-66a3-4e77-a778-165f7f368674",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -2442,14 +2641,29 @@
                       "e31022bc-0213-4ad4-bdb0-5115d2f5726b::2035",
                       "e31022bc-0213-4ad4-bdb0-5115d2f5726b::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.759280Z",
+                  "last_modified": "2025-06-05T16:06:56.243201Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "aa2a3fac-dcba-411a-8062-5704407cd31b",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "aa2a3fac-dcba-411a-8062-5704407cd31b"
               },
               {
                 "id": "fa226bf2-2aaf-400d-a50f-6cd38ce25deb",
-                "created": "2026-01-22T14:58:16.735309Z",
-                "last_modified": "2026-01-22T14:58:16.735312Z",
+                "created": "2025-06-05T15:51:48.620582Z",
+                "last_modified": "2025-06-05T15:51:48.620582Z",
                 "quantity": {
                   "id": "effd4965-55eb-4c3e-8e3b-73cc1b1c840b",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -2661,7 +2875,22 @@
                       "77538542-a524-437d-b41d-eb80fa8b86f4::2035",
                       "77538542-a524-437d-b41d-eb80fa8b86f4::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:51:48.611684Z",
+                  "last_modified": "2025-06-05T16:06:56.163128Z",
+                  "parameter_path": [
+                    [
+                      "942ed88c-3864-48a7-9ad4-6fc44bbfc508",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "5f1479e4-4ea7-4c8c-851e-d3690ef77521",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "5f1479e4-4ea7-4c8c-851e-d3690ef77521"
               }
@@ -2675,8 +2904,8 @@
     "non_combustible_emissions": [
       {
         "id": "1867caca-5a58-4911-b0d4-75052a65943c",
-        "created": "2026-01-22T14:58:16.600332Z",
-        "last_modified": "2026-01-22T14:58:16.600335Z",
+        "created": "2025-06-05T15:51:48.456640Z",
+        "last_modified": "2025-06-05T15:51:48.456640Z",
         "flow_id": "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
         "quantity": {
           "id": "c855a10b-02f8-471e-bf57-fb37c25759e0",
@@ -2962,13 +3191,28 @@
               "11957d9a-7242-4687-b877-8f83375e8823::2050",
               "19800098-225e-4fa1-9772-f7a8425ad7f4::0"
             ]
-          }
+          },
+          "created": "2025-06-05T15:51:48.443311Z",
+          "last_modified": "2025-06-05T16:06:56.079343Z",
+          "parameter_path": [
+            [
+              "179175aa-4394-41cc-8c2c-230d90fdc1e4",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "1d607a76-f7a4-49e9-91a2-e6c7cbab27f3",
-        "created": "2026-01-22T14:58:16.600346Z",
-        "last_modified": "2026-01-22T14:58:16.600349Z",
+        "created": "2025-06-05T15:51:48.333255Z",
+        "last_modified": "2025-06-05T15:51:48.333255Z",
         "flow_id": "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
         "quantity": {
           "id": "7fd5f272-4b25-4d55-856a-74c7b452b568",
@@ -3181,13 +3425,28 @@
               "09134e39-9c6c-4b78-a594-4d57be442e1d::2035",
               "09134e39-9c6c-4b78-a594-4d57be442e1d::2050"
             ]
-          }
+          },
+          "created": "2025-06-05T15:51:48.324177Z",
+          "last_modified": "2025-06-05T16:06:56.010531Z",
+          "parameter_path": [
+            [
+              "179175aa-4394-41cc-8c2c-230d90fdc1e4",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "acb8a12d-2f8f-4f10-b9c5-8c7360bb9c82",
-        "created": "2026-01-22T14:58:16.600360Z",
-        "last_modified": "2026-01-22T14:58:16.600364Z",
+        "created": "2025-06-05T15:51:48.362890Z",
+        "last_modified": "2025-06-05T15:51:48.362890Z",
         "flow_id": "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
         "quantity": {
           "id": "37a05905-6847-4d2d-a386-a322339be563",
@@ -3400,13 +3659,28 @@
               "2016120c-b1a4-4023-8739-2354e112fbd9::2035",
               "2016120c-b1a4-4023-8739-2354e112fbd9::2050"
             ]
-          }
+          },
+          "created": "2025-06-05T15:51:48.354512Z",
+          "last_modified": "2025-06-05T16:06:56.027372Z",
+          "parameter_path": [
+            [
+              "179175aa-4394-41cc-8c2c-230d90fdc1e4",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "c7a64319-7155-440b-ba7a-77daf823e114",
-        "created": "2026-01-22T14:58:16.600374Z",
-        "last_modified": "2026-01-22T14:58:16.600377Z",
+        "created": "2025-06-05T15:51:48.392778Z",
+        "last_modified": "2025-06-05T15:51:48.392778Z",
         "flow_id": "c666c37c-5e84-421f-b4f7-e46b58a759c2",
         "quantity": {
           "id": "11957d9a-7242-4687-b877-8f83375e8823",
@@ -3619,13 +3893,28 @@
               "16b84258-2091-4994-b1be-5c609bc6ab8d::2035",
               "16b84258-2091-4994-b1be-5c609bc6ab8d::2050"
             ]
-          }
+          },
+          "created": "2025-06-05T15:51:48.383724Z",
+          "last_modified": "2025-06-05T16:06:56.043875Z",
+          "parameter_path": [
+            [
+              "179175aa-4394-41cc-8c2c-230d90fdc1e4",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "Non-Combustion Emission",
+              "c666c37c-5e84-421f-b4f7-e46b58a759c2",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "d28aae92-aa16-4f2e-b094-a579d94a4533",
-        "created": "2026-01-22T14:58:16.600388Z",
-        "last_modified": "2026-01-22T14:58:16.600392Z",
+        "created": "2025-06-05T15:51:48.422360Z",
+        "last_modified": "2025-06-05T15:51:48.422360Z",
         "flow_id": "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
         "quantity": {
           "id": "b90a3ba6-5f50-4251-8d71-e7c2f3bb2148",
@@ -3911,7 +4200,22 @@
               "11957d9a-7242-4687-b877-8f83375e8823::2050",
               "bc80cc61-897d-4984-8fc3-821dd6b5ff69::0"
             ]
-          }
+          },
+          "created": "2025-06-05T15:51:48.412852Z",
+          "last_modified": "2025-06-05T16:06:56.062313Z",
+          "parameter_path": [
+            [
+              "179175aa-4394-41cc-8c2c-230d90fdc1e4",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "Non-Combustion Emission",
+              "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       }
     ],
@@ -3948,7 +4252,11 @@
             }
           },
           "parameters_used": []
-        }
+        },
+        "created": "2025-10-23T22:56:27.348939Z",
+        "last_modified": "2025-10-23T22:56:27.348939Z",
+        "parameter_path": [],
+        "parameter_attr_name": ""
       }
     },
     "urban_share": {
@@ -3976,7 +4284,17 @@
         "parameters_used": [
           "93d115d7-211d-4849-9822-645648271a71::0"
         ]
-      }
+      },
+      "created": "2025-06-05T15:52:51.775753Z",
+      "last_modified": "2025-06-05T16:17:59.778031Z",
+      "parameter_path": [
+        [
+          "29b61a37-33f5-4fa0-a71d-4fe295fbe573",
+          "Vehicle",
+          "vehicles"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "payload": {
       "id": "b7a7bb93-9a73-4196-9d8d-ff6935304847",
@@ -4189,7 +4507,17 @@
           "6af0fcec-9e5d-4954-88af-2655877198e9::2035",
           "6af0fcec-9e5d-4954-88af-2655877198e9::2050"
         ]
-      }
+      },
+      "created": "2025-06-05T15:52:51.789249Z",
+      "last_modified": "2025-06-05T16:07:20.987659Z",
+      "parameter_path": [
+        [
+          "29b61a37-33f5-4fa0-a71d-4fe295fbe573",
+          "Vehicle",
+          "vehicles"
+        ]
+      ],
+      "parameter_attr_name": "payload"
     },
     "lifetime_vmt": null,
     "electric_range": null,
@@ -4215,20 +4543,30 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:52:52.002459Z",
+          "last_modified": "2025-06-05T16:17:59.790518Z",
+          "parameter_path": [
+            [
+              "14100fe2-685d-4726-83ae-1986233587e0",
+              "Vehicle Mode",
+              "vehicle_modes"
+            ]
+          ],
+          "parameter_attr_name": "miles_of_travel_shared"
         },
         "powerplants": [
           {
             "id": "085e67ae-2206-418f-a16d-40f4442a7e9d",
-            "created": "2026-01-22T14:58:16.690464Z",
-            "last_modified": "2026-01-22T14:58:16.690468Z",
+            "created": "2025-06-05T15:52:52.031251Z",
+            "last_modified": "2025-06-05T15:55:34.493554Z",
             "is_template": false,
             "is_draft": false,
             "fuels": [
               {
                 "id": "5f1fdab8-2810-4229-91ef-4759d795b654",
-                "created": "2026-01-22T14:58:16.703508Z",
-                "last_modified": "2026-01-22T14:58:16.703512Z",
+                "created": "2025-06-05T15:52:52.063357Z",
+                "last_modified": "2025-06-05T15:52:52.063357Z",
                 "consumption": {
                   "id": "50311dec-9049-41f8-8f1c-439d3564726c",
                   "unit_id": "335190aa-5f0f-43ae-b94f-61e0fff08900",
@@ -4440,7 +4778,22 @@
                       "ee4c264a-0ab4-41d3-8caf-58205aa9743d::2035",
                       "ee4c264a-0ab4-41d3-8caf-58205aa9743d::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.051975Z",
+                  "last_modified": "2025-06-05T16:07:21.084721Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Fuel",
+                      "cf8ed5b4-f8e4-46d7-bef3-fbee2490dfe1",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "consumption"
                 },
                 "refueling_or_charging_efficiency": {
                   "id": "da256fbc-c7fc-42ac-b157-cae48db05042",
@@ -4455,7 +4808,22 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.037733Z",
+                  "last_modified": "2025-06-05T16:17:59.803652Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Fuel",
+                      "cf8ed5b4-f8e4-46d7-bef3-fbee2490dfe1",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "refueling_or_charging_efficiency"
                 },
                 "source_mix_id": "324f4fb5-cd41-4504-ad00-c350f2a0a4ca",
                 "source_pathway_id": null,
@@ -4472,8 +4840,8 @@
             "emissions": [
               {
                 "id": "13b5abf6-66dc-42fa-b307-263d2428b76b",
-                "created": "2026-01-22T14:58:16.735323Z",
-                "last_modified": "2026-01-22T14:58:16.735326Z",
+                "created": "2025-06-05T15:52:52.106380Z",
+                "last_modified": "2025-06-05T15:52:52.106380Z",
                 "quantity": {
                   "id": "2671ce65-6709-4582-aff7-7b6b457b709c",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -4685,14 +5053,29 @@
                       "55a52fec-c686-4b14-a950-62886b486396::2035",
                       "55a52fec-c686-4b14-a950-62886b486396::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.095661Z",
+                  "last_modified": "2025-06-05T16:07:21.097739Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "28cf6f42-a329-4d0c-afd9-48ef12b9cf73",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "28cf6f42-a329-4d0c-afd9-48ef12b9cf73"
               },
               {
                 "id": "30784b0c-76b5-4a8b-8f3a-57d29995d1f5",
-                "created": "2026-01-22T14:58:16.735337Z",
-                "last_modified": "2026-01-22T14:58:16.735340Z",
+                "created": "2025-06-05T15:52:52.139108Z",
+                "last_modified": "2025-06-05T15:52:52.139108Z",
                 "quantity": {
                   "id": "dfd35bb4-e290-4458-8514-6f5a90c9fd42",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -4904,14 +5287,29 @@
                       "c9387d55-9adb-4a4d-adbd-32a347be793e::2035",
                       "c9387d55-9adb-4a4d-adbd-32a347be793e::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.129154Z",
+                  "last_modified": "2025-06-05T16:07:21.109263Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "dd54ff20-bb17-4b60-82ee-884721b7beac",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "dd54ff20-bb17-4b60-82ee-884721b7beac"
               },
               {
                 "id": "3c7b683b-5d32-41c1-b72e-f8c328e9744c",
-                "created": "2026-01-22T14:58:16.735351Z",
-                "last_modified": "2026-01-22T14:58:16.735354Z",
+                "created": "2025-06-05T15:52:52.377453Z",
+                "last_modified": "2025-06-05T15:52:52.377453Z",
                 "quantity": {
                   "id": "e417db69-775c-447c-a5de-0650a77b2d95",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -5123,14 +5521,29 @@
                       "9e2ce8fa-2e16-476c-817a-15faf4a84708::2035",
                       "9e2ce8fa-2e16-476c-817a-15faf4a84708::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.365940Z",
+                  "last_modified": "2025-06-05T16:07:21.195102Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "83108355-6ac7-4125-bd11-11062fabdec3",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "83108355-6ac7-4125-bd11-11062fabdec3"
               },
               {
                 "id": "40ee675e-3e4d-4f87-b452-cc8068cd113e",
-                "created": "2026-01-22T14:58:16.735365Z",
-                "last_modified": "2026-01-22T14:58:16.735368Z",
+                "created": "2025-06-05T15:52:52.414497Z",
+                "last_modified": "2025-06-05T15:52:52.414497Z",
                 "quantity": {
                   "id": "41a30e7c-7f84-44b2-87a3-f227394f799f",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -5198,14 +5611,29 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.401479Z",
+                  "last_modified": "2025-06-05T16:07:21.207117Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "7689c69d-5fa4-4bba-995e-1c5446994c41",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "7689c69d-5fa4-4bba-995e-1c5446994c41"
               },
               {
                 "id": "546cb7a0-a86e-46a7-b506-9c6ec74c646a",
-                "created": "2026-01-22T14:58:16.735379Z",
-                "last_modified": "2026-01-22T14:58:16.735382Z",
+                "created": "2025-06-05T15:52:52.172640Z",
+                "last_modified": "2025-06-05T15:52:52.172640Z",
                 "quantity": {
                   "id": "15f6c576-239b-43f6-89e5-cfa2a4c39063",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -5417,14 +5845,29 @@
                       "d32f3e79-f660-42ac-b130-c8ecc1e6a62c::2035",
                       "d32f3e79-f660-42ac-b130-c8ecc1e6a62c::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.159624Z",
+                  "last_modified": "2025-06-05T16:07:21.121778Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "5f1479e4-4ea7-4c8c-851e-d3690ef77521",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "5f1479e4-4ea7-4c8c-851e-d3690ef77521"
               },
               {
                 "id": "6bb4e900-ff17-4a4e-b66e-c26bb2fb1d7b",
-                "created": "2026-01-22T14:58:16.735393Z",
-                "last_modified": "2026-01-22T14:58:16.735396Z",
+                "created": "2025-06-05T15:52:52.310208Z",
+                "last_modified": "2025-06-05T15:52:52.310208Z",
                 "quantity": {
                   "id": "21ec15ee-55ee-4642-b4e2-d610a46ca973",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -5636,14 +6079,29 @@
                       "cdd8183f-a01b-445a-a25e-022e8c31bc5a::2035",
                       "cdd8183f-a01b-445a-a25e-022e8c31bc5a::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.299422Z",
+                  "last_modified": "2025-06-05T16:07:21.171098Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "ee3bef9c-8bd5-4545-9797-caa2f2e771b2",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "ee3bef9c-8bd5-4545-9797-caa2f2e771b2"
               },
               {
                 "id": "6c98025f-22db-440c-8d70-9456a3e3a75f",
-                "created": "2026-01-22T14:58:16.735406Z",
-                "last_modified": "2026-01-22T14:58:16.735410Z",
+                "created": "2025-06-05T15:52:52.343546Z",
+                "last_modified": "2025-06-05T15:52:52.343546Z",
                 "quantity": {
                   "id": "a0dde247-5715-47d8-8faa-e34cb379f006",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -5855,14 +6313,29 @@
                       "1ecb542d-1ca7-4cf6-9939-c3340ffbe64c::2035",
                       "1ecb542d-1ca7-4cf6-9939-c3340ffbe64c::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.333636Z",
+                  "last_modified": "2025-06-05T16:07:21.183603Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "aa2a3fac-dcba-411a-8062-5704407cd31b",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "aa2a3fac-dcba-411a-8062-5704407cd31b"
               },
               {
                 "id": "91d75699-3220-46ad-ac04-5c039de35af1",
-                "created": "2026-01-22T14:58:16.735420Z",
-                "last_modified": "2026-01-22T14:58:16.735424Z",
+                "created": "2025-06-05T15:52:52.239100Z",
+                "last_modified": "2025-06-05T15:52:52.239100Z",
                 "quantity": {
                   "id": "5a6235cf-13b8-4565-afcf-920bfaa624dd",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -6074,14 +6547,29 @@
                       "366dc3e2-f19d-44ef-91b4-4a7b43d64154::2035",
                       "366dc3e2-f19d-44ef-91b4-4a7b43d64154::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.229263Z",
+                  "last_modified": "2025-06-05T16:07:21.146833Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "ec4e4ae9-903d-40c7-a1e5-226b211eece7",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "ec4e4ae9-903d-40c7-a1e5-226b211eece7"
               },
               {
                 "id": "b1160d2e-702e-4bf7-8d06-33ef8fda1af4",
-                "created": "2026-01-22T14:58:16.735434Z",
-                "last_modified": "2026-01-22T14:58:16.735437Z",
+                "created": "2025-06-05T15:52:52.205396Z",
+                "last_modified": "2025-06-05T15:52:52.205396Z",
                 "quantity": {
                   "id": "f37eed7e-8d56-4fee-bcd4-b0755c009294",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -6293,14 +6781,29 @@
                       "b6fb5e8a-0675-4013-a914-828ae3babd3f::2035",
                       "b6fb5e8a-0675-4013-a914-828ae3babd3f::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.194541Z",
+                  "last_modified": "2025-06-05T16:07:21.134308Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "d15ee111-065b-44a6-ab98-915eb5bd75a1",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "d15ee111-065b-44a6-ab98-915eb5bd75a1"
               },
               {
                 "id": "ccf85dc3-c928-47ec-a165-09128c4a6209",
-                "created": "2026-01-22T14:58:16.735448Z",
-                "last_modified": "2026-01-22T14:58:16.735452Z",
+                "created": "2025-06-05T15:52:52.274233Z",
+                "last_modified": "2025-06-05T15:52:52.274233Z",
                 "quantity": {
                   "id": "5be7e3d3-b63b-4204-8e47-4d1c71c48eff",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -6512,14 +7015,29 @@
                       "56502958-3361-4f6f-bc86-036015dc4c9d::2035",
                       "56502958-3361-4f6f-bc86-036015dc4c9d::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.263191Z",
+                  "last_modified": "2025-06-05T16:07:21.158362Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "2d3d0bfc-6fb2-4012-b3df-4372951165a7",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "2d3d0bfc-6fb2-4012-b3df-4372951165a7"
               },
               {
                 "id": "d6ceb938-66d8-405f-8150-fdfbb6be431c",
-                "created": "2026-01-22T14:58:16.735462Z",
-                "last_modified": "2026-01-22T14:58:16.735465Z",
+                "created": "2025-06-05T15:52:52.452272Z",
+                "last_modified": "2025-06-05T15:52:52.452272Z",
                 "quantity": {
                   "id": "1eafe821-7457-4b4a-90c2-d808f84f27ad",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -6587,7 +7105,22 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:52:52.439510Z",
+                  "last_modified": "2025-06-05T16:07:21.218647Z",
+                  "parameter_path": [
+                    [
+                      "085e67ae-2206-418f-a16d-40f4442a7e9d",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "835e0f7a-89c3-4a3b-ad93-24da649eb177",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "835e0f7a-89c3-4a3b-ad93-24da649eb177"
               }
@@ -6601,8 +7134,8 @@
     "non_combustible_emissions": [
       {
         "id": "35fa1db7-8fac-4a68-9998-40c1bb8b84c7",
-        "created": "2026-01-22T14:58:16.600403Z",
-        "last_modified": "2026-01-22T14:58:16.600406Z",
+        "created": "2025-06-05T15:52:51.916166Z",
+        "last_modified": "2025-06-05T15:52:51.916166Z",
         "flow_id": "c666c37c-5e84-421f-b4f7-e46b58a759c2",
         "quantity": {
           "id": "ba42fa8c-681a-4fa5-9154-332b43b281dc",
@@ -6815,13 +7348,28 @@
               "956bf283-91cf-4445-af50-2c136ff704d9::2035",
               "956bf283-91cf-4445-af50-2c136ff704d9::2050"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:51.906138Z",
+          "last_modified": "2025-06-05T16:07:21.027142Z",
+          "parameter_path": [
+            [
+              "29b61a37-33f5-4fa0-a71d-4fe295fbe573",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "Non-Combustion Emission",
+              "c666c37c-5e84-421f-b4f7-e46b58a759c2",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "a3b531b9-248d-4a86-ab54-1a1eb3fb73ac",
-        "created": "2026-01-22T14:58:16.603003Z",
-        "last_modified": "2026-01-22T14:58:16.603008Z",
+        "created": "2025-06-05T15:52:51.884563Z",
+        "last_modified": "2025-06-05T15:52:51.884563Z",
         "flow_id": "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
         "quantity": {
           "id": "ce03732a-6cf6-4612-8144-a997ae5a92dc",
@@ -7034,13 +7582,28 @@
               "657720e0-32a1-4609-9d16-1985d5865de1::2035",
               "657720e0-32a1-4609-9d16-1985d5865de1::2050"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:51.871747Z",
+          "last_modified": "2025-06-05T16:07:21.013113Z",
+          "parameter_path": [
+            [
+              "29b61a37-33f5-4fa0-a71d-4fe295fbe573",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "bbbd1a3f-bc4a-47bc-b5b1-fb27737fb5f5",
-        "created": "2026-01-22T14:58:16.603020Z",
-        "last_modified": "2026-01-22T14:58:16.603024Z",
+        "created": "2025-06-05T15:52:51.949230Z",
+        "last_modified": "2025-06-05T15:52:51.949230Z",
         "flow_id": "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
         "quantity": {
           "id": "d02659d4-efd7-4e97-acdf-b16106ca7d8c",
@@ -7326,13 +7889,28 @@
               "ba42fa8c-681a-4fa5-9154-332b43b281dc::2050",
               "bc80cc61-897d-4984-8fc3-821dd6b5ff69::0"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:51.939714Z",
+          "last_modified": "2025-06-05T16:07:21.041167Z",
+          "parameter_path": [
+            [
+              "29b61a37-33f5-4fa0-a71d-4fe295fbe573",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "Non-Combustion Emission",
+              "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "dc8653e0-bca6-4f0a-9a1d-6afd1db37482",
-        "created": "2026-01-22T14:58:16.603034Z",
-        "last_modified": "2026-01-22T14:58:16.603038Z",
+        "created": "2025-06-05T15:52:51.983342Z",
+        "last_modified": "2025-06-05T15:52:51.983342Z",
         "flow_id": "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
         "quantity": {
           "id": "3bc84812-bd91-47b8-b358-52c4977508d9",
@@ -7618,13 +8196,28 @@
               "ba42fa8c-681a-4fa5-9154-332b43b281dc::2035",
               "ba42fa8c-681a-4fa5-9154-332b43b281dc::2050"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:51.972900Z",
+          "last_modified": "2025-06-05T16:07:21.054172Z",
+          "parameter_path": [
+            [
+              "29b61a37-33f5-4fa0-a71d-4fe295fbe573",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "fbd774f5-fda2-4800-951d-2484f0de6c96",
-        "created": "2026-01-22T14:58:16.603048Z",
-        "last_modified": "2026-01-22T14:58:16.603052Z",
+        "created": "2025-06-05T15:52:51.845670Z",
+        "last_modified": "2025-06-05T15:52:51.845670Z",
         "flow_id": "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
         "quantity": {
           "id": "e07a9bcc-6589-4a81-8494-644778a1fa83",
@@ -7837,7 +8430,22 @@
               "d5db3f2f-f094-4282-8430-fa68250c8427::2035",
               "d5db3f2f-f094-4282-8430-fa68250c8427::2050"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:51.833105Z",
+          "last_modified": "2025-06-05T16:07:20.999621Z",
+          "parameter_path": [
+            [
+              "29b61a37-33f5-4fa0-a71d-4fe295fbe573",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       }
     ],
@@ -7874,7 +8482,11 @@
             }
           },
           "parameters_used": []
-        }
+        },
+        "created": "2025-10-23T22:56:27.349943Z",
+        "last_modified": "2025-10-23T22:56:27.349943Z",
+        "parameter_path": [],
+        "parameter_attr_name": ""
       }
     },
     "urban_share": {
@@ -7902,7 +8514,17 @@
         "parameters_used": [
           "1adf43db-e0f1-42ad-87ea-33de4c0896d2::0"
         ]
-      }
+      },
+      "created": "2025-06-05T15:55:10.301461Z",
+      "last_modified": "2025-06-05T16:18:13.100993Z",
+      "parameter_path": [
+        [
+          "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+          "Vehicle",
+          "vehicles"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "payload": null,
     "lifetime_vmt": {
@@ -7924,7 +8546,17 @@
           }
         },
         "parameters_used": []
-      }
+      },
+      "created": "2025-06-05T15:55:10.313474Z",
+      "last_modified": "2025-06-05T16:08:15.771983Z",
+      "parameter_path": [
+        [
+          "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+          "Vehicle",
+          "vehicles"
+        ]
+      ],
+      "parameter_attr_name": "lifetime_vmt"
     },
     "electric_range": null,
     "passengers": null,
@@ -7949,20 +8581,30 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:55:10.512579Z",
+          "last_modified": "2025-06-05T16:18:13.109506Z",
+          "parameter_path": [
+            [
+              "Vehicle Mode",
+              "ceebeb62-8e82-4ab8-95ab-1b517775161b",
+              "vehicle_modes"
+            ]
+          ],
+          "parameter_attr_name": "miles_of_travel_shared"
         },
         "powerplants": [
           {
             "id": "62c5503e-b927-463c-9361-0e87a042a29e",
-            "created": "2026-01-22T14:58:16.690479Z",
-            "last_modified": "2026-01-22T14:58:16.690482Z",
+            "created": "2025-06-05T15:55:10.541606Z",
+            "last_modified": "2025-06-05T15:55:35.623561Z",
             "is_template": false,
             "is_draft": false,
             "fuels": [
               {
                 "id": "5f04edf8-916c-426e-a2fa-fe6db3fd0c74",
-                "created": "2026-01-22T14:58:16.703527Z",
-                "last_modified": "2026-01-22T14:58:16.703530Z",
+                "created": "2025-06-05T15:55:10.574363Z",
+                "last_modified": "2025-06-05T15:55:10.574363Z",
                 "consumption": {
                   "id": "d3b81d9f-d8e2-4087-8127-9ad2ad9d1607",
                   "unit_id": "335190aa-5f0f-43ae-b94f-61e0fff08900",
@@ -8174,7 +8816,22 @@
                       "494f1571-4663-46a3-b62c-3d94e5385eac::2035",
                       "494f1571-4663-46a3-b62c-3d94e5385eac::2050"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.561187Z",
+                  "last_modified": "2025-06-05T16:08:15.865828Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa",
+                      "Fuel",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "consumption"
                 },
                 "refueling_or_charging_efficiency": {
                   "id": "ba31c7a5-2811-422b-8be7-d918d2360464",
@@ -8189,7 +8846,22 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.548323Z",
+                  "last_modified": "2025-06-05T16:18:13.118014Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "2fc804c4-16a1-4bcc-95d6-2b914a7b2aaa",
+                      "Fuel",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "refueling_or_charging_efficiency"
                 },
                 "source_mix_id": null,
                 "source_pathway_id": "a0964777-1e93-430a-8a13-b0cae7963529",
@@ -8206,8 +8878,8 @@
             "emissions": [
               {
                 "id": "1ea20e8e-e866-497c-b8e1-d2aa558641e6",
-                "created": "2026-01-22T14:58:16.735476Z",
-                "last_modified": "2026-01-22T14:58:16.735479Z",
+                "created": "2025-06-05T15:55:10.822306Z",
+                "last_modified": "2025-06-05T15:55:10.822306Z",
                 "quantity": {
                   "id": "263adb12-24f3-4bf9-b1dc-c00a2d3c554a",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -8351,14 +9023,29 @@
                       "a6aeab1b-050b-4c3a-8f6b-0193b26464a0::2015",
                       "a6aeab1b-050b-4c3a-8f6b-0193b26464a0::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.809790Z",
+                  "last_modified": "2025-06-05T16:08:15.951312Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "ee3bef9c-8bd5-4545-9797-caa2f2e771b2",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "ee3bef9c-8bd5-4545-9797-caa2f2e771b2"
               },
               {
                 "id": "4370952c-ae43-44b3-abbf-b3a57b058678",
-                "created": "2026-01-22T14:58:16.735490Z",
-                "last_modified": "2026-01-22T14:58:16.735493Z",
+                "created": "2025-06-05T15:55:10.756389Z",
+                "last_modified": "2025-06-05T15:55:10.756389Z",
                 "quantity": {
                   "id": "6c9a1e3f-44e6-4235-b992-97eebf79f32b",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -8502,14 +9189,29 @@
                       "389dfdce-7ef7-467e-ab43-943930287449::2015",
                       "389dfdce-7ef7-467e-ab43-943930287449::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.734117Z",
+                  "last_modified": "2025-06-05T16:08:15.926370Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "ec4e4ae9-903d-40c7-a1e5-226b211eece7",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "ec4e4ae9-903d-40c7-a1e5-226b211eece7"
               },
               {
                 "id": "5dc02d4b-d872-47f0-aaa9-32f046508cc5",
-                "created": "2026-01-22T14:58:16.735504Z",
-                "last_modified": "2026-01-22T14:58:16.735508Z",
+                "created": "2025-06-05T15:55:10.618278Z",
+                "last_modified": "2025-06-05T15:55:10.618278Z",
                 "quantity": {
                   "id": "a3608b40-cb70-4432-99ac-6661f500f9f9",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -8653,14 +9355,29 @@
                       "d62479fb-e47f-4a64-b9e0-33ca6118e2dc::2015",
                       "d62479fb-e47f-4a64-b9e0-33ca6118e2dc::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.605765Z",
+                  "last_modified": "2025-06-05T16:08:15.878378Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "28cf6f42-a329-4d0c-afd9-48ef12b9cf73",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "28cf6f42-a329-4d0c-afd9-48ef12b9cf73"
               },
               {
                 "id": "6c7d83b9-6c85-4629-ab55-f631ddd83021",
-                "created": "2026-01-22T14:58:16.735518Z",
-                "last_modified": "2026-01-22T14:58:16.735522Z",
+                "created": "2025-06-05T15:55:10.789911Z",
+                "last_modified": "2025-06-05T15:55:10.789911Z",
                 "quantity": {
                   "id": "6af21f06-4b45-4be5-8154-34f1291e6d2e",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -8804,14 +9521,29 @@
                       "496acfff-97d9-41a7-9536-72affffe83c7::2015",
                       "496acfff-97d9-41a7-9536-72affffe83c7::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.778401Z",
+                  "last_modified": "2025-06-05T16:08:15.938796Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "2d3d0bfc-6fb2-4012-b3df-4372951165a7",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "2d3d0bfc-6fb2-4012-b3df-4372951165a7"
               },
               {
                 "id": "7e277d4a-a75a-48af-8cbb-af9af4813546",
-                "created": "2026-01-22T14:58:16.735532Z",
-                "last_modified": "2026-01-22T14:58:16.735536Z",
+                "created": "2025-06-05T15:55:10.920038Z",
+                "last_modified": "2025-06-05T15:55:10.920038Z",
                 "quantity": {
                   "id": "66ee65b9-a695-4dde-9981-43bed8a31dda",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -8859,14 +9591,29 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.909448Z",
+                  "last_modified": "2025-06-05T16:08:15.985824Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "7689c69d-5fa4-4bba-995e-1c5446994c41",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "7689c69d-5fa4-4bba-995e-1c5446994c41"
               },
               {
                 "id": "b5b6efe3-6e9f-4768-8206-ab76d5419db5",
-                "created": "2026-01-22T14:58:16.735546Z",
-                "last_modified": "2026-01-22T14:58:16.735550Z",
+                "created": "2025-06-05T15:55:10.951280Z",
+                "last_modified": "2025-06-05T15:55:10.951280Z",
                 "quantity": {
                   "id": "fcf1f182-9c24-43c4-9d68-b560f99619d4",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -8914,14 +9661,29 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.940780Z",
+                  "last_modified": "2025-06-05T16:08:15.998372Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "835e0f7a-89c3-4a3b-ad93-24da649eb177",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "835e0f7a-89c3-4a3b-ad93-24da649eb177"
               },
               {
                 "id": "c61d1a15-6be6-4763-85d5-6cba6ba53b42",
-                "created": "2026-01-22T14:58:16.735560Z",
-                "last_modified": "2026-01-22T14:58:16.735564Z",
+                "created": "2025-06-05T15:55:10.885775Z",
+                "last_modified": "2025-06-05T15:55:10.885775Z",
                 "quantity": {
                   "id": "57a17eca-f932-4ee6-88af-b2ed2e6601ac",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -9065,14 +9827,29 @@
                       "4245efd5-4439-45ff-a1f4-6f425e75613f::2015",
                       "4245efd5-4439-45ff-a1f4-6f425e75613f::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.874358Z",
+                  "last_modified": "2025-06-05T16:08:15.975012Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "83108355-6ac7-4125-bd11-11062fabdec3",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "83108355-6ac7-4125-bd11-11062fabdec3"
               },
               {
                 "id": "ca22326a-860c-4f33-8df0-31c10c4d50dd",
-                "created": "2026-01-22T14:58:16.735574Z",
-                "last_modified": "2026-01-22T14:58:16.735578Z",
+                "created": "2025-06-05T15:55:10.854588Z",
+                "last_modified": "2025-06-05T15:55:10.854588Z",
                 "quantity": {
                   "id": "115ea064-13e2-4b10-8884-3df788e3de8f",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -9216,14 +9993,29 @@
                       "1bd5bcbd-5ba6-4351-8ef9-3c73aeaf75e5::2015",
                       "1bd5bcbd-5ba6-4351-8ef9-3c73aeaf75e5::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.843571Z",
+                  "last_modified": "2025-06-05T16:08:15.962503Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "aa2a3fac-dcba-411a-8062-5704407cd31b",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "aa2a3fac-dcba-411a-8062-5704407cd31b"
               },
               {
                 "id": "f11bfcfd-c2d1-4720-9583-8ac66b62537a",
-                "created": "2026-01-22T14:58:16.735588Z",
-                "last_modified": "2026-01-22T14:58:16.735591Z",
+                "created": "2025-06-05T15:55:10.714579Z",
+                "last_modified": "2025-06-05T15:55:10.714579Z",
                 "quantity": {
                   "id": "6149f8b6-451d-4051-8907-8e74abf5241d",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -9367,14 +10159,29 @@
                       "80d3cb85-6795-440c-a3c3-b61897ab1221::2015",
                       "80d3cb85-6795-440c-a3c3-b61897ab1221::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.703507Z",
+                  "last_modified": "2025-06-05T16:08:15.914870Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "d15ee111-065b-44a6-ab98-915eb5bd75a1",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "d15ee111-065b-44a6-ab98-915eb5bd75a1"
               },
               {
                 "id": "f148e1bf-a876-48d0-9c62-7279287a3f67",
-                "created": "2026-01-22T14:58:16.735602Z",
-                "last_modified": "2026-01-22T14:58:16.735605Z",
+                "created": "2025-06-05T15:55:10.681325Z",
+                "last_modified": "2025-06-05T15:55:10.681325Z",
                 "quantity": {
                   "id": "eaf26b57-39ee-4a33-a79d-d705beaef8f1",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -9518,14 +10325,29 @@
                       "9305a605-885d-47bc-8b75-02511b6f5d03::2015",
                       "9305a605-885d-47bc-8b75-02511b6f5d03::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.670808Z",
+                  "last_modified": "2025-06-05T16:08:15.902162Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "5f1479e4-4ea7-4c8c-851e-d3690ef77521",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "5f1479e4-4ea7-4c8c-851e-d3690ef77521"
               },
               {
                 "id": "fbaa6f92-5b24-4776-b584-e03b05b11b03",
-                "created": "2026-01-22T14:58:16.735616Z",
-                "last_modified": "2026-01-22T14:58:16.735619Z",
+                "created": "2025-06-05T15:55:10.649026Z",
+                "last_modified": "2025-06-05T15:55:10.649026Z",
                 "quantity": {
                   "id": "75fb1141-a9d8-4dcf-b75a-e90db87b3646",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -9669,7 +10491,22 @@
                       "b357e8fb-5ae2-4fc8-97ee-8b048c52c354::2015",
                       "b357e8fb-5ae2-4fc8-97ee-8b048c52c354::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:55:10.638428Z",
+                  "last_modified": "2025-06-05T16:08:15.890612Z",
+                  "parameter_path": [
+                    [
+                      "62c5503e-b927-463c-9361-0e87a042a29e",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "dd54ff20-bb17-4b60-82ee-884721b7beac",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "dd54ff20-bb17-4b60-82ee-884721b7beac"
               }
@@ -9682,14 +10519,14 @@
     "vehicle_materials_group": [
       {
         "id": "3a21918b-b529-445a-96d9-a7fd439c821f",
-        "created": "2026-01-22T14:58:16.631076Z",
-        "last_modified": "2026-01-22T14:58:16.631079Z",
+        "created": "2025-06-05T15:55:10.974015Z",
+        "last_modified": "2025-06-05T15:55:10.974015Z",
         "type": "Components",
         "vehicle_materials": [
           {
             "id": "1ba37ef1-9be7-4d0f-9362-ff74df283b28",
-            "created": "2026-01-22T14:58:16.638299Z",
-            "last_modified": "2026-01-22T14:58:16.638302Z",
+            "created": "2025-06-05T15:55:11.318312Z",
+            "last_modified": "2025-06-05T15:55:11.318312Z",
             "replacement_mass": {
               "id": "6d94cb9f-080f-4e7b-a961-a8388f396468",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -9703,7 +10540,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.303610Z",
+              "last_modified": "2025-06-05T16:08:16.135171Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "412631a3-ae8b-4d50-9fee-0eb83523c898",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "82ae9a2d-26d8-4305-b6cc-0e96cc73b4f5",
@@ -9718,7 +10575,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.292593Z",
+              "last_modified": "2025-06-05T16:18:13.206978Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "412631a3-ae8b-4d50-9fee-0eb83523c898",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "cab5f1e3-f477-416c-aa02-500e56c87d43",
@@ -9733,7 +10610,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.283583Z",
+              "last_modified": "2025-06-05T16:18:13.197975Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "412631a3-ae8b-4d50-9fee-0eb83523c898",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "d13826f4-ed8c-4b63-8c1b-6f8cd6c2bac2",
@@ -9747,8 +10644,8 @@
           },
           {
             "id": "3c70c97c-3a4f-49af-8e30-32ad1e7c0613",
-            "created": "2026-01-22T14:58:16.638319Z",
-            "last_modified": "2026-01-22T14:58:16.638322Z",
+            "created": "2025-06-05T15:55:11.243537Z",
+            "last_modified": "2025-06-05T15:55:11.243537Z",
             "replacement_mass": {
               "id": "58353656-cce6-441c-98fb-d06da73b5675",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -9762,7 +10659,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.231012Z",
+              "last_modified": "2025-06-05T16:08:16.108198Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "1214dea1-7e50-44d5-a8e4-c5e8a8b973e8",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "98a9b540-2d15-4f35-a68b-d1c4eb8a3385",
@@ -9777,7 +10694,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.219577Z",
+              "last_modified": "2025-06-05T16:18:13.188194Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "1214dea1-7e50-44d5-a8e4-c5e8a8b973e8",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "93f2d0a4-9508-436e-a11b-c03b6e6ce530",
@@ -9792,7 +10729,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.208514Z",
+              "last_modified": "2025-06-05T16:18:13.180193Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "1214dea1-7e50-44d5-a8e4-c5e8a8b973e8",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "ce7cbe76-7b1a-4e0f-86bd-bb4c8acf0986",
@@ -9806,8 +10763,8 @@
           },
           {
             "id": "73772d0a-649d-4cc4-8c23-19c5914575ff",
-            "created": "2026-01-22T14:58:16.638338Z",
-            "last_modified": "2026-01-22T14:58:16.638342Z",
+            "created": "2025-06-05T15:55:11.170468Z",
+            "last_modified": "2025-06-05T15:55:11.170468Z",
             "replacement_mass": {
               "id": "fdf91e5c-0950-40e6-8fd1-b9bd4dfbf635",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -9821,7 +10778,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.153959Z",
+              "last_modified": "2025-06-05T16:08:16.080345Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a4f44dac-7192-425e-98dd-75e3ec3755f8",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "6975f428-52ee-42a9-857f-6a2930fbb5e9",
@@ -9836,7 +10813,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.141945Z",
+              "last_modified": "2025-06-05T16:18:13.170990Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a4f44dac-7192-425e-98dd-75e3ec3755f8",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "e03118c5-7798-40e2-b653-b9c9ed8958c7",
@@ -9851,7 +10848,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.129907Z",
+              "last_modified": "2025-06-05T16:18:13.161951Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a4f44dac-7192-425e-98dd-75e3ec3755f8",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "76272108-94c8-4fcc-9d54-b0c4ca88e2ac",
@@ -9865,8 +10882,8 @@
           },
           {
             "id": "a4280ebc-a56f-45cd-a230-753882538300",
-            "created": "2026-01-22T14:58:16.638359Z",
-            "last_modified": "2026-01-22T14:58:16.638362Z",
+            "created": "2025-06-05T15:55:11.017410Z",
+            "last_modified": "2025-06-05T15:55:11.017410Z",
             "replacement_mass": {
               "id": "d9b66ab7-b488-4623-8a0f-4b22ee3054d5",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -9880,7 +10897,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.004899Z",
+              "last_modified": "2025-06-05T16:08:16.025567Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "11b36612-fa59-426e-b229-8b5acdffff8f",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "d9e5b981-93fe-4b3d-aa68-679f203633c1",
@@ -9895,7 +10932,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:10.991863Z",
+              "last_modified": "2025-06-05T16:18:13.135959Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "11b36612-fa59-426e-b229-8b5acdffff8f",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "1031c1fc-90e7-4697-9d62-ec7639d30d15",
@@ -9910,7 +10967,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:10.980016Z",
+              "last_modified": "2025-06-05T16:18:13.126444Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "11b36612-fa59-426e-b229-8b5acdffff8f",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "f46d9a43-fb3e-4393-9198-95c1ceaf4c04",
@@ -9924,8 +11001,8 @@
           },
           {
             "id": "abe17676-a21a-49b3-8b88-9c1f543d9c01",
-            "created": "2026-01-22T14:58:16.638379Z",
-            "last_modified": "2026-01-22T14:58:16.638383Z",
+            "created": "2025-06-05T15:55:11.095128Z",
+            "last_modified": "2025-06-05T15:55:11.095128Z",
             "replacement_mass": {
               "id": "249ebcc2-be0a-4031-af06-e898da2874ed",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -9939,7 +11016,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.082398Z",
+              "last_modified": "2025-06-05T16:08:16.052563Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "05411d0c-2bed-45b1-9eaf-88815553e4ab",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "a64b9303-9c93-4a89-be12-97b8c18e14fd",
@@ -9954,7 +11051,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.070501Z",
+              "last_modified": "2025-06-05T16:18:13.153617Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "05411d0c-2bed-45b1-9eaf-88815553e4ab",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "c84c8dfc-3c9f-4d20-8d88-ce0c41203123",
@@ -9969,7 +11086,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.060974Z",
+              "last_modified": "2025-06-05T16:18:13.144262Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "3a21918b-b529-445a-96d9-a7fd439c821f",
+                  "Material Category",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "05411d0c-2bed-45b1-9eaf-88815553e4ab",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "87c42598-2236-48cd-9a59-e9fbbbef57b7",
@@ -9985,14 +11122,14 @@
       },
       {
         "id": "b6a6d064-d365-4629-9eb5-6b515aec2a5c",
-        "created": "2026-01-22T14:58:16.631087Z",
-        "last_modified": "2026-01-22T14:58:16.631090Z",
+        "created": "2025-06-05T15:55:11.356099Z",
+        "last_modified": "2025-06-05T15:55:11.356099Z",
         "type": "ADR",
         "vehicle_materials": [
           {
             "id": "1b66d6b6-cdb8-44f2-975e-78a9b4394486",
-            "created": "2026-01-22T14:58:16.638399Z",
-            "last_modified": "2026-01-22T14:58:16.638403Z",
+            "created": "2025-06-05T15:55:11.395354Z",
+            "last_modified": "2025-06-05T15:55:11.395354Z",
             "replacement_mass": {
               "id": "da4b2f08-cabe-41a6-9ae1-a1df1236a486",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10006,7 +11143,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.383788Z",
+              "last_modified": "2025-06-05T16:08:16.161989Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "b6a6d064-d365-4629-9eb5-6b515aec2a5c",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "2d48fe09-2fac-4b59-96a0-ac8e58f74474",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "2010c44d-0325-4fe8-a89e-0a060c42e347",
@@ -10021,7 +11178,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.371579Z",
+              "last_modified": "2025-06-05T16:18:13.223809Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "b6a6d064-d365-4629-9eb5-6b515aec2a5c",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "2d48fe09-2fac-4b59-96a0-ac8e58f74474",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "f0a75d57-b5f3-4b03-a609-c70ba0cfbf51",
@@ -10036,7 +11213,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.361099Z",
+              "last_modified": "2025-06-05T16:18:13.214999Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "b6a6d064-d365-4629-9eb5-6b515aec2a5c",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "2d48fe09-2fac-4b59-96a0-ac8e58f74474",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "d3b59f7b-11f7-44e2-a025-7bb3f0885c1d",
@@ -10052,14 +11249,14 @@
       },
       {
         "id": "ed84bb61-6f18-4647-b680-dfe230065e92",
-        "created": "2026-01-22T14:58:16.631097Z",
-        "last_modified": "2026-01-22T14:58:16.631101Z",
+        "created": "2025-06-05T15:55:11.430445Z",
+        "last_modified": "2025-06-05T15:55:11.430445Z",
         "type": "Fluids",
         "vehicle_materials": [
           {
             "id": "27b42057-c39d-4bff-aa12-7ffd6a219a78",
-            "created": "2026-01-22T14:58:16.638419Z",
-            "last_modified": "2026-01-22T14:58:16.638423Z",
+            "created": "2025-06-05T15:55:11.683408Z",
+            "last_modified": "2025-06-05T15:55:11.683408Z",
             "replacement_mass": {
               "id": "6b679d9d-53a2-4f9a-98bc-cf99cddf110b",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10073,7 +11270,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.672364Z",
+              "last_modified": "2025-06-05T16:08:16.271916Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "80fd44df-c1f2-4443-a9d2-2986a10c347b",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "bf69fc0e-0602-4a0a-a801-aaf02e801c4e",
@@ -10088,7 +11305,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.661462Z",
+              "last_modified": "2025-06-05T16:18:13.292715Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "80fd44df-c1f2-4443-a9d2-2986a10c347b",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "fbf5d5d7-76ea-415e-9bb1-85eb3f19c3ee",
@@ -10103,7 +11340,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.651449Z",
+              "last_modified": "2025-06-05T16:18:13.284209Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "80fd44df-c1f2-4443-a9d2-2986a10c347b",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "1d83b752-0d88-4f14-9db0-e97269f32d59",
@@ -10117,8 +11374,8 @@
           },
           {
             "id": "3a14feb3-acca-4efa-8d9d-641313fc4fc1",
-            "created": "2026-01-22T14:58:16.638439Z",
-            "last_modified": "2026-01-22T14:58:16.638442Z",
+            "created": "2025-06-05T15:55:11.897407Z",
+            "last_modified": "2025-06-05T15:55:11.897407Z",
             "replacement_mass": {
               "id": "34f85c74-e883-4975-9afe-83a18365a727",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10132,7 +11389,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.884877Z",
+              "last_modified": "2025-06-05T16:08:16.350304Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "afa67d40-6d07-4b97-bc25-1827bbc26193",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "5040c10c-cebe-4c69-a4a6-33f2a6242613",
@@ -10147,7 +11424,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.874348Z",
+              "last_modified": "2025-06-05T16:18:13.346337Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "afa67d40-6d07-4b97-bc25-1827bbc26193",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "5d04d275-7a8e-4884-97e7-5e6218ceea02",
@@ -10162,7 +11459,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.863105Z",
+              "last_modified": "2025-06-05T16:18:13.336378Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "afa67d40-6d07-4b97-bc25-1827bbc26193",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "df27dafb-91b2-475e-b89b-e328c43e436b",
@@ -10176,8 +11493,8 @@
           },
           {
             "id": "591617db-7d61-477c-bf5a-38fbf9e166f4",
-            "created": "2026-01-22T14:58:16.638458Z",
-            "last_modified": "2026-01-22T14:58:16.638462Z",
+            "created": "2025-06-05T15:55:11.471293Z",
+            "last_modified": "2025-06-05T15:55:11.471293Z",
             "replacement_mass": {
               "id": "c4840440-ee83-49eb-aa2b-5b7904de43f0",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10191,7 +11508,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.459438Z",
+              "last_modified": "2025-06-05T16:08:16.194300Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "13545cc3-262f-49d8-a92b-81c78e6f5dba",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "e42b3043-599a-44f3-b26f-4c4a48ef7051",
@@ -10206,7 +11543,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.450432Z",
+              "last_modified": "2025-06-05T16:18:13.240994Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "13545cc3-262f-49d8-a92b-81c78e6f5dba",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "52ed18de-216c-43e6-b30d-8f46711c3b10",
@@ -10221,7 +11578,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.437973Z",
+              "last_modified": "2025-06-05T16:18:13.231490Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "13545cc3-262f-49d8-a92b-81c78e6f5dba",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "0e27a84a-c856-4ee6-970f-ee4d89ee60c5",
@@ -10235,8 +11612,8 @@
           },
           {
             "id": "65ab663e-34d6-4126-b0ee-b570e6d03911",
-            "created": "2026-01-22T14:58:16.638478Z",
-            "last_modified": "2026-01-22T14:58:16.638482Z",
+            "created": "2025-06-05T15:55:11.544741Z",
+            "last_modified": "2025-06-05T15:55:11.544741Z",
             "replacement_mass": {
               "id": "cd3063b3-3d35-4d55-b5ff-cb34d0a8a0e3",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10250,7 +11627,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.533216Z",
+              "last_modified": "2025-06-05T16:08:16.220643Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "c0749c12-5375-49eb-a649-0370077724b1",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "da1727ba-a2f9-4342-b05d-6f31fe5bcbf3",
@@ -10265,7 +11662,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.522504Z",
+              "last_modified": "2025-06-05T16:18:13.259044Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "c0749c12-5375-49eb-a649-0370077724b1",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "e0cef7ab-2587-4224-a73c-e40d3cf3bc43",
@@ -10280,7 +11697,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.511990Z",
+              "last_modified": "2025-06-05T16:18:13.250045Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "c0749c12-5375-49eb-a649-0370077724b1",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "1277ceeb-7c70-4651-bff2-9af7efefd3a2",
@@ -10294,8 +11731,8 @@
           },
           {
             "id": "8c8efd80-1627-420b-8554-c5d617b9c897",
-            "created": "2026-01-22T14:58:16.638498Z",
-            "last_modified": "2026-01-22T14:58:16.638501Z",
+            "created": "2025-06-05T15:55:11.752122Z",
+            "last_modified": "2025-06-05T15:55:11.752122Z",
             "replacement_mass": {
               "id": "676b09b5-634b-4490-9b87-edf68967064e",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10309,7 +11746,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.741298Z",
+              "last_modified": "2025-06-05T16:08:16.297897Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "214e95ab-f46e-475c-8be8-3fd32ae16106",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "743e53bc-2f0b-4d4a-8ebb-b29fc43a60c7",
@@ -10324,7 +11781,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.731554Z",
+              "last_modified": "2025-06-05T16:18:13.310682Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "214e95ab-f46e-475c-8be8-3fd32ae16106",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "7dab7539-74c5-4a27-89b2-44d79012f253",
@@ -10339,7 +11816,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.720791Z",
+              "last_modified": "2025-06-05T16:18:13.301820Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "214e95ab-f46e-475c-8be8-3fd32ae16106",
+                  "Material",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": "e59261be-d037-4a7a-a75c-f8db3d321e11",
             "source_pathway_id": null,
@@ -10353,8 +11850,8 @@
           },
           {
             "id": "a33be970-08a6-4b3e-89b8-bbc89873700e",
-            "created": "2026-01-22T14:58:16.638517Z",
-            "last_modified": "2026-01-22T14:58:16.638521Z",
+            "created": "2025-06-05T15:55:11.825089Z",
+            "last_modified": "2025-06-05T15:55:11.825089Z",
             "replacement_mass": {
               "id": "92aa390f-d9bf-409e-b40f-35d9b05ee0a0",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10368,7 +11865,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.812499Z",
+              "last_modified": "2025-06-05T16:08:16.324609Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a884ee7e-2bac-4ee4-9fc4-d660c072cce5",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "3381acc7-76c0-4fa6-a163-a987e3b974fe",
@@ -10383,7 +11900,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.801993Z",
+              "last_modified": "2025-06-05T16:18:13.328584Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a884ee7e-2bac-4ee4-9fc4-d660c072cce5",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "cc317ef2-b5ce-4a77-bac8-2e871d51086e",
@@ -10398,7 +11935,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.787344Z",
+              "last_modified": "2025-06-05T16:18:13.319651Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a884ee7e-2bac-4ee4-9fc4-d660c072cce5",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "1198d631-1d9b-4283-a448-9e6e64b142ac",
@@ -10412,8 +11969,8 @@
           },
           {
             "id": "e49c36e1-1d19-4c10-930d-f35361bfcc1f",
-            "created": "2026-01-22T14:58:16.638537Z",
-            "last_modified": "2026-01-22T14:58:16.638541Z",
+            "created": "2025-06-05T15:55:11.612556Z",
+            "last_modified": "2025-06-05T15:55:11.612556Z",
             "replacement_mass": {
               "id": "8bdf8de2-1f69-4088-8981-3917220db30b",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10427,7 +11984,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.601028Z",
+              "last_modified": "2025-06-05T16:08:16.246291Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a38b6d2d-f871-4c08-834a-11739cc9ac07",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "e320240b-51a5-4bd5-b46e-237470c3fc07",
@@ -10442,7 +12019,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.590528Z",
+              "last_modified": "2025-06-05T16:18:13.276211Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a38b6d2d-f871-4c08-834a-11739cc9ac07",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "e3ab55b0-c341-40c5-9160-a1b90984a7fe",
@@ -10457,7 +12054,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.579470Z",
+              "last_modified": "2025-06-05T16:18:13.267702Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "ed84bb61-6f18-4647-b680-dfe230065e92",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "a38b6d2d-f871-4c08-834a-11739cc9ac07",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "96a6aac3-5cae-42e8-a577-d8ae9ea2aa32",
@@ -10473,14 +12090,14 @@
       },
       {
         "id": "fbd426e4-e224-45ca-9ad4-ea1c9ca9968f",
-        "created": "2026-01-22T14:58:16.631108Z",
-        "last_modified": "2026-01-22T14:58:16.631112Z",
+        "created": "2025-06-05T15:55:11.931638Z",
+        "last_modified": "2025-06-05T15:55:11.931638Z",
         "type": "Battery",
         "vehicle_materials": [
           {
             "id": "0c094c8e-f901-4966-9657-d6e0882101dc",
-            "created": "2026-01-22T14:58:16.638557Z",
-            "last_modified": "2026-01-22T14:58:16.638561Z",
+            "created": "2025-06-05T15:55:11.973400Z",
+            "last_modified": "2025-06-05T15:55:11.973400Z",
             "replacement_mass": {
               "id": "03c24a7e-dfea-400b-bfd7-b2773150e105",
               "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
@@ -10494,7 +12111,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.958462Z",
+              "last_modified": "2025-06-05T16:08:16.377350Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "fbd426e4-e224-45ca-9ad4-ea1c9ca9968f",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "e468dcdc-535a-4b10-94c6-a63cb56c387d",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "replacement_mass"
             },
             "total_lifetime_replacements": {
               "id": "d13a0fba-d447-40b6-9d0c-557d5e73357a",
@@ -10509,7 +12146,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.949485Z",
+              "last_modified": "2025-06-05T16:18:13.362998Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "fbd426e4-e224-45ca-9ad4-ea1c9ca9968f",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "e468dcdc-535a-4b10-94c6-a63cb56c387d",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "total_lifetime_replacements"
             },
             "units_number": {
               "id": "4b31cff8-c83a-421c-9863-538bfbc30ee3",
@@ -10524,7 +12181,27 @@
                   }
                 },
                 "parameters_used": []
-              }
+              },
+              "created": "2025-06-05T15:55:11.938396Z",
+              "last_modified": "2025-06-05T16:18:13.354951Z",
+              "parameter_path": [
+                [
+                  "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+                  "Vehicle",
+                  "vehicles"
+                ],
+                [
+                  "Material Category",
+                  "fbd426e4-e224-45ca-9ad4-ea1c9ca9968f",
+                  "vehicle_material_groups"
+                ],
+                [
+                  "Material",
+                  "e468dcdc-535a-4b10-94c6-a63cb56c387d",
+                  "flows"
+                ]
+              ],
+              "parameter_attr_name": "units_number"
             },
             "source_mix_id": null,
             "source_pathway_id": "2cad329e-8dc7-4674-b463-fcb7aaca5fd5",
@@ -10542,8 +12219,8 @@
     "non_combustible_emissions": [
       {
         "id": "04331506-40d6-4a4a-9297-00228e9005a8",
-        "created": "2026-01-22T14:58:16.603063Z",
-        "last_modified": "2026-01-22T14:58:16.603066Z",
+        "created": "2025-06-05T15:55:10.432115Z",
+        "last_modified": "2025-06-05T15:55:10.432115Z",
         "flow_id": "c666c37c-5e84-421f-b4f7-e46b58a759c2",
         "quantity": {
           "id": "18d0f1c3-86a9-4ab6-83f2-4a830acafe96",
@@ -10688,13 +12365,28 @@
               "bc506e3d-c28c-42e3-a5d3-ae913e2a1ce9::2015",
               "bc506e3d-c28c-42e3-a5d3-ae913e2a1ce9::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:55:10.419601Z",
+          "last_modified": "2025-06-05T16:08:15.810466Z",
+          "parameter_path": [
+            [
+              "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "Non-Combustion Emission",
+              "c666c37c-5e84-421f-b4f7-e46b58a759c2",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "048d5f17-a15a-4148-bfef-ecdcf84c00df",
-        "created": "2026-01-22T14:58:16.603077Z",
-        "last_modified": "2026-01-22T14:58:16.603080Z",
+        "created": "2025-06-05T15:55:10.463248Z",
+        "last_modified": "2025-06-05T15:55:10.463248Z",
         "flow_id": "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
         "quantity": {
           "id": "30dc955e-0e54-46f9-b0cf-45b3fc957029",
@@ -10888,13 +12580,28 @@
               "bc506e3d-c28c-42e3-a5d3-ae913e2a1ce9::2020",
               "ec2316c4-f7f6-47ca-aaad-32ecd633fb26::0"
             ]
-          }
+          },
+          "created": "2025-06-05T15:55:10.452238Z",
+          "last_modified": "2025-06-05T16:08:15.822614Z",
+          "parameter_path": [
+            [
+              "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "Non-Combustion Emission",
+              "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "14b375ac-686a-433d-aead-d70f9c5eaff5",
-        "created": "2026-01-22T14:58:16.603091Z",
-        "last_modified": "2026-01-22T14:58:16.603094Z",
+        "created": "2025-06-05T15:55:10.367344Z",
+        "last_modified": "2025-06-05T15:55:10.367344Z",
         "flow_id": "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
         "quantity": {
           "id": "de350ce0-fe68-42ce-8e01-2a6836ca905d",
@@ -11039,13 +12746,28 @@
               "68baca0e-d650-487b-9605-f9cb057c484f::2015",
               "68baca0e-d650-487b-9605-f9cb057c484f::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:55:10.356834Z",
+          "last_modified": "2025-06-05T16:08:15.784020Z",
+          "parameter_path": [
+            [
+              "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "5283d60c-46b7-41cd-aedd-9c1abed43003",
-        "created": "2026-01-22T14:58:16.603105Z",
-        "last_modified": "2026-01-22T14:58:16.603108Z",
+        "created": "2025-06-05T15:55:10.399661Z",
+        "last_modified": "2025-06-05T15:55:10.399661Z",
         "flow_id": "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
         "quantity": {
           "id": "ab979e27-8673-4560-9e4e-c5ee3e5554b3",
@@ -11190,13 +12912,28 @@
               "cd43f29f-191f-4e37-9158-9d2966a28d50::2015",
               "cd43f29f-191f-4e37-9158-9d2966a28d50::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:55:10.389150Z",
+          "last_modified": "2025-06-05T16:08:15.797941Z",
+          "parameter_path": [
+            [
+              "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "7ce031d7-944f-429c-a6a3-9dc505229d52",
-        "created": "2026-01-22T14:58:16.603118Z",
-        "last_modified": "2026-01-22T14:58:16.603122Z",
+        "created": "2025-06-05T15:55:10.493200Z",
+        "last_modified": "2025-06-05T15:55:10.493200Z",
         "flow_id": "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
         "quantity": {
           "id": "992cb3a1-1ed6-4bce-afcd-36cbb02146fc",
@@ -11390,7 +13127,22 @@
               "bc506e3d-c28c-42e3-a5d3-ae913e2a1ce9::2015",
               "bc506e3d-c28c-42e3-a5d3-ae913e2a1ce9::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:55:10.481014Z",
+          "last_modified": "2025-06-05T16:08:15.835121Z",
+          "parameter_path": [
+            [
+              "531bb726-5ff8-43f9-8fbd-705e16c5d009",
+              "Vehicle",
+              "vehicles"
+            ],
+            [
+              "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       }
     ],
@@ -11427,7 +13179,11 @@
             }
           },
           "parameters_used": []
-        }
+        },
+        "created": "2025-10-23T22:56:27.350943Z",
+        "last_modified": "2025-10-23T22:56:27.350943Z",
+        "parameter_path": [],
+        "parameter_attr_name": ""
       }
     },
     "urban_share": {
@@ -11455,7 +13211,17 @@
         "parameters_used": [
           "10a375ea-21b0-48c5-953c-7ed67af67113::0"
         ]
-      }
+      },
+      "created": "2025-06-05T15:52:39.084594Z",
+      "last_modified": "2025-06-05T16:17:58.745368Z",
+      "parameter_path": [
+        [
+          "Vehicle",
+          "da9d3fe7-9fe4-4744-99a2-76897b4c0cad",
+          "vehicles"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
     },
     "payload": null,
     "lifetime_vmt": null,
@@ -11482,20 +13248,30 @@
               }
             },
             "parameters_used": []
-          }
+          },
+          "created": "2025-06-05T15:52:39.382338Z",
+          "last_modified": "2025-06-05T16:17:58.760013Z",
+          "parameter_path": [
+            [
+              "0000003b-0000-0001-0000-000000000100",
+              "Vehicle Mode",
+              "vehicle_modes"
+            ]
+          ],
+          "parameter_attr_name": "miles_of_travel_shared"
         },
         "powerplants": [
           {
             "id": "0000003b-0000-0001-0000-000000000000",
-            "created": "2026-01-22T14:58:16.690494Z",
-            "last_modified": "2026-01-22T14:58:16.690497Z",
+            "created": "2025-06-05T15:52:39.425900Z",
+            "last_modified": "2025-06-05T15:55:34.401915Z",
             "is_template": false,
             "is_draft": false,
             "fuels": [
               {
                 "id": "8e40833a-bd39-4d0c-8d43-b48d8550cc1d",
-                "created": "2026-01-22T14:58:16.703545Z",
-                "last_modified": "2026-01-22T14:58:16.703549Z",
+                "created": "2025-06-05T15:52:39.492602Z",
+                "last_modified": "2025-06-05T15:52:39.493611Z",
                 "consumption": {
                   "id": "82a6bf8d-ffc8-47bd-b780-a2e3092e23b8",
                   "unit_id": "335190aa-5f0f-43ae-b94f-61e0fff08900",
@@ -11639,7 +13415,22 @@
                       "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2015",
                       "86bf2e3e-19ff-42d8-8a87-c550dcde32b2::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.472909Z",
+                  "last_modified": "2025-06-05T16:07:17.382086Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "52227e2b-6b23-4bc4-a047-87d42d759c61",
+                      "Fuel",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "consumption"
                 },
                 "refueling_or_charging_efficiency": {
                   "id": "6cc933c3-7340-48ac-bcea-020898678e6a",
@@ -11654,7 +13445,22 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.445459Z",
+                  "last_modified": "2025-06-05T16:17:58.772132Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "52227e2b-6b23-4bc4-a047-87d42d759c61",
+                      "Fuel",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "refueling_or_charging_efficiency"
                 },
                 "source_mix_id": null,
                 "source_pathway_id": "01d6b510-1f53-4333-bf7e-c1ddecac7fb5",
@@ -11671,8 +13477,8 @@
             "emissions": [
               {
                 "id": "1d304c09-7b77-4e9a-9788-e2406b36c3a5",
-                "created": "2026-01-22T14:58:16.735629Z",
-                "last_modified": "2026-01-22T14:58:16.735633Z",
+                "created": "2025-06-05T15:52:39.861295Z",
+                "last_modified": "2025-06-05T15:52:39.861295Z",
                 "quantity": {
                   "id": "99a9c126-812b-4c2f-a503-194a029ffbf7",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -11816,14 +13622,29 @@
                       "28102298-0a3f-4214-b650-6dcef6723f58::2015",
                       "28102298-0a3f-4214-b650-6dcef6723f58::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.836831Z",
+                  "last_modified": "2025-06-05T16:07:17.472221Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "ee3bef9c-8bd5-4545-9797-caa2f2e771b2",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "ee3bef9c-8bd5-4545-9797-caa2f2e771b2"
               },
               {
                 "id": "4d4a9069-1e56-4864-b3a7-7ddd414ca12c",
-                "created": "2026-01-22T14:58:16.735643Z",
-                "last_modified": "2026-01-22T14:58:16.735647Z",
+                "created": "2025-06-05T15:52:39.663325Z",
+                "last_modified": "2025-06-05T15:52:39.663325Z",
                 "quantity": {
                   "id": "532561ef-6e4a-4188-a118-6cbc9fb5a88f",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -11967,14 +13788,29 @@
                       "306af040-9d6e-42a0-aeb4-ce18023f8a39::2015",
                       "306af040-9d6e-42a0-aeb4-ce18023f8a39::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.637129Z",
+                  "last_modified": "2025-06-05T16:07:17.420136Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "5f1479e4-4ea7-4c8c-851e-d3690ef77521",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "5f1479e4-4ea7-4c8c-851e-d3690ef77521"
               },
               {
                 "id": "62f8b201-dd33-480b-8db6-7ab92c51a514",
-                "created": "2026-01-22T14:58:16.735658Z",
-                "last_modified": "2026-01-22T14:58:16.735661Z",
+                "created": "2025-06-05T15:52:39.594199Z",
+                "last_modified": "2025-06-05T15:52:39.594199Z",
                 "quantity": {
                   "id": "899249b2-3996-4e03-93a8-eb25bca4863a",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -12118,14 +13954,29 @@
                       "2fe184ca-9f29-4148-8409-4fd0f06f9753::2015",
                       "2fe184ca-9f29-4148-8409-4fd0f06f9753::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.578082Z",
+                  "last_modified": "2025-06-05T16:07:17.407618Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "dd54ff20-bb17-4b60-82ee-884721b7beac",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "dd54ff20-bb17-4b60-82ee-884721b7beac"
               },
               {
                 "id": "744ae8ef-c9f8-491e-9638-221084862370",
-                "created": "2026-01-22T14:58:16.735672Z",
-                "last_modified": "2026-01-22T14:58:16.735676Z",
+                "created": "2025-06-05T15:52:39.923269Z",
+                "last_modified": "2025-06-05T15:52:39.923269Z",
                 "quantity": {
                   "id": "ec2beb1b-2f0b-4458-8453-d2aa8090ab0e",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -12269,14 +14120,29 @@
                       "0685200a-c183-4675-90a8-7ee91b8784cb::2015",
                       "0685200a-c183-4675-90a8-7ee91b8784cb::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.899912Z",
+                  "last_modified": "2025-06-05T16:07:17.484732Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "aa2a3fac-dcba-411a-8062-5704407cd31b",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "aa2a3fac-dcba-411a-8062-5704407cd31b"
               },
               {
                 "id": "8351cd7a-8904-4f57-aace-b9959ebd32ba",
-                "created": "2026-01-22T14:58:16.735686Z",
-                "last_modified": "2026-01-22T14:58:16.735690Z",
+                "created": "2025-06-05T15:52:39.552252Z",
+                "last_modified": "2025-06-05T15:52:39.552252Z",
                 "quantity": {
                   "id": "98ed6c9e-eb35-4572-a968-052599369296",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -12420,14 +14286,29 @@
                       "7c46fc67-9360-44d5-b487-5bf000ae7781::2015",
                       "7c46fc67-9360-44d5-b487-5bf000ae7781::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.539717Z",
+                  "last_modified": "2025-06-05T16:07:17.395590Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "28cf6f42-a329-4d0c-afd9-48ef12b9cf73",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "28cf6f42-a329-4d0c-afd9-48ef12b9cf73"
               },
               {
                 "id": "90875e48-8519-49ae-9398-6c27685c73dc",
-                "created": "2026-01-22T14:58:16.735700Z",
-                "last_modified": "2026-01-22T14:58:16.735703Z",
+                "created": "2025-06-05T15:52:39.765676Z",
+                "last_modified": "2025-06-05T15:52:39.765676Z",
                 "quantity": {
                   "id": "efc39ad3-adc9-46fd-a02b-af930e382e01",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -12571,14 +14452,29 @@
                       "17479358-b314-499c-be76-0152f3c1a2f3::2015",
                       "17479358-b314-499c-be76-0152f3c1a2f3::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.753664Z",
+                  "last_modified": "2025-06-05T16:07:17.445145Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "ec4e4ae9-903d-40c7-a1e5-226b211eece7",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "ec4e4ae9-903d-40c7-a1e5-226b211eece7"
               },
               {
                 "id": "98c740db-4aa3-4228-a1b4-6cd75033a6b3",
-                "created": "2026-01-22T14:58:16.735714Z",
-                "last_modified": "2026-01-22T14:58:16.735717Z",
+                "created": "2025-06-05T15:52:39.810167Z",
+                "last_modified": "2025-06-05T15:52:39.810167Z",
                 "quantity": {
                   "id": "d4bbbaf6-e251-44c8-9f09-dea078ec8bbd",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -12722,14 +14618,29 @@
                       "10d57a98-a017-4476-a78d-5de04ee30fe6::2015",
                       "10d57a98-a017-4476-a78d-5de04ee30fe6::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.796311Z",
+                  "last_modified": "2025-06-05T16:07:17.459683Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "2d3d0bfc-6fb2-4012-b3df-4372951165a7",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "2d3d0bfc-6fb2-4012-b3df-4372951165a7"
               },
               {
                 "id": "9d59f80c-dde4-40e1-9921-3200918e11e9",
-                "created": "2026-01-22T14:58:16.735728Z",
-                "last_modified": "2026-01-22T14:58:16.735731Z",
+                "created": "2025-06-05T15:52:39.711189Z",
+                "last_modified": "2025-06-05T15:52:39.711189Z",
                 "quantity": {
                   "id": "0ff71b40-adc6-4174-aaaf-cae8f5c03590",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -12873,14 +14784,29 @@
                       "122ea15a-58e8-44f3-901a-a1e83ddf181e::2015",
                       "122ea15a-58e8-44f3-901a-a1e83ddf181e::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.697159Z",
+                  "last_modified": "2025-06-05T16:07:17.432643Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "Emission Factor",
+                      "d15ee111-065b-44a6-ab98-915eb5bd75a1",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "d15ee111-065b-44a6-ab98-915eb5bd75a1"
               },
               {
                 "id": "bcbc9861-616d-4ce2-b47a-fb8ec7086c24",
-                "created": "2026-01-22T14:58:16.735742Z",
-                "last_modified": "2026-01-22T14:58:16.735745Z",
+                "created": "2025-06-05T15:52:39.988965Z",
+                "last_modified": "2025-06-05T15:52:39.988965Z",
                 "quantity": {
                   "id": "e134c9a6-fd5c-4cab-959d-93b53301f256",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -13024,14 +14950,29 @@
                       "d6786307-40ac-47b4-a009-76898aff680c::2015",
                       "d6786307-40ac-47b4-a009-76898aff680c::2020"
                     ]
-                  }
+                  },
+                  "created": "2025-06-05T15:52:39.966271Z",
+                  "last_modified": "2025-06-05T16:07:17.497769Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "83108355-6ac7-4125-bd11-11062fabdec3",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "83108355-6ac7-4125-bd11-11062fabdec3"
               },
               {
                 "id": "c4e2edc0-ef9e-4100-8672-77aa44d771d5",
-                "created": "2026-01-22T14:58:16.735755Z",
-                "last_modified": "2026-01-22T14:58:16.735759Z",
+                "created": "2025-06-05T15:52:40.069737Z",
+                "last_modified": "2025-06-05T15:52:40.069737Z",
                 "quantity": {
                   "id": "22e55f89-45af-4945-89ba-5be8d15d8353",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -13044,14 +14985,29 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:52:40.057494Z",
+                  "last_modified": "2025-06-05T16:07:17.516920Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "7689c69d-5fa4-4bba-995e-1c5446994c41",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "7689c69d-5fa4-4bba-995e-1c5446994c41"
               },
               {
                 "id": "e5f9d9db-f83f-4e7d-b9db-c51c60bceb6f",
-                "created": "2026-01-22T14:58:16.735769Z",
-                "last_modified": "2026-01-22T14:58:16.735773Z",
+                "created": "2025-06-05T15:52:40.033619Z",
+                "last_modified": "2025-06-05T15:52:40.033619Z",
                 "quantity": {
                   "id": "871c3ea9-a482-4979-9c6a-d011fd8880cc",
                   "unit_id": "15844530-64b4-4d63-842d-29e19776aaf9",
@@ -13065,7 +15021,22 @@
                       }
                     },
                     "parameters_used": []
-                  }
+                  },
+                  "created": "2025-06-05T15:52:40.017783Z",
+                  "last_modified": "2025-06-05T16:07:17.507413Z",
+                  "parameter_path": [
+                    [
+                      "0000003b-0000-0001-0000-000000000000",
+                      "Vehicle Powertrain",
+                      "powerplants"
+                    ],
+                    [
+                      "835e0f7a-89c3-4a3b-ad93-24da649eb177",
+                      "Emission Factor",
+                      "flows"
+                    ]
+                  ],
+                  "parameter_attr_name": "quantity"
                 },
                 "flow_id": "835e0f7a-89c3-4a3b-ad93-24da649eb177"
               }
@@ -13079,8 +15050,8 @@
     "non_combustible_emissions": [
       {
         "id": "3eb81652-b2cd-4a5b-848e-de8ebed21d35",
-        "created": "2026-01-22T14:58:16.603132Z",
-        "last_modified": "2026-01-22T14:58:16.603136Z",
+        "created": "2025-06-05T15:52:39.349118Z",
+        "last_modified": "2025-06-05T15:52:39.349118Z",
         "flow_id": "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
         "quantity": {
           "id": "e8bd9c23-1de6-4a16-ab02-41d379fc0276",
@@ -13225,13 +15196,28 @@
               "b068651d-3ded-499d-8257-b8a002ce3fe6::2015",
               "b068651d-3ded-499d-8257-b8a002ce3fe6::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:39.331232Z",
+          "last_modified": "2025-06-05T16:07:17.349558Z",
+          "parameter_path": [
+            [
+              "Vehicle",
+              "da9d3fe7-9fe4-4744-99a2-76897b4c0cad",
+              "vehicles"
+            ],
+            [
+              "565e0bab-3d27-4e5a-b9af-3aaf7365aa83",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "50f30c21-e3ce-4e72-b955-4eb43dda8b70",
-        "created": "2026-01-22T14:58:16.603146Z",
-        "last_modified": "2026-01-22T14:58:16.603149Z",
+        "created": "2025-06-05T15:52:39.169650Z",
+        "last_modified": "2025-06-05T15:52:39.169650Z",
         "flow_id": "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
         "quantity": {
           "id": "6c9c0707-84b0-41f3-b0bc-f455ba806d5f",
@@ -13376,13 +15362,28 @@
               "95d45fa5-e320-478f-877c-d6403096f5a4::2015",
               "95d45fa5-e320-478f-877c-d6403096f5a4::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:39.146117Z",
+          "last_modified": "2025-06-05T16:07:17.302976Z",
+          "parameter_path": [
+            [
+              "Vehicle",
+              "da9d3fe7-9fe4-4744-99a2-76897b4c0cad",
+              "vehicles"
+            ],
+            [
+              "74cd5372-2133-4f1b-a96d-d13adc4e36f0",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "6c8aea18-596c-4411-89eb-9c56df898a4f",
-        "created": "2026-01-22T14:58:16.603159Z",
-        "last_modified": "2026-01-22T14:58:16.603163Z",
+        "created": "2025-06-05T15:52:39.266527Z",
+        "last_modified": "2025-06-05T15:52:39.266527Z",
         "flow_id": "c666c37c-5e84-421f-b4f7-e46b58a759c2",
         "quantity": {
           "id": "9f7dfa9f-c53c-4200-b3ca-d3955a3bddb1",
@@ -13527,13 +15528,28 @@
               "cc208739-3692-42b5-80c3-7f12453ac016::2015",
               "cc208739-3692-42b5-80c3-7f12453ac016::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:39.254310Z",
+          "last_modified": "2025-06-05T16:07:17.326495Z",
+          "parameter_path": [
+            [
+              "Vehicle",
+              "da9d3fe7-9fe4-4744-99a2-76897b4c0cad",
+              "vehicles"
+            ],
+            [
+              "Non-Combustion Emission",
+              "c666c37c-5e84-421f-b4f7-e46b58a759c2",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "a1f37058-b50e-4786-b893-02b83892e738",
-        "created": "2026-01-22T14:58:16.603173Z",
-        "last_modified": "2026-01-22T14:58:16.603177Z",
+        "created": "2025-06-05T15:52:39.299405Z",
+        "last_modified": "2025-06-05T15:52:39.299405Z",
         "flow_id": "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
         "quantity": {
           "id": "80e0763d-eea0-419c-9cbc-17c371c65ccd",
@@ -13678,13 +15694,28 @@
               "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2015",
               "1e3aef1b-ce78-4b1d-93d3-11b318c08fb5::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:39.289131Z",
+          "last_modified": "2025-06-05T16:07:17.338046Z",
+          "parameter_path": [
+            [
+              "Vehicle",
+              "da9d3fe7-9fe4-4744-99a2-76897b4c0cad",
+              "vehicles"
+            ],
+            [
+              "Non-Combustion Emission",
+              "a3ef2d36-a902-4c55-93b0-62ec99cf27a2",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       },
       {
         "id": "cc147581-c767-4073-a507-7dc7f823c922",
-        "created": "2026-01-22T14:58:16.603187Z",
-        "last_modified": "2026-01-22T14:58:16.603190Z",
+        "created": "2025-06-05T15:52:39.227354Z",
+        "last_modified": "2025-06-05T15:52:39.227354Z",
         "flow_id": "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
         "quantity": {
           "id": "751255e5-9e8e-4f5f-a687-1705e08ddc25",
@@ -13829,7 +15860,22 @@
               "5242d305-59d0-4520-8d58-4ad4983a79b0::2015",
               "5242d305-59d0-4520-8d58-4ad4983a79b0::2020"
             ]
-          }
+          },
+          "created": "2025-06-05T15:52:39.209332Z",
+          "last_modified": "2025-06-05T16:07:17.314484Z",
+          "parameter_path": [
+            [
+              "Vehicle",
+              "da9d3fe7-9fe4-4744-99a2-76897b4c0cad",
+              "vehicles"
+            ],
+            [
+              "5a4e1382-10f2-4ab6-b802-5ad0bf1b9bf7",
+              "Non-Combustion Emission",
+              "flows"
+            ]
+          ],
+          "parameter_attr_name": "quantity"
         }
       }
     ],
