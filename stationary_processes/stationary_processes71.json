@@ -1825,6 +1825,205 @@
     "external_import_id": null
   },
   {
+    "id": "1db7635f-7aa7-463a-81b8-41acae4d48d6",
+    "created": "2026-01-25T04:43:53.675219Z",
+    "last_modified": "2026-01-25T04:43:53.675230Z",
+    "name": "sp4",
+    "is_draft": false,
+    "notes": "",
+    "urban_share": {
+      "id": "6ded9c8d-04da-4892-8e8a-46eed1f518a0",
+      "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+      "values_by_year": {
+        "parameters_used": [],
+        "years": {
+          "0": {
+            "value_or_formula": "0",
+            "is_estimated": false,
+            "user_selected_display_unit": "ratio",
+            "resolved_value": 0.0
+          }
+        }
+      },
+      "created": "2026-01-25T04:43:53.673284Z",
+      "last_modified": "2026-01-25T04:43:53.673298Z",
+      "parameter_path": [
+        [
+          "Stationary Process",
+          "stationary_processes",
+          "1db7635f-7aa7-463a-81b8-41acae4d48d6"
+        ]
+      ],
+      "parameter_attr_name": "urban_share"
+    },
+    "allocation_method": "none",
+    "is_carbon_relation_enabled": false,
+    "carbon_relations": {
+      "af4ae74d-5831-42b7-afa7-12170ef88290": {
+        "e961705f-a346-4499-b129-8c4c9b9fc65f": {
+          "id": "80c39fd9-685d-42a1-a11c-f0b298e2e521",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "parameters_used": [],
+            "years": {
+              "0": {
+                "value_or_formula": "0.0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            }
+          },
+          "created": "2026-01-25T04:43:53.666142Z",
+          "last_modified": "2026-01-25T04:43:53.666269Z",
+          "parameter_path": [
+            [
+              "Stationary Process",
+              "stationary_processes",
+              "1db7635f-7aa7-463a-81b8-41acae4d48d6"
+            ]
+          ],
+          "parameter_attr_name": "crelation [E85 <-> E85]"
+        }
+      }
+    },
+    "causal_allocation_factors": [],
+    "input_groups": [],
+    "input_streams": [
+      {
+        "id": "e961705f-a346-4499-b129-8c4c9b9fc65f",
+        "created": "2026-01-25T04:43:53.703703Z",
+        "last_modified": "2026-01-25T04:43:53.703713Z",
+        "notes": "",
+        "amount": {
+          "id": "7a91a22f-5ddf-40ec-825f-bcb31e26e0ed",
+          "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
+          "values_by_year": {
+            "parameters_used": [],
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "kg",
+                "resolved_value": 1.0
+              }
+            }
+          },
+          "created": "2026-01-25T04:43:53.701946Z",
+          "last_modified": "2026-01-25T04:43:53.701959Z",
+          "parameter_path": [
+            [
+              "Input",
+              "flows",
+              "f6c54a4b-33c8-402b-820d-7b8750099d5b"
+            ],
+            [
+              "Stationary Process",
+              "stationary_processes",
+              "1db7635f-7aa7-463a-81b8-41acae4d48d6"
+            ]
+          ],
+          "parameter_attr_name": "amount"
+        },
+        "flow_id": "f6c54a4b-33c8-402b-820d-7b8750099d5b",
+        "source_type": "Previous",
+        "source_mix_id": null,
+        "source_pathway_id": null,
+        "emission_ratios": [],
+        "technology_shares": [],
+        "content_type": {
+          "id": 19,
+          "model_name": "inputstream",
+          "app_label": "stationary_processes"
+        }
+      }
+    ],
+    "output_streams": [
+      {
+        "id": "af4ae74d-5831-42b7-afa7-12170ef88290",
+        "created": "2026-01-25T04:43:53.692573Z",
+        "last_modified": "2026-01-25T04:43:53.692589Z",
+        "is_main": true,
+        "flow_id": "f6c54a4b-33c8-402b-820d-7b8750099d5b",
+        "amount": {
+          "id": "13fbe25b-c52e-4819-af45-838bc4df33c5",
+          "unit_id": "0c268c9a-c608-4bf7-9989-92134a1a02c7",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "1",
+                "is_estimated": false,
+                "user_selected_display_unit": "kg",
+                "resolved_value": 1.0
+              }
+            },
+            "parameters_used": []
+          },
+          "created": "2026-01-25T04:43:53.684638Z",
+          "last_modified": "2026-01-25T04:43:53.684651Z",
+          "parameter_path": [
+            [
+              "Product",
+              "flows",
+              "f6c54a4b-33c8-402b-820d-7b8750099d5b"
+            ],
+            [
+              "Stationary Process",
+              "stationary_processes",
+              "1db7635f-7aa7-463a-81b8-41acae4d48d6"
+            ]
+          ],
+          "parameter_attr_name": "amount"
+        },
+        "loss_ratio": {
+          "id": "d087dba1-8bbd-4028-ab83-6a550199cf3d",
+          "unit_id": "cf0198b2-c319-4f12-bf4a-9182b8d993e0",
+          "values_by_year": {
+            "years": {
+              "0": {
+                "value_or_formula": "0",
+                "is_estimated": false,
+                "user_selected_display_unit": "%",
+                "resolved_value": 0.0
+              }
+            },
+            "parameters_used": []
+          },
+          "created": "2026-01-25T04:43:53.689337Z",
+          "last_modified": "2026-01-25T04:43:53.689351Z",
+          "parameter_path": [
+            [
+              "Product",
+              "flows",
+              "f6c54a4b-33c8-402b-820d-7b8750099d5b"
+            ],
+            [
+              "Stationary Process",
+              "stationary_processes",
+              "1db7635f-7aa7-463a-81b8-41acae4d48d6"
+            ]
+          ],
+          "parameter_attr_name": "loss_ratio"
+        },
+        "is_used_for_displacement": false,
+        "displaced_conventional_products": [],
+        "content_type": {
+          "id": 22,
+          "model_name": "outputstream",
+          "app_label": "stationary_processes"
+        }
+      }
+    ],
+    "emission_streams": [],
+    "content_type": {
+      "id": 27,
+      "model_name": "stationaryprocess",
+      "app_label": "stationary_processes"
+    },
+    "warning": null,
+    "external_import_id": null
+  },
+  {
     "id": "25b3f85a-12f2-4ab8-bb99-edf73ee287a6",
     "created": "2025-06-05T15:38:29.730623Z",
     "last_modified": "2025-06-05T15:38:29.918517Z",
